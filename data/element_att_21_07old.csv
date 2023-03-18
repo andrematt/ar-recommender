@@ -1,0 +1,1294 @@
+id,rule_id,original_rule_id,xPath,parent,realName,ECA,operator,nextOperator,value,completeName
+0,0,704977266,user/position/timeInsideARoom/@timeInsideBathroom,timeinsidearoom,timeinsidebathroom,condition,more,NEXTOPERATOR,30,timeinsidearoom-timeinsidebathroom
+1,0,704977266,Alarms,alarms,alarms,action,OPERATOR,NEXTOPERATOR,Alarm,alarms-alarms
+2,1,419000676,environment/currentWeather/@weatherIcon,currentweather,weathericon,condition,equal,NEXTOPERATOR,Sun,currentweather-weathericon
+3,1,419000676,Reminders,reminders,reminders,action,OPERATOR,NEXTOPERATOR,The sun is shining. Please go outside.,reminders-reminders
+4,2,713172375,XPATH,relativeposition,typeofproximity,TRIGGER,inside,NEXTOPERATOR,bathroom,relativeposition-typeofproximity
+5,2,713172375,applianceState/Bathroom/allLight,bathroom,alllight,action,OPERATOR,NEXTOPERATOR,invokeFunctions:changeApplianceState,bathroom-alllight
+6,3,77241990,user/physiological/@steps,physiological,steps,condition,less,NEXTOPERATOR,5000,physiological-steps
+7,3,77241990,Reminders,reminders,reminders,action,OPERATOR,NEXTOPERATOR,Exercises on the treadmill,reminders-reminders
+8,4,1907121792,environment/@lightLevel,livingroom,lightlevel,event,equal,NEXTOPERATOR,LOW_LIGHT,livingroom-lightlevel
+9,4,1907121792,applianceState/LivingRoom/lightColor,livingroom,hue color light living room,action,OPERATOR,NEXTOPERATOR,update:lightColor,livingroom-hue color light living room
+10,5,905189230,technology/light/@state,greatluminaire,state,condition,equal,NEXTOPERATOR,OFF,greatluminaire-state
+11,5,905189230,applianceState/Kitchen/lightColor,kitchen,hue color light kitchen,action,OPERATOR,NEXTOPERATOR,custom:lightColor,kitchen-hue color light kitchen
+12,6,851168453,environment/dateTime/@localTime,datetime,localtime,event,equal,NEXTOPERATOR,15:22,datetime-localtime
+13,6,851168453,Reminders,reminders,reminders,action,OPERATOR,NEXTOPERATOR,"You haven't played with Kwido in a long time, try playing a game!",reminders-reminders
+14,7,99199286,environment/dateTime/@localTime,datetime,localtime,event,equal,NEXTOPERATOR,14:52,datetime-localtime
+15,7,99199286,Reminders,reminders,reminders,action,OPERATOR,NEXTOPERATOR,Remember to take aspirin,reminders-reminders
+16,7,99199286,applianceState/LivingRoom/lightColor,livingroom,hue color light living room,action,OPERATOR,NEXTOPERATOR,update:lightColor,livingroom-hue color light living room
+17,8,1105527972,user/cognitive/@trainingTime,cognitive,trainingtime,condition,equal,NEXTOPERATOR,30,cognitive-trainingtime
+18,8,1105527972,Alarms,alarms,alarms,action,OPERATOR,NEXTOPERATOR,You can stop doing the exercises,alarms-alarms
+19,9,2007374019,user/activity/@medicationName,activity,medicationname,condition,equal,NEXTOPERATOR,Dobetin and Lampard,activity-medicationname
+20,9,2007374019,Alarms,alarms,alarms,action,OPERATOR,NEXTOPERATOR,Dobetin and Lampard ,alarms-alarms
+21,10,462892822,user/activity/@medicationName,activity,medicationname,condition,equal,NEXTOPERATOR,Cardicor ,activity-medicationname
+22,10,462892822,Alarms,alarms,alarms,action,OPERATOR,NEXTOPERATOR,Take the evening Cardicor ,alarms-alarms
+23,11,1409254731,user/activity/@medicationName,activity,medicationname,condition,equal,NEXTOPERATOR,Provisacor,activity-medicationname
+24,11,1409254731,Alarms,alarms,alarms,action,OPERATOR,NEXTOPERATOR,Take the evening Provisacor ,alarms-alarms
+25,12,978742196,user/activity/@medicationName,activity,medicationname,condition,equal,NEXTOPERATOR,Tardifer lunch,activity-medicationname
+26,12,978742196,Alarms,alarms,alarms,action,OPERATOR,NEXTOPERATOR,Take Tardifer ,alarms-alarms
+27,13,2104560701,user/activity/@medicationName,activity,medicationname,condition,equal,NEXTOPERATOR,Duoplavin lunch,activity-medicationname
+28,13,2104560701,Alarms,alarms,alarms,action,OPERATOR,NEXTOPERATOR,Duoplavin lunch,alarms-alarms
+29,14,1606185754,user/activity/@medicationName,activity,medicationname,condition,equal,NEXTOPERATOR,Ganfort eye drops,activity-medicationname
+30,14,1606185754,Alarms,alarms,alarms,action,OPERATOR,NEXTOPERATOR,Ganfort eye drops evening,alarms-alarms
+31,15,1892053115,user/activity/@medicationName,activity,medicationname,condition,equal,NEXTOPERATOR,Trusopt eye drops evening,activity-medicationname
+32,15,1892053115,Alarms,alarms,alarms,action,OPERATOR,NEXTOPERATOR,Trusopt eye drops evening,alarms-alarms
+33,16,2034544156,user/activity/@medicationName,activity,medicationname,condition,equal,NEXTOPERATOR,Trusopt lunch,activity-medicationname
+34,16,2034544156,Alarms,alarms,alarms,action,OPERATOR,NEXTOPERATOR,Trusopt eye drops lunch,alarms-alarms
+35,17,211899885,user/activity/@medicationName,activity,medicationname,condition,equal,NEXTOPERATOR,Trusopt eye drops,activity-medicationname
+36,17,211899885,Alarms,alarms,alarms,action,OPERATOR,NEXTOPERATOR,Take Trusopt drops morning,alarms-alarms
+37,18,809092032,user/activity/@medicationName,activity,medicationname,condition,equal,NEXTOPERATOR,Zoloft,activity-medicationname
+38,18,809092032,Alarms,alarms,alarms,action,OPERATOR,NEXTOPERATOR,Take Zoloft,alarms-alarms
+39,19,1941907476,user/activity/@medicationName,activity,medicationname,condition,equal,NEXTOPERATOR,Lansoprazolo,activity-medicationname
+40,19,1941907476,Alarms,alarms,alarms,action,OPERATOR,NEXTOPERATOR,Take Lansoprazolo,alarms-alarms
+41,20,802638897,user/activity/@medicationName,activity,medicationname,condition,equal,NEXTOPERATOR,Eucreas evening,activity-medicationname
+42,20,802638897,Alarms,alarms,alarms,action,OPERATOR,NEXTOPERATOR,Take evening Eucreas ,alarms-alarms
+43,21,694118939,user/activity/@medicationName,activity,medicationname,condition,equal,NEXTOPERATOR,Eucreas lunch,activity-medicationname
+44,21,694118939,Alarms,alarms,alarms,action,OPERATOR,NEXTOPERATOR,Take Eucreas Lunch,alarms-alarms
+45,22,1468435251,user/activity/@medicationName,activity,medicationname,event,equal,NEXTOPERATOR,Eucreas,activity-medicationname
+46,22,1468435251,Alarms,alarms,alarms,action,OPERATOR,NEXTOPERATOR,Take Morning Eucreas ,alarms-alarms
+47,23,1567876703,technology/light/@state,greatluminaire,state,condition,notequal,and,OFF,greatluminaire-state
+48,23,1567876703,environment/dateTime/@localTime,datetime,localtime,condition,equal,NEXTOPERATOR,13:37,datetime-localtime
+49,23,1567876703,Reminders,reminders,reminders,action,OPERATOR,NEXTOPERATOR,Turn off the great luminarie,reminders-reminders
+50,24,1221627652,technology/light/@state,greatluminaire,state,condition,notequal,NEXTOPERATOR,OFF,greatluminaire-state
+51,24,1221627652,Reminders,reminders,reminders,action,OPERATOR,NEXTOPERATOR,Turn off the great luminarie,reminders-reminders
+52,25,437070775,environment/@lightLevel,livingroom,lightlevel,event,equal,NEXTOPERATOR,LOW_LIGHT,livingroom-lightlevel
+53,25,437070775,applianceState/LivingRoom/lightColor,livingroom,hue color light living room,action,OPERATOR,NEXTOPERATOR,update:lightColor,livingroom-hue color light living room
+54,26,2033312982,user/physiological/@steps,physiological,steps,condition,less,NEXTOPERATOR,5000,physiological-steps
+55,26,2033312982,Reminders,reminders,reminders,action,OPERATOR,NEXTOPERATOR,exercises on the treadmill,reminders-reminders
+56,27,1571550446,XPATH,relativeposition,typeofproximity,event,outside,NEXTOPERATOR,house,relativeposition-typeofproximity
+57,27,1571550446,environment/dateTime/@localTime,datetime,localtime,condition,gt,and,21:00,datetime-localtime
+58,27,1571550446,environment/dateTime/@localTime,datetime,localtime,condition,lt,and,22:00,datetime-localtime
+59,27,1571550446,Alarms,alarms,alarms,action,OPERATOR,NEXTOPERATOR,User 2 is away from home late at night,alarms-alarms
+60,28,1592563941,user/cognitive/@trainingTime,cognitive,trainingtime,condition,less,NEXTOPERATOR,1,cognitive-trainingtime
+61,28,1592563941,Alarms,alarms,alarms,action,OPERATOR,NEXTOPERATOR,Keep practicing,alarms-alarms
+62,29,2112820361,user/activity/medication/@intakeTime,medication,intaketime,condition,notequal,NEXTOPERATOR,15:00,medication-intaketime
+63,29,2112820361,Alarms,alarms,alarms,action,OPERATOR,NEXTOPERATOR,Take the 3 o'clock pill,alarms-alarms
+64,30,1093134839,user/activity/@medicationName,activity,medicationname,event,equal,NEXTOPERATOR,Aprovel/Coaprovel,activity-medicationname
+65,30,1093134839,Alarms,alarms,alarms,action,OPERATOR,NEXTOPERATOR,Aprovel/Coaprovel ,alarms-alarms
+66,31,1203160242,user/activity/@medicationName,activity,medicationname,event,equal,NEXTOPERATOR,Ibustrin 200 mg 1cp /die,activity-medicationname
+67,31,1203160242,Alarms,alarms,alarms,action,OPERATOR,NEXTOPERATOR,Ibustrin 200 mg 1cp/die,alarms-alarms
+68,32,1590173288,user/activity/@medicationName,activity,medicationname,event,equal,NEXTOPERATOR,Norvasc 5mg 1cp/die,activity-medicationname
+69,32,1590173288,Alarms,alarms,alarms,action,OPERATOR,NEXTOPERATOR,Norvasc 5 mg 1cp/die,alarms-alarms
+70,33,1483343173,user/activity/@medicationName,activity,medicationname,event,equal,NEXTOPERATOR,Tenormin 1/4 cp/die,activity-medicationname
+71,33,1483343173,Alarms,alarms,alarms,action,OPERATOR,NEXTOPERATOR,Tenormin 1/4 pill,alarms-alarms
+72,34,645674990,user/activity/@medicationName,activity,medicationname,event,equal,NEXTOPERATOR,Pantorc,activity-medicationname
+73,34,645674990,Alarms,alarms,alarms,action,OPERATOR,NEXTOPERATOR,Remember to take the Pantorc,alarms-alarms
+74,35,809749427,user/activity/@medicationName,activity,medicationname,event,equal,NEXTOPERATOR,Aplactin 20 mg 1cp/die,activity-medicationname
+75,35,809749427,Alarms,alarms,alarms,action,OPERATOR,NEXTOPERATOR,Aplactin 20 mg 1cp/die,alarms-alarms
+76,36,1777644173,user/cognitive/@trainingTime,cognitive,trainingtime,condition,less,NEXTOPERATOR,20,cognitive-trainingtime
+77,36,1777644173,Reminders,reminders,reminders,action,OPERATOR,NEXTOPERATOR,Do some more exercise,reminders-reminders
+78,37,1246057138,user/activity/@medicationName,activity,medicationname,condition,equal,NEXTOPERATOR,Aspirine,activity-medicationname
+79,37,1246057138,Reminders,reminders,reminders,action,OPERATOR,NEXTOPERATOR,Aspirine taken,reminders-reminders
+80,38,1665350978,user/activity/@medicationName,activity,medicationname,event,equal,NEXTOPERATOR,Aspirine,activity-medicationname
+81,38,1665350978,Alarms,alarms,alarms,action,OPERATOR,NEXTOPERATOR,Marco did not take the Aspirine!,alarms-alarms
+82,39,68957425,environment/@lightLevel,bedroom,lightlevel,event,equal,NEXTOPERATOR,NO_LIGHT,bedroom-lightlevel
+83,39,68957425,applianceState/Bedroom/@scene,bedroom,biorhythmlight,action,OPERATOR,NEXTOPERATOR,invokeFunctions:lightScene,bedroom-biorhythmlight
+84,40,469433638,environment/dateTime/@localTime,datetime,localtime,event,equal,and,18:25,datetime-localtime
+85,40,469433638,user/physiological/@steps,physiological,steps,condition,less,and,5000,physiological-steps
+86,40,469433638,Reminders,reminders,reminders,action,OPERATOR,NEXTOPERATOR,Go outside to have a walk,reminders-reminders
+87,41,1170467921,user/position/timeInsideARoom/@timeInsideBathroom,timeinsidearoom,timeinsidebathroom,event,more,NEXTOPERATOR,2,timeinsidearoom-timeinsidebathroom
+88,41,1170467921,Alarms,alarms,alarms,action,OPERATOR,NEXTOPERATOR,Marco is in the bathroom for more than 1 hour,alarms-alarms
+89,42,1513466231,XPATH,relativeposition,typeofproximity,event,inside,NEXTOPERATOR,bedroom,relativeposition-typeofproximity
+90,42,1513466231,applianceState/Bedroom/@scene,bedroom,relax,action,OPERATOR,NEXTOPERATOR,invokeFunctions:lightScene,bedroom-relax
+91,43,1933171152,environment/@motion,bedroom,motion,event,equal,and,true,bedroom-motion
+92,43,1933171152,environment/dateTime/@localTime,datetime,localtime,condition,between,and,17:55,datetime-localtime
+93,43,1933171152,environment/dateTime/@localTime,datetime,localtime,condition,lt,and,18:00,datetime-localtime
+94,43,1933171152,applianceState/Corridor/lightColor,corridor,light strip corridor,action,OPERATOR,NEXTOPERATOR,update:lightColor,corridor-light strip corridor
+95,44,84606861,environment/dateTime/@localTime,datetime,localtime,event,equal,NEXTOPERATOR,17:52,datetime-localtime
+96,44,84606861,Reminders,reminders,reminders,action,OPERATOR,NEXTOPERATOR,Remember to take the aspirine,reminders-reminders
+97,45,119713179,user/cognitive/@vocalEmotionalState,cognitive,vocalemotionalstate,event,equal,NEXTOPERATOR,HAPPY,cognitive-vocalemotionalstate
+98,45,119713179,applianceState/LivingRoom/lightColor,livingroom,hue color light living room,action,OPERATOR,NEXTOPERATOR,update:lightColor,livingroom-hue color light living room
+99,46,1739114914,user/physical/@layingDown,physical,layingdown,condition,equal,NEXTOPERATOR,true,physical-layingdown
+100,46,1739114914,Alarms,alarms,alarms,action,OPERATOR,NEXTOPERATOR,Man down alarm,alarms-alarms
+101,47,936824373,environment/dateTime/@localTime,datetime,localtime,event,equal,NEXTOPERATOR,22:00,datetime-localtime
+102,47,936824373,Reminders,reminders,reminders,action,OPERATOR,NEXTOPERATOR,Reminder: drink a glass of water,reminders-reminders
+103,48,1968211442,environment/dateTime/@localTime,datetime,localtime,event,equal,NEXTOPERATOR,16:00,datetime-localtime
+104,48,1968211442,Reminders,reminders,reminders,action,OPERATOR,NEXTOPERATOR,Reminder: drink a glass of water,reminders-reminders
+105,49,763004522,environment/dateTime/@localTime,datetime,localtime,event,equal,NEXTOPERATOR,11:00,datetime-localtime
+106,49,763004522,Reminders,reminders,reminders,action,OPERATOR,NEXTOPERATOR,Reminder: drink a glass of water,reminders-reminders
+107,50,1272561656,environment/dateTime/@localTime,datetime,localtime,event,equal,NEXTOPERATOR,09:00,datetime-localtime
+108,50,1272561656,Reminders,reminders,reminders,action,OPERATOR,NEXTOPERATOR,Reminder: eye drops and therapy,reminders-reminders
+109,51,1249863632,XPATH,relativeposition,typeofproximity,event,inside,NEXTOPERATOR,livingroom,relativeposition-typeofproximity
+110,51,1249863632,environment/dateTime/@localTime,datetime,localtime,condition,more,and,09:30,datetime-localtime
+111,51,1249863632,applianceState/LivingRoom/greatLuminare,livingroom,greatluminare,action,OPERATOR,NEXTOPERATOR,custom:greatLuminare,livingroom-greatluminare
+112,52,997266552,XPATH,relativeposition,typeofproximity,event,inside,NEXTOPERATOR,livingroom,relativeposition-typeofproximity
+113,52,997266552,environment/dateTime/@localTime,datetime,localtime,event,more,and,22:00,datetime-localtime
+114,52,997266552,applianceState/LivingRoom/@scene,livingroom,relax,action,OPERATOR,NEXTOPERATOR,invokeFunctions:lightScene,livingroom-relax
+115,53,1111596202,user/cognitive/@lastConnectionTime,cognitive,lastconnectiontime,condition,more,NEXTOPERATOR,48,cognitive-lastconnectiontime
+116,53,1111596202,Reminders,reminders,reminders,action,OPERATOR,NEXTOPERATOR,Please do exercises on the tablet,reminders-reminders
+117,54,1909868168,environment/dateTime/@localTime,datetime,localtime,event,equal,NEXTOPERATOR,22:00,datetime-localtime
+118,54,1909868168,Reminders,reminders,reminders,action,OPERATOR,NEXTOPERATOR,Reminder: drink a glass of water,reminders-reminders
+119,55,287394626,environment/dateTime/@localTime,datetime,localtime,event,equal,NEXTOPERATOR,16:00,datetime-localtime
+120,55,287394626,Reminders,reminders,reminders,action,OPERATOR,NEXTOPERATOR,Reminder: drink a glass of water,reminders-reminders
+121,56,148808064,environment/dateTime/@localTime,datetime,localtime,event,equal,NEXTOPERATOR,11:00,datetime-localtime
+122,56,148808064,Reminders,reminders,reminders,action,OPERATOR,NEXTOPERATOR,Reminder: drink a glass of water,reminders-reminders
+123,57,926400819,environment/dateTime/@localTime,datetime,localtime,event,equal,NEXTOPERATOR,09:00,datetime-localtime
+124,57,926400819,Reminders,reminders,reminders,action,OPERATOR,NEXTOPERATOR,Reminder: eye drops and therapy,reminders-reminders
+125,58,1878396368,XPATH,relativeposition,typeofproximity,event,inside,NEXTOPERATOR,livingroom,relativeposition-typeofproximity
+126,58,1878396368,environment/dateTime/@localTime,datetime,localtime,event,more,and,22:00,datetime-localtime
+127,58,1878396368,applianceState/LivingRoom/@scene,livingroom,relax,action,OPERATOR,NEXTOPERATOR,invokeFunctions:lightScene,livingroom-relax
+128,59,307847951,user/cognitive/@lastConnectionTime,cognitive,lastconnectiontime,event,equal,NEXTOPERATOR,48,cognitive-lastconnectiontime
+129,59,307847951,Reminders,reminders,reminders,action,OPERATOR,NEXTOPERATOR,Please do exercises on the tablet,reminders-reminders
+130,60,460199470,environment/@motion,livingroom,motion,event,equal,and,true,livingroom-motion
+131,60,460199470,environment/@lightLevel,livingroom,lightlevel,condition,equal,and,VERY_LOW_LIGHT,livingroom-lightlevel
+132,60,460199470,applianceState/LivingRoom/greatLuminare,livingroom,greatluminare,action,OPERATOR,NEXTOPERATOR,custom:greatLuminare,livingroom-greatluminare
+133,61,1579672307,environment/@motion,bedroom,motion,event,equal,NEXTOPERATOR,true,bedroom-motion
+134,61,1579672307,applianceState/LivingRoom/lightColor,livingroom,hue color light living room,action,OPERATOR,NEXTOPERATOR,update:lightColor,livingroom-hue color light living room
+135,62,232201151,environment/@motion,bedroom,motion,event,equal,NEXTOPERATOR,true,bedroom-motion
+136,62,232201151,applianceState/Bedroom/@scene,bedroom,activate,action,OPERATOR,NEXTOPERATOR,invokeFunctions:lightScene,bedroom-activate
+137,63,143122028,environment/twentyFourHoursWeatherForecast/@rain,twentyfourhoursweatherforecast,rain,event,equal,NEXTOPERATOR,true,twentyfourhoursweatherforecast-rain
+138,63,143122028,Alarms,alarms,alarms,action,OPERATOR,NEXTOPERATOR,tomorrow is likely to rain,alarms-alarms
+139,64,728738884,user/physiological/@steps,physiological,steps,event,less,NEXTOPERATOR,6000,physiological-steps
+140,64,728738884,Reminders,reminders,reminders,action,OPERATOR,NEXTOPERATOR,Remind to walk more for a healthier lifestyle,reminders-reminders
+141,65,506862500,XPATH,relativeposition,typeofproximity,condition,inside,NEXTOPERATOR,livingroom,relativeposition-typeofproximity
+142,65,506862500,environment/dateTime/@localTime,datetime,localtime,event,equal,and,22:00,datetime-localtime
+143,65,506862500,applianceState/LivingRoom/@scene,livingroom,relax,action,OPERATOR,NEXTOPERATOR,invokeFunctions:lightScene,livingroom-relax
+144,66,730456382,user/position/timeInsideARoom/@timeInsideBathroom,timeinsidearoom,timeinsidebathroom,event,more,NEXTOPERATOR,30,timeinsidearoom-timeinsidebathroom
+145,66,730456382,Alarms,alarms,alarms,action,OPERATOR,NEXTOPERATOR,Marco is in the bathroom for more than 1 hour,alarms-alarms
+146,67,499855005,environment/@lightLevel,bedroom,lightlevel,event,equal,NEXTOPERATOR,NO_LIGHT,bedroom-lightlevel
+147,67,499855005,applianceState/Bedroom/@scene,bedroom,biorhythmlight,action,OPERATOR,NEXTOPERATOR,invokeFunctions:lightScene,bedroom-biorhythmlight
+148,68,1089495978,user/physiological/@steps,physiological,steps,event,less,NEXTOPERATOR,6000,physiological-steps
+149,68,1089495978,Reminders,reminders,reminders,action,OPERATOR,NEXTOPERATOR,Remind to walk more for a healthier lifestyle,reminders-reminders
+150,69,245210718,environment/@motion,bedroom,motion,event,equal,and,true,bedroom-motion
+151,69,245210718,environment/dateTime/@localTime,datetime,localtime,condition,gt,and,22:00,datetime-localtime
+152,69,245210718,environment/dateTime/@localTime,datetime,localtime,condition,lt,and,23:59,datetime-localtime
+153,69,245210718,environment/dateTime/@localTime,datetime,localtime,condition,equal,and,02:30,datetime-localtime
+154,69,245210718,environment/dateTime/@localTime,datetime,localtime,condition,equal,and,06:00,datetime-localtime
+155,69,245210718,applianceState/Bathroom/lightColor,bathroom,hue color light bathroom,action,OPERATOR,NEXTOPERATOR,update:lightColor,bathroom-hue color light bathroom
+156,70,28492400,environment/dateTime/@localTime,datetime,localtime,event,equal,NEXTOPERATOR,08:00,datetime-localtime
+157,70,28492400,Reminders,reminders,reminders,action,OPERATOR,NEXTOPERATOR,Please measure blood sugar,reminders-reminders
+158,71,1954746659,environment/dateTime/@localTime,datetime,localtime,event,equal,NEXTOPERATOR,08:00,datetime-localtime
+159,71,1954746659,Reminders,reminders,reminders,action,OPERATOR,NEXTOPERATOR,Please measure blood sugar,reminders-reminders
+160,72,1860576298,user/cognitive/@emotionalState,cognitive,emotionalstate,condition,equal,NEXTOPERATOR,DISCOURAGED,cognitive-emotionalstate
+161,72,1860576298,Alarms,alarms,alarms,action,OPERATOR,NEXTOPERATOR,Emotional status discouraged,alarms-alarms
+162,73,723194353,user/cognitive/@cognitiveState,cognitive,cognitivestate,condition,equal,NEXTOPERATOR,MILD_COGNITIVE_IMPAIRMENT,cognitive-cognitivestate
+163,73,723194353,Alarms,alarms,alarms,action,OPERATOR,NEXTOPERATOR,Mild cognitive status,alarms-alarms
+164,74,1458507200,user/cognitive/@emotionalState,cognitive,emotionalstate,event,equal,NEXTOPERATOR,SAD,cognitive-emotionalstate
+165,74,1458507200,applianceState/LivingRoom/@scene,livingroom,activate,action,OPERATOR,NEXTOPERATOR,invokeFunctions:lightScene,livingroom-activate
+166,75,1476088173,user/cognitive/@lastConnectionTime,cognitive,lastconnectiontime,condition,more,NEXTOPERATOR,48,cognitive-lastconnectiontime
+167,75,1476088173,Alarms,alarms,alarms,action,OPERATOR,NEXTOPERATOR,Your last connection was more than 48 hours ago. Lets play!,alarms-alarms
+168,76,210155031,user/activity/@medicationName,activity,medicationname,condition,equal,NEXTOPERATOR,aspirine,activity-medicationname
+169,76,210155031,Reminders,reminders,reminders,action,OPERATOR,NEXTOPERATOR,Aspirine taken,reminders-reminders
+170,77,721225114,user/cognitive/@emotionalState,cognitive,emotionalstate,condition,equal,NEXTOPERATOR,DISCOURAGED,cognitive-emotionalstate
+171,77,721225114,Alarms,alarms,alarms,action,OPERATOR,NEXTOPERATOR,Emotional status discouraged,alarms-alarms
+172,78,1299316102,user/cognitive/@cognitiveState,cognitive,cognitivestate,condition,equal,NEXTOPERATOR,MILD_COGNITIVE_IMPAIRMENT,cognitive-cognitivestate
+173,78,1299316102,Alarms,alarms,alarms,action,OPERATOR,NEXTOPERATOR,Mild cognitive status,alarms-alarms
+174,79,1415350453,user/cognitive/@emotionalState,cognitive,emotionalstate,event,equal,NEXTOPERATOR,SAD,cognitive-emotionalstate
+175,79,1415350453,applianceState/LivingRoom/@scene,livingroom,activate,action,OPERATOR,NEXTOPERATOR,invokeFunctions:lightScene,livingroom-activate
+176,80,1842592295,user/cognitive/@lastConnectionTime,cognitive,lastconnectiontime,condition,more,NEXTOPERATOR,48,cognitive-lastconnectiontime
+177,80,1842592295,Alarms,alarms,alarms,action,OPERATOR,NEXTOPERATOR,Your last connection was more than 48 hours ago. Lets play!,alarms-alarms
+178,81,1290908745,user/vocalInput/@vocalString,vocalinput,vocalstring,event,equal,NEXTOPERATOR,TURN_ON_LIGHT_IN_LIVING_ROOM_SCENE_RELAXING,vocalinput-vocalstring
+179,81,1290908745,applianceState/LivingRoom/@scene,livingroom,relax,action,OPERATOR,NEXTOPERATOR,invokeFunctions:lightScene,livingroom-relax
+180,82,784470700,environment/twentyFourHoursWeatherForecast/@rain,twentyfourhoursweatherforecast,rain,condition,equal,NEXTOPERATOR,true,twentyfourhoursweatherforecast-rain
+181,82,784470700,Reminders,reminders,reminders,action,OPERATOR,NEXTOPERATOR,Tomorrow will rain,reminders-reminders
+182,83,713862806,user/activity/sleep/@sleepDuration,sleep,sleepduration,event,less,NEXTOPERATOR,60,sleep-sleepduration
+183,83,713862806,Alarms,alarms,alarms,action,OPERATOR,NEXTOPERATOR,you're getting too little sleep,alarms-alarms
+184,84,1718829999,environment/@gasSensor,kitchen,gassensor,event,equal,or,true,kitchen-gassensor
+185,84,1718829999,environment/@smokeSensor,kitchen,smokesensor,event,equal,NEXTOPERATOR,true,kitchen-smokesensor
+186,84,1718829999,Alarms,alarms,alarms,action,OPERATOR,NEXTOPERATOR,gas or smoke detected in the kitchen!,alarms-alarms
+187,85,1788513126,user/cognitive/@lastConnectionTime,cognitive,lastconnectiontime,event,more,or,48,cognitive-lastconnectiontime
+188,85,1788513126,user/cognitive/@trainingTime,cognitive,trainingtime,event,less,NEXTOPERATOR,15,cognitive-trainingtime
+189,85,1788513126,Reminders,reminders,reminders,action,OPERATOR,NEXTOPERATOR,remember to train more,reminders-reminders
+190,86,1546471114,XPATH,relativeposition,typeofproximity,TRIGGER,inside,NEXTOPERATOR,house,relativeposition-typeofproximity
+191,86,1546471114,environment/@lightLevel,livingroom,lightlevel,condition,equal,NEXTOPERATOR,LOW_LIGHT,livingroom-lightlevel
+192,86,1546471114,applianceState/LivingRoom/@scene,livingroom,biorhythmlight,action,OPERATOR,NEXTOPERATOR,invokeFunctions:lightScene,livingroom-biorhythmlight
+193,87,1649551250,environment/dateTime/@localTime,datetime,localtime,condition,gt,and,21:00,datetime-localtime
+194,87,1649551250,environment/dateTime/@localTime,datetime,localtime,condition,lt,NEXTOPERATOR,23:00,datetime-localtime
+195,87,1649551250,applianceState/LivingRoom/@scene,livingroom,relax,action,OPERATOR,NEXTOPERATOR,invokeFunctions:lightScene,livingroom-relax
+196,88,1266656161,user/cognitive/@emotionalState,cognitive,emotionalstate,event,equal,NEXTOPERATOR,SAD,cognitive-emotionalstate
+197,88,1266656161,Reminders,reminders,reminders,action,OPERATOR,NEXTOPERATOR,Elderly is sad: call her/him,reminders-reminders
+198,89,741066011,XPATH,relativeposition,typeofproximity,TRIGGER,inside,NEXTOPERATOR,bedroom,relativeposition-typeofproximity
+199,89,741066011,environment/dateTime/@localTime,datetime,localtime,condition,gt,and,23:00,datetime-localtime
+200,89,741066011,environment/dateTime/@localTime,datetime,localtime,condition,lt,NEXTOPERATOR,06:00,datetime-localtime
+201,89,741066011,applianceState/Bedroom/allLight,bedroom,alllight,action,OPERATOR,NEXTOPERATOR,invokeFunctions:changeApplianceState,bedroom-alllight
+202,90,464375429,environment/dateTime/@localTime,datetime,localtime,event,equal,NEXTOPERATOR,21:00,datetime-localtime
+203,90,464375429,Reminders,reminders,reminders,action,OPERATOR,NEXTOPERATOR,Remember to charge your smart devices,reminders-reminders
+204,91,1326270866,XPATH,relativeposition,typeofproximity,event,outside,NEXTOPERATOR,house,relativeposition-typeofproximity
+205,91,1326270866,applianceState/all/allLight,all,alllight,action,OPERATOR,NEXTOPERATOR,invokeFunctions:changeApplianceState,all-alllight
+206,92,355157170,XPATH,relativeposition,typeofproximity,event,inside,NEXTOPERATOR,house,relativeposition-typeofproximity
+207,92,355157170,applianceState/Entrance/lightColor,entrance,hue color light entrance,action,OPERATOR,NEXTOPERATOR,update:lightColor,entrance-hue color light entrance
+208,93,448888480,XPATH,relativeposition,typeofproximity,TRIGGER,inside,NEXTOPERATOR,livingroom,relativeposition-typeofproximity
+209,93,448888480,environment/@lightLevel,livingroom,lightlevel,condition,equal,NEXTOPERATOR,LOW_LIGHT,livingroom-lightlevel
+210,93,448888480,applianceState/LivingRoom/lightColor,livingroom,hue color light living room,action,OPERATOR,NEXTOPERATOR,update:lightColor,livingroom-hue color light living room
+211,94,1983707087,user/position/timeInsideARoom/@timeInsideBathroom,timeinsidearoom,timeinsidebathroom,event,equal,and,20,timeinsidearoom-timeinsidebathroom
+212,94,1983707087,environment/dateTime/@localTime,datetime,localtime,condition,gt,and,22:00,datetime-localtime
+213,94,1983707087,environment/dateTime/@localTime,datetime,localtime,condition,lt,NEXTOPERATOR,07:00,datetime-localtime
+214,94,1983707087,Alarms,alarms,alarms,action,OPERATOR,NEXTOPERATOR,"The elder has been in the bathroom for 20 minutes, he may have fallen",alarms-alarms
+215,95,850861311,XPATH,relativeposition,typeofproximity,event,outside,NEXTOPERATOR,kitchen,relativeposition-typeofproximity
+216,95,850861311,technology/light/@state,kitchenlight,state,condition,equal,NEXTOPERATOR,ON,kitchenlight-state
+217,95,850861311,applianceState/Kitchen/lightColor,kitchen,hue color light kitchen,action,OPERATOR,NEXTOPERATOR,update:lightColor,kitchen-hue color light kitchen
+218,96,2117586770,user/cognitive/@lastConnectionTime,cognitive,lastconnectiontime,event,equal,NEXTOPERATOR,72,cognitive-lastconnectiontime
+219,96,2117586770,Alarms,alarms,alarms,action,OPERATOR,NEXTOPERATOR,More than 72 hours since the last connection to the Kwido application,alarms-alarms
+220,97,1480635719,environment/@motion,bedroom,motion,condition,equal,NEXTOPERATOR,true,bedroom-motion
+221,97,1480635719,applianceState/Bedroom/@scene,bedroom,activate,action,OPERATOR,NEXTOPERATOR,invokeFunctions:lightScene,bedroom-activate
+222,98,1503966898,environment/dateTime/@localTime,datetime,localtime,event,equal,and,18:00,datetime-localtime
+223,98,1503966898,environment/twentyFourHoursWeatherForecast/@outdoorCondition,twentyfourhoursweatherforecast,outdoorcondition,condition,equal,and,CLEAR_SKY,twentyfourhoursweatherforecast-outdoorcondition
+224,98,1503966898,environment/twentyFourHoursWeatherForecast/@outdoorTemperature,twentyfourhoursweatherforecast,outdoortemperature,condition,more,NEXTOPERATOR,20,twentyfourhoursweatherforecast-outdoortemperature
+225,98,1503966898,Reminders,reminders,reminders,action,OPERATOR,NEXTOPERATOR,Tomorrow the weather will be excellent: remember to go out for a walk!,reminders-reminders
+226,99,80470413,XPATH,relativeposition,typeofproximity,event,inside,NEXTOPERATOR,kitchen,relativeposition-typeofproximity
+227,99,80470413,environment/@lightLevel,kitchen,lightlevel,condition,equal,NEXTOPERATOR,LOW_LIGHT,kitchen-lightlevel
+228,99,80470413,applianceState/Kitchen/lightColor,kitchen,hue color light kitchen,action,OPERATOR,NEXTOPERATOR,update:lightColor,kitchen-hue color light kitchen
+229,100,471448302,environment/dateTime/@localTime,datetime,localtime,event,equal,and,18:30,datetime-localtime
+230,100,471448302,XPATH,relativeposition,typeofproximity,TRIGGER,inside,NEXTOPERATOR,kitchen,relativeposition-typeofproximity
+231,100,471448302,environment/@lightLevel,kitchen,lightlevel,condition,equal,NEXTOPERATOR,DARK,kitchen-lightlevel
+232,100,471448302,applianceState/Kitchen/lightColor,kitchen,hue color light kitchen,action,OPERATOR,NEXTOPERATOR,update:lightColor,kitchen-hue color light kitchen
+233,101,1059760973,environment/dateTime/@localTime,datetime,localtime,event,equal,and,09:00,datetime-localtime
+234,101,1059760973,environment/dateTime/@localDate,datetime,localdate,condition,equal,NEXTOPERATOR,12-06-2020,datetime-localdate
+235,101,1059760973,Reminders,reminders,reminders,action,OPERATOR,NEXTOPERATOR,remember to go to the appointment!,reminders-reminders
+236,101,1059760973,Reminders,reminders,reminders,action,OPERATOR,NEXTOPERATOR,the Elder has an appointment,reminders-reminders
+237,102,45466234,user/cognitive/@emotionalState,cognitive,emotionalstate,event,equal,NEXTOPERATOR,SAD,cognitive-emotionalstate
+238,102,45466234,applianceState/LivingRoom/@scene,livingroom,relax,action,OPERATOR,NEXTOPERATOR,invokeFunctions:lightScene,livingroom-relax
+239,103,1623028136,environment/dateTime/@localTime,datetime,localtime,event,equal,NEXTOPERATOR,09:00,datetime-localtime
+240,103,1623028136,Reminders,reminders,reminders,action,OPERATOR,NEXTOPERATOR,remember to take the medicine,reminders-reminders
+241,104,1831712457,user/physiological/@heartRate,physiological,heartrate,event,equal,and,100,physiological-heartrate
+242,104,1831712457,XPATH,relativeposition,typeofproximity,TRIGGER,inside,NEXTOPERATOR,bedroom,relativeposition-typeofproximity
+243,104,1831712457,applianceState/Bedroom/@scene,bedroom,relax,action,OPERATOR,NEXTOPERATOR,invokeFunctions:lightScene,bedroom-relax
+244,105,2014942980,user/physiological/@heartRate,physiological,heartrate,event,equal,NEXTOPERATOR,130,physiological-heartrate
+245,105,2014942980,Alarms,alarms,alarms,action,OPERATOR,NEXTOPERATOR,Elderly heart rate is 130,alarms-alarms
+246,106,1388005434,environment/dateTime/@localTime,datetime,localtime,event,equal,and,20:00,datetime-localtime
+247,106,1388005434,XPATH,relativeposition,typeofproximity,TRIGGER,outside,NEXTOPERATOR,house,relativeposition-typeofproximity
+248,106,1388005434,Alarms,alarms,alarms,action,OPERATOR,NEXTOPERATOR,Elderly is outside house!,alarms-alarms
+249,107,1269287404,environment/@motion,bedroom,motion,event,equal,and,true,bedroom-motion
+250,107,1269287404,environment/dateTime/@localTime,datetime,localtime,condition,gt,and,00:00,datetime-localtime
+251,107,1269287404,environment/dateTime/@localTime,datetime,localtime,condition,lt,NEXTOPERATOR,06:00,datetime-localtime
+252,107,1269287404,applianceState/Corridor/lightColor,corridor,light strip corridor,action,OPERATOR,NEXTOPERATOR,update:lightColor,corridor-light strip corridor
+253,108,1588154226,environment/dateTime/@localTime,datetime,localtime,event,equal,and,15:00,datetime-localtime
+254,108,1588154226,user/physiological/@steps,physiological,steps,condition,less,NEXTOPERATOR,1000,physiological-steps
+255,108,1588154226,Reminders,reminders,reminders,action,OPERATOR,NEXTOPERATOR,you should move more!,reminders-reminders
+256,109,334201783,environment/dateTime/@localTime,datetime,localtime,event,equal,and,15:00,datetime-localtime
+257,109,334201783,XPATH,relativeposition,typeofproximity,TRIGGER,inside,NEXTOPERATOR,livingroom,relativeposition-typeofproximity
+258,109,334201783,applianceState/LivingRoom/@scene,livingroom,relax,action,OPERATOR,NEXTOPERATOR,invokeFunctions:lightScene,livingroom-relax
+259,110,537784833,user/cognitive/@trainingResult,cognitive,trainingresult,event,equal,NEXTOPERATOR,NOT_PROGRESSING,cognitive-trainingresult
+260,110,537784833,Reminders,reminders,reminders,action,OPERATOR,NEXTOPERATOR,"Keep trying, the results will improve!",reminders-reminders
+261,111,1802140655,environment/currentWeather/@outdoorCondition,currentweather,outdoorcondition,event,equal,and,CLEAR_SKY,currentweather-outdoorcondition
+262,111,1802140655,environment/dateTime/@localTime,datetime,localtime,condition,gt,and,09:30,datetime-localtime
+263,111,1802140655,environment/dateTime/@localTime,datetime,localtime,condition,lt,NEXTOPERATOR,11:00,datetime-localtime
+264,111,1802140655,Reminders,reminders,reminders,action,OPERATOR,NEXTOPERATOR,"weather is good, you should go out for a walk",reminders-reminders
+265,112,24867418,environment/@motion,bedroom,motion,event,equal,NEXTOPERATOR,true,bedroom-motion
+266,112,24867418,Alarms,alarms,alarms,action,OPERATOR,NEXTOPERATOR,no motion in bedroom,alarms-alarms
+267,113,1919962984,user/activity/@medicationName,activity,medicationname,event,equal,NEXTOPERATOR,medicine x,activity-medicationname
+268,113,1919962984,Reminders,reminders,reminders,action,OPERATOR,NEXTOPERATOR,Remember to take the medicine,reminders-reminders
+269,114,896802317,user/cognitive/@trainingResult,cognitive,trainingresult,event,equal,NEXTOPERATOR,NOT_PROGRESSING,cognitive-trainingresult
+270,114,896802317,Reminders,reminders,reminders,action,OPERATOR,NEXTOPERATOR,Training is not progressing,reminders-reminders
+271,115,541443398,user/cognitive/@trainingResult,cognitive,trainingresult,event,equal,NEXTOPERATOR,NOT_PROGRESSING,cognitive-trainingresult
+272,115,541443398,applianceState/LivingRoom/lightColor,livingroom,hue color light living room,action,OPERATOR,NEXTOPERATOR,update:lightColor,livingroom-hue color light living room
+273,115,541443398,applianceState/LivingRoom/@scene,livingroom,activate,action,OPERATOR,NEXTOPERATOR,invokeFunctions:lightScene,livingroom-activate
+274,116,490024077,environment/@windowSensor,kitchen,windowsensor,condition,equal,NEXTOPERATOR,OPEN,kitchen-windowsensor
+275,116,490024077,applianceState/Kitchen/allLight,kitchen,alllight,action,OPERATOR,NEXTOPERATOR,invokeFunctions:changeApplianceState,kitchen-alllight
+276,117,2082796164,environment/@lightLevel,bedroom,lightlevel,event,equal,NEXTOPERATOR,NO_LIGHT,bedroom-lightlevel
+277,117,2082796164,applianceState/Bedroom/@scene,bedroom,biorhythmlight,action,OPERATOR,NEXTOPERATOR,invokeFunctions:lightScene,bedroom-biorhythmlight
+278,118,1782958109,XPATH,relativeposition,typeofproximity,event,inside,NEXTOPERATOR,livingroom,relativeposition-typeofproximity
+279,118,1782958109,environment/dateTime/@localTime,datetime,localtime,event,more,and,22:00,datetime-localtime
+280,118,1782958109,applianceState/LivingRoom/@scene,livingroom,relax,action,OPERATOR,NEXTOPERATOR,invokeFunctions:lightScene,livingroom-relax
+281,119,1795131732,user/cognitive/@lastConnectionTime,cognitive,lastconnectiontime,condition,more,NEXTOPERATOR,48,cognitive-lastconnectiontime
+282,119,1795131732,Reminders,reminders,reminders,action,OPERATOR,NEXTOPERATOR,Please do exercises on the tablet,reminders-reminders
+283,120,f7ee29ad-141d-4ff6-8907-cc2ac0a702a8,technology/appliance/@door,fridge,door,condition,equal,rule,CLOSE,fridge-door
+284,120,f7ee29ad-141d-4ff6-8907-cc2ac0a702a8,Reminders,reminders,reminders,action,OPERATOR,none,The refrigerator door is open.,reminders-reminders
+285,121,dcfbbe1b-ad2d-40de-9ac7-5114d31f415d,environment/dateTime/@localTime,datetime,localtime,event,equal,and,07:30,datetime-localtime
+286,121,dcfbbe1b-ad2d-40de-9ac7-5114d31f415d,environment/currentWeather/@outdoorTemperature,currentweather,outdoortemperature,condition,lessthen,rule,14,currentweather-outdoortemperature
+287,121,dcfbbe1b-ad2d-40de-9ac7-5114d31f415d,Reminders,reminders,reminders,action,OPERATOR,none,Remember to take your scarf and gloves!,reminders-reminders
+288,122,8111d3f9-ed6d-4bee-a5ed-6bce12e4e966,environment/@motion,bedroom,motion,condition,equal,rule,VALUE,bedroom-motion
+289,122,8111d3f9-ed6d-4bee-a5ed-6bce12e4e966,Alarms,alarms,alarms,action,OPERATOR,sequential,"Wake up, you'll be late.",alarms-alarms
+290,122,8111d3f9-ed6d-4bee-a5ed-6bce12e4e966,applianceState/Bedroom/@scene,bedroom,activate,action,OPERATOR,none,invokeFunctions:lightScene,bedroom-activate
+291,123,b5c9a3fd-d2af-41cf-993c-60005a6b4db5,user/position/timeInsideARoom/@timeInsideBedroom,timeinsidearoom,timeinsidebedroom,condition,morethen,and,20,timeinsidearoom-timeinsidebedroom
+292,123,b5c9a3fd-d2af-41cf-993c-60005a6b4db5,technology/light/@state,bedroomlight,state,condition,equal,rule,ON,bedroomlight-state
+293,123,b5c9a3fd-d2af-41cf-993c-60005a6b4db5,Alarms,alarms,alarms,action,OPERATOR,sequential,Energy saving mode activated.,alarms-alarms
+294,123,b5c9a3fd-d2af-41cf-993c-60005a6b4db5,applianceState/Bedroom/@scene,bedroom,relax,action,OPERATOR,none,invokeFunctions:lightScene,bedroom-relax
+295,124,77de7738-3465-4356-bb8e-cbb91ff53755,user/personalData/@age,personaldata,age,condition,morethen,and,70,personaldata-age
+296,124,77de7738-3465-4356-bb8e-cbb91ff53755,technology/light/@state,bedroomportablelight,state,event,equal,rule,ON,bedroomportablelight-state
+297,124,77de7738-3465-4356-bb8e-cbb91ff53755,applianceState/Corridor/lightColor,corridor,light strip corridor,action,OPERATOR,parallel,update:lightColor,corridor-light strip corridor
+298,124,77de7738-3465-4356-bb8e-cbb91ff53755,Reminders,reminders,reminders,action,OPERATOR,none,The bedside light is on,reminders-reminders
+299,125,82f98aca-3f37-40cd-96d8-438d30a0a548,technology/light/@brightness,bedroomportablelight,brightness,event,morethen,rule,100,bedroomportablelight-brightness
+300,125,82f98aca-3f37-40cd-96d8-438d30a0a548,Reminders,reminders,reminders,action,OPERATOR,none,Lower the brightness,reminders-reminders
+301,126,8eacd991-8610-4a22-a1a5-7b4dc06c55dd,environment/@doorWindowSensor,entrance,doorsensor,event,equal,or,OPEN,entrance-doorsensor
+302,126,8eacd991-8610-4a22-a1a5-7b4dc06c55dd,environment/@doorWindowSensor,livingroom,doorwindowsensor,event,equal,rule,OPEN,livingroom-doorwindowsensor
+303,126,8eacd991-8610-4a22-a1a5-7b4dc06c55dd,Reminders,reminders,reminders,action,OPERATOR,none,Close doors and / or windows,reminders-reminders
+304,127,b68dd0c9-61ec-4938-876d-615e704221d9,user/physiological/@steps,physiological,steps,condition,morethen,rule,500,physiological-steps
+305,127,b68dd0c9-61ec-4938-876d-615e704221d9,applianceState/all/@scene,all,biorhythmlight,action,OPERATOR,parallel,invokeFunctions:lightScene,all-biorhythmlight
+306,127,b68dd0c9-61ec-4938-876d-615e704221d9,Alarms,alarms,alarms,action,OPERATOR,none,Increase physical activity,alarms-alarms
+307,128,cd297508-423f-4399-bce1-a2fc2962bd0a,environment/@smokeSensor,kitchen,smokesensor,event,equal,and,VALUE,kitchen-smokesensor
+308,128,cd297508-423f-4399-bce1-a2fc2962bd0a,technology/light/@brightness,kitchenlight,brightness,event,lessthen,rule,30,kitchenlight-brightness
+309,128,cd297508-423f-4399-bce1-a2fc2962bd0a,applianceState/Kitchen/lightColor,kitchen,hue color light kitchen,action,OPERATOR,parallel,update:lightColor,kitchen-hue color light kitchen
+310,128,cd297508-423f-4399-bce1-a2fc2962bd0a,Alarms,alarms,alarms,action,OPERATOR,none,some smoke comes from the kitchen,alarms-alarms
+311,129,66f7a5b0-ee6f-48fa-b349-2b84c12febca,technology/appliance/@door,fridge,door,condition,equal,and,OPEN,fridge-door
+312,129,66f7a5b0-ee6f-48fa-b349-2b84c12febca,user/personalData/@age,personaldata,age,condition,morethen,rule,75,personaldata-age
+313,129,66f7a5b0-ee6f-48fa-b349-2b84c12febca,applianceState/Kitchen/allLight,kitchen,alllight,action,OPERATOR,parallel,invokeFunctions:changeApplianceState,kitchen-alllight
+314,129,66f7a5b0-ee6f-48fa-b349-2b84c12febca,Reminders,reminders,reminders,action,OPERATOR,none,Close the fridge door,reminders-reminders
+315,130,44d315c0-2d15-4f34-a86e-f422e390d4f9,technology/light/@state,livingroomlight,state,condition,equal,and,OFF,livingroomlight-state
+316,130,44d315c0-2d15-4f34-a86e-f422e390d4f9,environment/dateTime/@localTime,datetime,localtime,event,equal,rule,07:00,datetime-localtime
+317,130,44d315c0-2d15-4f34-a86e-f422e390d4f9,Alarms,alarms,alarms,action,OPERATOR,sequential,"""Accese le luci""",alarms-alarms
+318,130,44d315c0-2d15-4f34-a86e-f422e390d4f9,applianceState/LivingRoom/allLight,livingroom,alllight,action,OPERATOR,none,invokeFunctions:changeApplianceState,livingroom-alllight
+319,131,c45ec668-d4a5-4ae9-a79f-6a07d349421e,technology/appliance/@door,fridge,door,condition,equal,rule,OPEN,fridge-door
+320,131,c45ec668-d4a5-4ae9-a79f-6a07d349421e,Reminders,reminders,reminders,action,OPERATOR,none,"""Porta del frigo aperta""",reminders-reminders
+321,132,f646d977-5865-4af9-a1b1-d915a5e10320,technology/light/@state,bedroomportablelight,state,condition,equal,and,ON,bedroomportablelight-state
+322,132,f646d977-5865-4af9-a1b1-d915a5e10320,user/position/relativePosition/@typeOfProximity,relativeposition,typeofproximity,event,inside,rule,BEDROOM,relativeposition-typeofproximity
+323,132,f646d977-5865-4af9-a1b1-d915a5e10320,applianceState/Bedroom/allLight,bedroom,alllight,action,OPERATOR,sequential,invokeFunctions:changeApplianceState,bedroom-alllight
+324,132,f646d977-5865-4af9-a1b1-d915a5e10320,Reminders,reminders,reminders,action,OPERATOR,none,Lights on!,reminders-reminders
+325,133,aca7c9b2-3a9b-46cb-8526-763781ff3f98,user/cognitive/@emotionalState,cognitive,emotionalstate,condition,equal,rule,HAPPY,cognitive-emotionalstate
+326,133,aca7c9b2-3a9b-46cb-8526-763781ff3f98,Alarms,alarms,alarms,action,OPERATOR,sequential,Call mum,alarms-alarms
+327,133,aca7c9b2-3a9b-46cb-8526-763781ff3f98,applianceState/LivingRoom/allLight,livingroom,alllight,action,OPERATOR,none,invokeFunctions:changeApplianceState,livingroom-alllight
+328,134,0ebb7df5-dfa7-43d9-b6f5-ef3b160f995c,environment/dateTime/@localTime,datetime,localtime,event,equal,and,06:50,datetime-localtime
+329,134,0ebb7df5-dfa7-43d9-b6f5-ef3b160f995c,environment/dateTime/@localDate,datetime,localdate,condition,equal,rule,2019-02-09,datetime-localdate
+330,134,0ebb7df5-dfa7-43d9-b6f5-ef3b160f995c,Reminders,reminders,reminders,action,OPERATOR,none,"""Svegliati""",reminders-reminders
+331,135,5f41c65c-9a88-41e0-8f5c-09ef938136f8,technology/appliance/@door,fridge,door,condition,equal,rule,OPEN,fridge-door
+332,135,5f41c65c-9a88-41e0-8f5c-09ef938136f8,Reminders,reminders,reminders,action,OPERATOR,none,Close the fridge door,reminders-reminders
+333,136,ed0c94cc-26f1-43c3-ba1a-f7878563e513,environment/@temperatureLevel,bedroom,temperaturelevel,event,lessthen,and,22,bedroom-temperaturelevel
+334,136,ed0c94cc-26f1-43c3-ba1a-f7878563e513,environment/dateTime/@localTime,datetime,localtime,condition,equal,rule,22:00,datetime-localtime
+335,136,ed0c94cc-26f1-43c3-ba1a-f7878563e513,Reminders,reminders,reminders,action,OPERATOR,none,Set the heat to 22 degrees ,reminders-reminders
+336,137,75ddb41b-a56a-4714-95c0-e67b73f8f6c0,user/cognitive/@trainingTime,cognitive,trainingtime,condition,equal,rule,60,cognitive-trainingtime
+337,137,75ddb41b-a56a-4714-95c0-e67b73f8f6c0,applianceState/LivingRoom/@scene,livingroom,relax,action,OPERATOR,sequential,invokeFunctions:lightScene,livingroom-relax
+338,137,75ddb41b-a56a-4714-95c0-e67b73f8f6c0,Alarms,alarms,alarms,action,OPERATOR,none,You have to train for at least 60 minutes a day!,alarms-alarms
+339,138,c5ebabfc-035e-4a88-9ed2-4a9ddbf0316a,environment/twentyFourHoursWeatherForecast/@rain,twentyfourhoursweatherforecast,rain,condition,equal,and,true,twentyfourhoursweatherforecast-rain
+340,138,c5ebabfc-035e-4a88-9ed2-4a9ddbf0316a,technology/light/@state,greatluminaire,state,condition,equal,rule,ON,greatluminaire-state
+341,138,c5ebabfc-035e-4a88-9ed2-4a9ddbf0316a,Alarms,alarms,alarms,action,OPERATOR,sequential,Remember that tomorrow will rain,alarms-alarms
+342,138,c5ebabfc-035e-4a88-9ed2-4a9ddbf0316a,applianceState/LivingRoom/lightColor,livingroom,hue color light living room,action,OPERATOR,none,update:lightColor,livingroom-hue color light living room
+343,139,9ed3bc76-63e3-4557-b4d8-30f643001b00,user/position/relativePosition/@typeOfProximity,relativeposition,typeofproximity,condition,outside,and,BEDROOM,relativeposition-typeofproximity
+344,139,9ed3bc76-63e3-4557-b4d8-30f643001b00,technology/light/@state,bedroomlight,state,event,equal,rule,ON,bedroomlight-state
+345,139,9ed3bc76-63e3-4557-b4d8-30f643001b00,Reminders,reminders,reminders,action,OPERATOR,sequential,you turned on the light by mistake,reminders-reminders
+346,139,9ed3bc76-63e3-4557-b4d8-30f643001b00,applianceState/Bedroom/allLight,bedroom,alllight,action,OPERATOR,none,invokeFunctions:changeApplianceState,bedroom-alllight
+347,140,b3930e5c-ecc7-4c1f-80db-1243f73975f1,technology/appliance/@door,fridge,door,condition,equal,rule,OPEN,fridge-door
+348,140,b3930e5c-ecc7-4c1f-80db-1243f73975f1,Reminders,reminders,reminders,action,OPERATOR,none,Close fridge's door,reminders-reminders
+349,141,88efecda-a904-43b3-ba36-a14fa85819a4,environment/currentWeather/@rain,currentweather,rain,event,equal,and,true,currentweather-rain
+350,141,88efecda-a904-43b3-ba36-a14fa85819a4,environment/@doorWindowSensor,livingroom,doorwindowsensor,condition,equal,rule,OPEN,livingroom-doorwindowsensor
+351,141,88efecda-a904-43b3-ba36-a14fa85819a4,Alarms,alarms,alarms,action,OPERATOR,none,Close the windows,alarms-alarms
+352,142,0320272e-e5b4-457f-aa91-5b3f2ad04739,user/activity/@medicationName,activity,medicationname,condition,equal,rule,cardio aspirina,activity-medicationname
+353,142,0320272e-e5b4-457f-aa91-5b3f2ad04739,applianceState/Kitchen/lightColor,kitchen,hue color light kitchen,action,OPERATOR,sequential,update:lightColor,kitchen-hue color light kitchen
+354,142,0320272e-e5b4-457f-aa91-5b3f2ad04739,Alarms,alarms,alarms,action,OPERATOR,none,Cardioaspirina,alarms-alarms
+355,143,e3099047-1609-47df-a4b1-85048dc68f64,environment/@temperatureLevel,bedroom,temperaturelevel,condition,lessthen,and,13,bedroom-temperaturelevel
+356,143,e3099047-1609-47df-a4b1-85048dc68f64,technology/light/@color,bedroomlight,color,condition,equal,rule,AZURE,bedroomlight-color
+357,143,e3099047-1609-47df-a4b1-85048dc68f64,applianceState/Bedroom/allLight,bedroom,alllight,action,OPERATOR,sequential,invokeFunctions:changeApplianceState,bedroom-alllight
+358,143,e3099047-1609-47df-a4b1-85048dc68f64,Alarms,alarms,alarms,action,OPERATOR,none,Low temperature in bedroom,alarms-alarms
+359,144,4c37de97-efeb-4931-a58a-5320bc38d674,user/activity/@wakingup,activity,wakingup,event,equal,and,true,activity-wakingup
+360,144,4c37de97-efeb-4931-a58a-5320bc38d674,technology/light/@state,bedroomportablelight,state,condition,equal,rule,ON,bedroomportablelight-state
+361,144,4c37de97-efeb-4931-a58a-5320bc38d674,Reminders,reminders,reminders,action,OPERATOR,sequential,Wake up,reminders-reminders
+362,144,4c37de97-efeb-4931-a58a-5320bc38d674,applianceState/Bathroom/allLight,bathroom,alllight,action,OPERATOR,none,invokeFunctions:changeApplianceState,bathroom-alllight
+363,145,7fbb444a-d9b5-41ca-aee7-ea69eda933c3,technology/appliance/@door,fridge,door,condition,equal,rule,OPEN,fridge-door
+364,145,7fbb444a-d9b5-41ca-aee7-ea69eda933c3,Reminders,reminders,reminders,action,OPERATOR,none,Remember to close the fridge,reminders-reminders
+365,146,a4dc5633-cefb-476e-a931-36c758044ec1,environment/currentWeather/@outdoorCondition,currentweather,outdoorcondition,event,equal,and,THUNDERSTORM,currentweather-outdoorcondition
+366,146,a4dc5633-cefb-476e-a931-36c758044ec1,environment/@doorWindowSensor,livingroom,doorwindowsensor,condition,equal,rule,OPEN,livingroom-doorwindowsensor
+367,146,a4dc5633-cefb-476e-a931-36c758044ec1,Reminders,reminders,reminders,action,OPERATOR,none,Remember to close the windows,reminders-reminders
+368,147,68cc4a0d-f52e-4c77-b37d-175080a8254e,environment/@doorWindowSensor,entrance,doorsensor,condition,equal,rule,CLOSE,entrance-doorsensor
+369,147,68cc4a0d-f52e-4c77-b37d-175080a8254e,Alarms,alarms,alarms,action,OPERATOR,sequential,"Be careful, thiefs!",alarms-alarms
+370,147,68cc4a0d-f52e-4c77-b37d-175080a8254e,applianceState/all/allLight,all,alllight,action,OPERATOR,none,invokeFunctions:changeApplianceState,all-alllight
+371,148,fd0a57cd-5e98-4716-b37a-b816a9d102c2,environment/@gasSensor,kitchen,gassensor,condition,equal,and,true,kitchen-gassensor
+372,148,fd0a57cd-5e98-4716-b37a-b816a9d102c2,environment/@lightLevel,kitchen,lightlevel,condition,equal,rule,NO_LIGHT,kitchen-lightlevel
+373,148,fd0a57cd-5e98-4716-b37a-b816a9d102c2,Alarms,alarms,alarms,action,OPERATOR,parallel,Gas leak!,alarms-alarms
+374,148,fd0a57cd-5e98-4716-b37a-b816a9d102c2,applianceState/Kitchen/allLight,kitchen,alllight,action,OPERATOR,parallel,invokeFunctions:changeApplianceState,kitchen-alllight
+375,148,fd0a57cd-5e98-4716-b37a-b816a9d102c2,applianceState/Kitchen/lightColor,kitchen,hue color light kitchen,action,OPERATOR,none,update:lightColor,kitchen-hue color light kitchen
+376,149,b6fcfa7f-a64f-4573-9cbc-56d179b1c234,user/activity/@wakingup,activity,wakingup,event,equal,and,true,activity-wakingup
+377,149,b6fcfa7f-a64f-4573-9cbc-56d179b1c234,environment/@lightLevel,bedroom,lightlevel,condition,equal,rule,NO_LIGHT,bedroom-lightlevel
+378,149,b6fcfa7f-a64f-4573-9cbc-56d179b1c234,applianceState/Bedroom/@scene,bedroom,relax,action,OPERATOR,sequential,invokeFunctions:lightScene,bedroom-relax
+379,149,b6fcfa7f-a64f-4573-9cbc-56d179b1c234,Reminders,reminders,reminders,action,OPERATOR,none,Have a nice day!,reminders-reminders
+380,150,47242790-49ea-4650-9bba-8b95f5db0f44,technology/appliance/@door,fridge,door,condition,equal,rule,OPEN,fridge-door
+381,150,47242790-49ea-4650-9bba-8b95f5db0f44,Alarms,alarms,alarms,action,OPERATOR,none,You left the fridge open!,alarms-alarms
+382,151,21f08e92-6d2f-442a-9a3a-4445f193880e,user/position/relativePosition/@typeOfProximity,relativeposition,typeofproximity,condition,outside,and,KITCHEN,relativeposition-typeofproximity
+383,151,21f08e92-6d2f-442a-9a3a-4445f193880e,environment/@gasSensor,kitchen,gassensor,condition,equal,rule,true,kitchen-gassensor
+384,151,21f08e92-6d2f-442a-9a3a-4445f193880e,applianceState/all/@scene,all,biorhythmlight,action,OPERATOR,parallel,invokeFunctions:lightScene,all-biorhythmlight
+385,151,21f08e92-6d2f-442a-9a3a-4445f193880e,Alarms,alarms,alarms,action,OPERATOR,none,"Th egas sensor is active, check that you have turned it off!",alarms-alarms
+386,152,0bf39de4-3a7d-427d-a095-ed20728eb16e,user/cognitive/@emotionalState,cognitive,emotionalstate,event,equal,and,SAD,cognitive-emotionalstate
+387,152,0bf39de4-3a7d-427d-a095-ed20728eb16e,technology/light/@state,livingroomlight,state,condition,equal,rule,OFF,livingroomlight-state
+388,152,0bf39de4-3a7d-427d-a095-ed20728eb16e,applianceState/LivingRoom/@scene,livingroom,relax,action,OPERATOR,parallel,invokeFunctions:lightScene,livingroom-relax
+389,152,0bf39de4-3a7d-427d-a095-ed20728eb16e,Reminders,reminders,reminders,action,OPERATOR,none,Do you want me to play some music?,reminders-reminders
+390,153,bcec60fe-9865-4b70-8e4a-804739f769e6,environment/currentWeather/@rain,currentweather,rain,event,equal,and,true,currentweather-rain
+391,153,bcec60fe-9865-4b70-8e4a-804739f769e6,environment/@doorWindowSensor,livingroom,doorwindowsensor,condition,equal,rule,OPEN,livingroom-doorwindowsensor
+392,153,bcec60fe-9865-4b70-8e4a-804739f769e6,Alarms,alarms,alarms,action,OPERATOR,none,"It's raining, close the windows",alarms-alarms
+393,154,9b5a9197-d049-4b0a-8fd7-7c560b1ecb0e,user/activity/@medicationName,activity,medicationname,condition,equal,rule,pressione,activity-medicationname
+394,154,9b5a9197-d049-4b0a-8fd7-7c560b1ecb0e,applianceState/all/@scene,all,biorhythmlight,action,OPERATOR,parallel,invokeFunctions:lightScene,all-biorhythmlight
+395,154,9b5a9197-d049-4b0a-8fd7-7c560b1ecb0e,Alarms,alarms,alarms,action,OPERATOR,none,You didn't take the meds!,alarms-alarms
+396,155,c4e9d6e9-e2ca-40f8-92bb-56c390706437,environment/@gasSensor,kitchen,gassensor,condition,equal,and,true,kitchen-gassensor
+397,155,c4e9d6e9-e2ca-40f8-92bb-56c390706437,technology/light/@state,kitchenlight,state,condition,equal,rule,OFF,kitchenlight-state
+398,155,c4e9d6e9-e2ca-40f8-92bb-56c390706437,Alarms,alarms,alarms,action,OPERATOR,parallel,Has anyone forgotten to turn off the gas?,alarms-alarms
+399,155,c4e9d6e9-e2ca-40f8-92bb-56c390706437,applianceState/Bedroom/lightColor,bedroom,hue color light bedroom,action,OPERATOR,none,update:lightColor,bedroom-hue color light bedroom
+400,156,84892db3-34ff-4493-afcf-396cd9601118,environment/currentWeather/@outdoorTemperature,currentweather,outdoortemperature,event,lessthen,and,6,currentweather-outdoortemperature
+401,156,84892db3-34ff-4493-afcf-396cd9601118,environment/@doorWindowSensor,corridor,doorwindowsensor,condition,equal,rule,CLOSE,corridor-doorwindowsensor
+402,156,84892db3-34ff-4493-afcf-396cd9601118,Reminders,reminders,reminders,action,OPERATOR,none,"""é freddo, é meglio tu chiuda la finestra del corridoio""",reminders-reminders
+403,157,84bfbfb4-489c-4a1e-9bfa-507f511c9e27,user/position/relativePosition/@typeOfProximity,relativeposition,typeofproximity,event,outside,and,BATHROOM,relativeposition-typeofproximity
+404,157,84bfbfb4-489c-4a1e-9bfa-507f511c9e27,technology/light/@state,bathroomlight,state,condition,equal,rule,ON,bathroomlight-state
+405,157,84bfbfb4-489c-4a1e-9bfa-507f511c9e27,applianceState/Corridor/lightColor,corridor,light strip corridor,action,OPERATOR,parallel,update:lightColor,corridor-light strip corridor
+406,157,84bfbfb4-489c-4a1e-9bfa-507f511c9e27,Reminders,reminders,reminders,action,OPERATOR,none,Remember to turn off the light when you leave the bathroom,reminders-reminders
+407,158,abdc0094-0622-4a40-ad09-5afb39e1f991,technology/light/@brightness,kitchenlight,brightness,condition,lessthen,rule,1,kitchenlight-brightness
+408,158,abdc0094-0622-4a40-ad09-5afb39e1f991,Reminders,reminders,reminders,action,OPERATOR,none,Change the kitchen lamp,reminders-reminders
+409,159,3e0e4090-8a37-48b4-a9e4-fb4853710e26,user/physiological/@steps,physiological,steps,condition,morethen,rule,7000,physiological-steps
+410,159,3e0e4090-8a37-48b4-a9e4-fb4853710e26,Alarms,alarms,alarms,action,OPERATOR,parallel,You did little exercise today. You should take a walk.,alarms-alarms
+411,159,3e0e4090-8a37-48b4-a9e4-fb4853710e26,applianceState/LivingRoom/lightColor,livingroom,hue color light living room,action,OPERATOR,none,update:lightColor,livingroom-hue color light living room
+412,160,baa53766-6357-4ceb-9890-db3f6c60809c,technology/light/@state,bathroomlight,state,condition,equal,and,ON,bathroomlight-state
+413,160,baa53766-6357-4ceb-9890-db3f6c60809c,environment/dateTime/@localTime,datetime,localtime,condition,equal,rule,21:00,datetime-localtime
+414,160,baa53766-6357-4ceb-9890-db3f6c60809c,xPath missing!!,reminders,reminders,action,OPERATOR,NEXTOPERATOR,"""Remember to turn off the bathroom light before going to sleep!""",reminders-reminders
+415,161,20d948fc-2be8-4f95-a577-c497465d7ae8,environment/sensors/@motion,kitchen,motion,condition,equal,and,VALUE,kitchen-motion
+416,161,20d948fc-2be8-4f95-a577-c497465d7ae8,environment/sensors/@gasSensor,kitchen,gassensor,event,equal,rule,VALUE,kitchen-gassensor
+417,161,20d948fc-2be8-4f95-a577-c497465d7ae8,xPath missing!!,reminders,reminders,action,OPERATOR,NEXTOPERATOR,"""Gas stove unattended, turn it off as soon as you can!""",reminders-reminders
+418,162,b8718916-289b-4fcb-8d3b-b75ba04f41ec,XPATH,relativeposition,typeofproximity,condition,inside,NEXTOPERATOR,bedroom,relativeposition-typeofproximity
+419,162,b8718916-289b-4fcb-8d3b-b75ba04f41ec,xPath missing!!,reminders,reminders,action,OPERATOR,NEXTOPERATOR,"""Child is not in the bedroom!""",reminders-reminders
+420,162,b8718916-289b-4fcb-8d3b-b75ba04f41ec,applianceState/Bedroom/lightColor,bedroom,hue color light bedroom,action,OPERATOR,NEXTOPERATOR,update:lightColor,bedroom-hue color light bedroom
+421,163,d6490f56-c017-499f-83fc-be2299aa4c6d,environment/sensors/@motion,kitchen,motion,condition,equal,and,VALUE,kitchen-motion
+422,163,d6490f56-c017-499f-83fc-be2299aa4c6d,technology/appliance/@door,fridge,door,condition,equal,rule,OPEN,fridge-door
+423,163,d6490f56-c017-499f-83fc-be2299aa4c6d,applianceState/Corridor/lightColor,corridor,light strip corridor,action,OPERATOR,NEXTOPERATOR,update:lightColor,corridor-light strip corridor
+424,164,4d449304-b8c1-46ae-ad88-6db401db86c4,user/activity/sleep/@bedInOut,test-user,bedinout,event,equal,and,OUT,test-user-bedinout
+425,164,4d449304-b8c1-46ae-ad88-6db401db86c4,technology/light/@state,smalllight,state,condition,equal,rule,OFF,smalllight-state
+426,164,4d449304-b8c1-46ae-ad88-6db401db86c4,applianceState/Bedroom/lightColor,bedroom,hue color light bedroom,action,OPERATOR,NEXTOPERATOR,update:lightColor,bedroom-hue color light bedroom
+427,164,4d449304-b8c1-46ae-ad88-6db401db86c4,xPath missing!!,reminders,reminders,action,OPERATOR,NEXTOPERATOR,"""good awakening!""",reminders-reminders
+428,165,4abaf892-9faf-483c-b2aa-01395946c72a,technology/light/@state,livingroomlight,state,event,equal,rule,OFF,livingroomlight-state
+429,165,4abaf892-9faf-483c-b2aa-01395946c72a,Reminders,reminders,reminders,action,OPERATOR,none,Living room light on,reminders-reminders
+430,166,135625e8-5b2a-41f1-a2e0-99b897bac6ca,environment/@doorWindowSensor,entrance,doorsensor,event,equal,and,OPEN,entrance-doorsensor
+431,166,135625e8-5b2a-41f1-a2e0-99b897bac6ca,environment/currentWeather/@rain,currentweather,rain,condition,equal,rule,true,currentweather-rain
+432,166,135625e8-5b2a-41f1-a2e0-99b897bac6ca,Reminders,reminders,reminders,action,OPERATOR,none,Close the window,reminders-reminders
+433,167,465b0445-18fc-4979-926e-2d51ebf3a4e1,user/position/relativePosition/@typeOfProximity,relativeposition,typeofproximity,event,inside,rule,LIVINGROOM,relativeposition-typeofproximity
+434,167,465b0445-18fc-4979-926e-2d51ebf3a4e1,Alarms,alarms,alarms,action,OPERATOR,parallel,Lights off,alarms-alarms
+435,167,465b0445-18fc-4979-926e-2d51ebf3a4e1,applianceState/all/allLight,all,alllight,action,OPERATOR,none,invokeFunctions:changeApplianceState,all-alllight
+436,168,34cbf3c6-a1cf-4c83-af6b-0e217bc4e726,environment/@motion,livingroom,motion,condition,equal,and,VALUE,livingroom-motion
+437,168,34cbf3c6-a1cf-4c83-af6b-0e217bc4e726,technology/light/@state,greatluminaire,state,condition,equal,rule,OFF,greatluminaire-state
+438,168,34cbf3c6-a1cf-4c83-af6b-0e217bc4e726,Alarms,alarms,alarms,action,OPERATOR,parallel,Movement in the house,alarms-alarms
+439,168,34cbf3c6-a1cf-4c83-af6b-0e217bc4e726,applianceState/all/allLight,all,alllight,action,OPERATOR,none,invokeFunctions:changeApplianceState,all-alllight
+440,169,34369a52-cc75-440e-a711-e029b6437166,user/activity/@wakingup,activity,wakingup,event,equal,and,true,activity-wakingup
+441,169,34369a52-cc75-440e-a711-e029b6437166,technology/light/@state,bedroomlight,state,condition,equal,rule,ON,bedroomlight-state
+442,169,34369a52-cc75-440e-a711-e029b6437166,applianceState/Bedroom/@scene,bedroom,relax,action,OPERATOR,parallel,invokeFunctions:lightScene,bedroom-relax
+443,169,34369a52-cc75-440e-a711-e029b6437166,Reminders,reminders,reminders,action,OPERATOR,none,Today's appointments,reminders-reminders
+444,170,c1dafea2-723d-4f3c-921b-a6f30bc4c60a,technology/light/@temperature,bedroomportablelight,temperature,condition,equal,rule,0,bedroomportablelight-temperature
+445,170,c1dafea2-723d-4f3c-921b-a6f30bc4c60a,Reminders,reminders,reminders,action,OPERATOR,none,"Don't strain your eyes, turn the color to warmer shades",reminders-reminders
+446,171,25c3de98-eb63-4cbc-9f11-615575cf50a7,environment/dateTime/@localTime,datatime,localtime,event,equal,and,21:30,datatime-localtime
+447,171,25c3de98-eb63-4cbc-9f11-615575cf50a7,environment/@lightLevel,bedroom,lightlevel,condition,equal,rule,NORMAL_LIGHT,bedroom-lightlevel
+448,171,25c3de98-eb63-4cbc-9f11-615575cf50a7,Reminders,reminders,reminders,action,OPERATOR,none,Lower the brightness of the light for better rest,reminders-reminders
+449,172,85495d69-92d7-4ddb-b1b6-c489fe694ebd,user/position/relativePosition/@typeOfProximity,relativeposition,typeofproximity,event,outside,and,KITCHEN,relativeposition-typeofproximity
+450,172,85495d69-92d7-4ddb-b1b6-c489fe694ebd,technology/appliance/@door,fridge,door,condition,equal,rule,OPEN,fridge-door
+451,172,85495d69-92d7-4ddb-b1b6-c489fe694ebd,applianceState/Corridor/allLight,corridor,alllight,action,OPERATOR,parallel,invokeFunctions:changeApplianceState,corridor-alllight
+452,172,85495d69-92d7-4ddb-b1b6-c489fe694ebd,Reminders,reminders,reminders,action,OPERATOR,none,The refrigerator remained open,reminders-reminders
+453,173,4588fbfd-de8c-4190-8331-dd00fb70c93e,environment/@smokeSensor,kitchen,smokesensor,event,equal,and,true,kitchen-smokesensor
+454,173,4588fbfd-de8c-4190-8331-dd00fb70c93e,technology/light/@state,kitchenlight,state,event,equal,rule,ON,kitchenlight-state
+455,173,4588fbfd-de8c-4190-8331-dd00fb70c93e,Alarms,alarms,alarms,action,OPERATOR,parallel,Smoke in the kitchen,alarms-alarms
+456,173,4588fbfd-de8c-4190-8331-dd00fb70c93e,applianceState/Kitchen/allLight,kitchen,alllight,action,OPERATOR,none,invokeFunctions:changeApplianceState,kitchen-alllight
+457,174,d0f8603f-0cd6-4c59-8503-37390aff412a,user/activity/@wakingup,activity,wakingup,event,equal,rule,true,activity-wakingup
+458,174,d0f8603f-0cd6-4c59-8503-37390aff412a,Alarms,alarms,alarms,action,OPERATOR,parallel,You woke up at an unusual time. You may have to regain energy for tomorrow!,alarms-alarms
+459,174,d0f8603f-0cd6-4c59-8503-37390aff412a,Reminders,reminders,reminders,action,OPERATOR,none,"News about your sleep, look at your mail ",reminders-reminders
+460,175,3c4fd0bf-7e11-4030-9b21-4049004f3fba,technology/appliance/@door,fridge,door,condition,equal,rule,OPEN,fridge-door
+461,175,3c4fd0bf-7e11-4030-9b21-4049004f3fba,Reminders,reminders,reminders,action,OPERATOR,none,The fridge door is open,reminders-reminders
+462,176,65daba24-4386-441d-9ed6-0ff0c107e212,environment/@lightLevel,livingroom,lightlevel,condition,equal,rule,DAY_LIGHT,livingroom-lightlevel
+463,176,65daba24-4386-441d-9ed6-0ff0c107e212,Alarms,alarms,alarms,action,OPERATOR,parallel,The living room light has just been turned on ,alarms-alarms
+464,176,65daba24-4386-441d-9ed6-0ff0c107e212,applianceState/LivingRoom/allLight,livingroom,alllight,action,OPERATOR,none,invokeFunctions:changeApplianceState,livingroom-alllight
+465,177,bae86fd0-98c2-4774-9d79-4b5e552860bd,environment/@doorWindowSensor,entrance,doorsensor,condition,equal,and,OPEN,entrance-doorsensor
+466,177,bae86fd0-98c2-4774-9d79-4b5e552860bd,technology/light/@state,entrancelight,state,condition,equal,rule,OFF,entrancelight-state
+467,177,bae86fd0-98c2-4774-9d79-4b5e552860bd,Alarms,alarms,alarms,action,OPERATOR,parallel,The entrance light has just been turned on,alarms-alarms
+468,177,bae86fd0-98c2-4774-9d79-4b5e552860bd,applianceState/Entrance/allLight,entrance,alllight,action,OPERATOR,none,invokeFunctions:changeApplianceState,entrance-alllight
+469,178,d53767aa-f92b-4540-b461-4ddf6316066b,user/position/relativePosition/@typeOfProximity,relativeposition,typeofproximity,event,inside,and,BEDROOM,relativeposition-typeofproximity
+470,178,d53767aa-f92b-4540-b461-4ddf6316066b,technology/light/@state,bedroomlight,state,condition,equal,rule,OFF,bedroomlight-state
+471,178,d53767aa-f92b-4540-b461-4ddf6316066b,applianceState/Bedroom/allLight,bedroom,alllight,action,OPERATOR,none,invokeFunctions:changeApplianceState,bedroom-alllight
+472,178,d53767aa-f92b-4540-b461-4ddf6316066b,Reminders,reminders,reminders,action,OPERATOR,none,The bedroom light has been turned on,reminders-reminders
+473,179,6d810c93-1383-4da6-8e3a-bf73773f60ce,environment/@temperatureLevel,livingroom,temperaturelevel,event,lessthen,and,10,livingroom-temperaturelevel
+474,179,6d810c93-1383-4da6-8e3a-bf73773f60ce,environment/@doorWindowSensor,livingroom,doorwindowsensor,condition,equal,rule,OPEN,livingroom-doorwindowsensor
+475,179,6d810c93-1383-4da6-8e3a-bf73773f60ce,applianceState/Bedroom/allLight,bedroom,alllight,action,OPERATOR,none,invokeFunctions:changeApplianceState,bedroom-alllight
+476,179,6d810c93-1383-4da6-8e3a-bf73773f60ce,Reminders,reminders,reminders,action,OPERATOR,none,The living room window is open and the inside temperature is too low,reminders-reminders
+477,180,975beab7-7724-485c-b01a-afdd4202e211,environment/@lightLevel,bedroom,lightlevel,condition,equal,rule,DAY_LIGHT,bedroom-lightlevel
+478,180,975beab7-7724-485c-b01a-afdd4202e211,Reminders,reminders,reminders,action,OPERATOR,none,The light in the bedroom is on,reminders-reminders
+479,181,c805ffdc-fcde-4431-919f-7efa3b2d5d4c,environment/currentWeather/@outdoorCondition,currentweather,outdoorcondition,event,equal,and,FOG,currentweather-outdoorcondition
+480,181,c805ffdc-fcde-4431-919f-7efa3b2d5d4c,environment/@doorWindowSensor,livingroom,doorwindowsensor,condition,equal,rule,OPEN,livingroom-doorwindowsensor
+481,181,c805ffdc-fcde-4431-919f-7efa3b2d5d4c,Reminders,reminders,reminders,action,OPERATOR,none,It is advisable to close the kitchen window due to strong fog,reminders-reminders
+482,182,266f3a3d-af3d-4ec1-ae52-8284dd1e6c6f,user/physiological/@heartRate,physiological,heartrate,condition,lessthen,rule,100,physiological-heartrate
+483,182,266f3a3d-af3d-4ec1-ae52-8284dd1e6c6f,Alarms,alarms,alarms,action,OPERATOR,sequential,Check the blood pressure,alarms-alarms
+484,182,266f3a3d-af3d-4ec1-ae52-8284dd1e6c6f,applianceState/Bedroom/lightColor,bedroom,hue color light bedroom,action,OPERATOR,none,update:lightColor,bedroom-hue color light bedroom
+485,183,3b46d821-2419-4557-b184-d03c037752b7,environment/@doorWindowSensor,kitchen,doorwindowsensor,condition,equal,and,OPEN,kitchen-doorwindowsensor
+486,183,3b46d821-2419-4557-b184-d03c037752b7,technology/light/@state,kitchenlight,state,condition,equal,rule,OFF,kitchenlight-state
+487,183,3b46d821-2419-4557-b184-d03c037752b7,Alarms,alarms,alarms,action,OPERATOR,parallel,kitchen window is open,alarms-alarms
+488,183,3b46d821-2419-4557-b184-d03c037752b7,applianceState/Kitchen/allLight,kitchen,alllight,action,OPERATOR,none,invokeFunctions:changeApplianceState,kitchen-alllight
+489,184,87c40543-2bd5-4741-bc5f-d881bd3144ae,user/position/timeInsideARoom/@timeInsideBathroom,timeinsidearoom,timeinsidebathroom,event,morethen,and,15,timeinsidearoom-timeinsidebathroom
+490,184,87c40543-2bd5-4741-bc5f-d881bd3144ae,technology/light/@state,bathroomlight,state,condition,equal,rule,ON,bathroomlight-state
+491,184,87c40543-2bd5-4741-bc5f-d881bd3144ae,applianceState/bathroom/lightColor,bathroom,hue color light bathroom,action,OPERATOR,parallel,update:lightColor,bathroom-hue color light bathroom
+492,184,87c40543-2bd5-4741-bc5f-d881bd3144ae,Reminders,reminders,reminders,action,OPERATOR,none,15 minutes spent in bathroom,reminders-reminders
+493,185,e26db514-f135-40d6-a2d0-5d56262bb106,technology/light/@state,corridorlightstrip,state,condition,equal,rule,ON,corridorlightstrip-state
+494,185,e26db514-f135-40d6-a2d0-5d56262bb106,Reminders,reminders,reminders,action,OPERATOR,none,reminder text,reminders-reminders
+495,186,1c0b985d-bb9c-4ba7-ba0d-95cf5a8e6548,environment/@doorWindowSensor,livingroom,doorwindowsensor,condition,equal,and,OPEN,livingroom-doorwindowsensor
+496,186,1c0b985d-bb9c-4ba7-ba0d-95cf5a8e6548,environment/@temperatureLevel,livingroom,temperaturelevel,event,lessthen,rule,20,livingroom-temperaturelevel
+497,186,1c0b985d-bb9c-4ba7-ba0d-95cf5a8e6548,Reminders,reminders,reminders,action,OPERATOR,none,reminder text,reminders-reminders
+498,187,191559bb-e857-4bdb-8cf4-2cd6dc336354,environment/@doorWindowSensor,entrance,doorsensor,condition,equal,rule,CLOSE,entrance-doorsensor
+499,187,191559bb-e857-4bdb-8cf4-2cd6dc336354,Alarms,alarms,alarms,action,OPERATOR,sequential,alarm text,alarms-alarms
+500,187,191559bb-e857-4bdb-8cf4-2cd6dc336354,applianceState/all/allLight,all,alllight,action,OPERATOR,none,invokeFunctions:changeApplianceState,all-alllight
+501,188,f651fb0d-249f-48b6-88e7-706e12a95ae0,environment/@smokeSensor,kitchen,smokesensor,condition,equal,and,true,kitchen-smokesensor
+502,188,f651fb0d-249f-48b6-88e7-706e12a95ae0,environment/@lightLevel,kitchen,lightlevel,condition,equal,rule,NO_LIGHT,kitchen-lightlevel
+503,188,f651fb0d-249f-48b6-88e7-706e12a95ae0,Alarms,alarms,alarms,action,OPERATOR,sequential,alarm text,alarms-alarms
+504,188,f651fb0d-249f-48b6-88e7-706e12a95ae0,applianceState/Kitchen/allLight,kitchen,alllight,action,OPERATOR,none,invokeFunctions:changeApplianceState,kitchen-alllight
+505,189,e1c90be0-7a20-49d1-805e-332027ab28bf,user/position/relativePosition/@typeOfProximity,relativeposition,typeofproximity,condition,outside,and,BATHROOM,relativeposition-typeofproximity
+506,189,e1c90be0-7a20-49d1-805e-332027ab28bf,environment/@lightLevel,bathroom,lightlevel,event,equal,rule,NORMAL_LIGHT,bathroom-lightlevel
+507,189,e1c90be0-7a20-49d1-805e-332027ab28bf,Reminders,reminders,reminders,action,OPERATOR,sequential,reminder text,reminders-reminders
+508,189,e1c90be0-7a20-49d1-805e-332027ab28bf,applianceState/All/allLight,all,alllight,action,OPERATOR,none,invokeFunctions:changeApplianceState,all-alllight
+509,190,2c4a33ef-e155-4b45-a2bf-5ceb3319a1a2,environment/currentWeather/@outdoorCondition,currentweather,outdoorcondition,condition,equal,rule,RAIN,currentweather-outdoorcondition
+510,190,2c4a33ef-e155-4b45-a2bf-5ceb3319a1a2,Reminders,reminders,reminders,action,OPERATOR,none,remember the umbrella,reminders-reminders
+511,191,98a4e1f1-16f0-4a45-afbc-8f531eb8f638,environment/@smokeSensor,kitchen,smokesensor,condition,equal,or,true,kitchen-smokesensor
+512,191,98a4e1f1-16f0-4a45-afbc-8f531eb8f638,environment/@temperatureLevel,kitchen,temperaturelevel,condition,morethen,rule,40,kitchen-temperaturelevel
+513,191,98a4e1f1-16f0-4a45-afbc-8f531eb8f638,Alarms,alarms,alarms,action,OPERATOR,parallel,fire,alarms-alarms
+514,191,98a4e1f1-16f0-4a45-afbc-8f531eb8f638,applianceState/Entrance/@scene,entrance,biorhythmlight,action,OPERATOR,none,invokeFunctions:lightScene,entrance-biorhythmlight
+515,192,c1060b8e-6b7f-4b49-bad9-2236fbbb5ede,technology/appliance/@door,fridge,door,event,equal,and,CLOSE,fridge-door
+516,192,c1060b8e-6b7f-4b49-bad9-2236fbbb5ede,user/cognitive/@emotionalState,cognitive,emotionalstate,condition,equal,rule,HAPPY,cognitive-emotionalstate
+517,192,c1060b8e-6b7f-4b49-bad9-2236fbbb5ede,applianceState/Kitchen/@scene,kitchen,relax,action,OPERATOR,parallel,invokeFunctions:lightScene,kitchen-relax
+518,192,c1060b8e-6b7f-4b49-bad9-2236fbbb5ede,Reminders,reminders,reminders,action,OPERATOR,none,Have a snack and close the fridge when you're done,reminders-reminders
+519,193,2f08fba9-cc85-417a-8dcb-2b3e0a4df7f0,user/activity/@wakingup,activity,wakingup,condition,equal,rule,true,activity-wakingup
+520,193,2f08fba9-cc85-417a-8dcb-2b3e0a4df7f0,Alarms,alarms,alarms,action,OPERATOR,sequential,The user did not wake up,alarms-alarms
+521,193,2f08fba9-cc85-417a-8dcb-2b3e0a4df7f0,applianceState/All/allLight,all,alllight,action,OPERATOR,none,invokeFunctions:changeApplianceState,all-alllight
+522,194,d92eaeb0-71a0-488a-9dd3-b5a4aa6459df,environment/@doorWindowSensor,livingroom,doorwindowsensor,event,equal,rule,OPEN,livingroom-doorwindowsensor
+523,194,d92eaeb0-71a0-488a-9dd3-b5a4aa6459df,Reminders,reminders,reminders,action,OPERATOR,none,Close the window,reminders-reminders
+524,195,a3871bcc-e727-4c7f-b16e-9d383d8a91b9,technology/appliance/@door,fridge,door,event,equal,rule,OPEN,fridge-door
+525,195,a3871bcc-e727-4c7f-b16e-9d383d8a91b9,Reminders,reminders,reminders,action,OPERATOR,none,Warning!! The fridge door is open!,reminders-reminders
+526,196,8f8b8003-f532-4502-95d4-30c118379387,environment/dateTime/@localTime,datetime,localtime,condition,equal,and,19:00,datetime-localtime
+527,196,8f8b8003-f532-4502-95d4-30c118379387,environment/@temperatureLevel,livingroom,temperaturelevel,event,lessthen,rule,18,livingroom-temperaturelevel
+528,196,8f8b8003-f532-4502-95d4-30c118379387,Reminders,reminders,reminders,action,OPERATOR,none,Turn the heater on,reminders-reminders
+529,197,92339ef8-c54d-43b8-a22e-9a97b9eaa857,user/activity/@wakingup,activity,wakingup,event,equal,rule,true,activity-wakingup
+530,197,92339ef8-c54d-43b8-a22e-9a97b9eaa857,Alarms,alarms,alarms,action,OPERATOR,sequential,Wake up,alarms-alarms
+531,197,92339ef8-c54d-43b8-a22e-9a97b9eaa857,applianceState/Bedroom/lightColor,bedroom,hue color light bedroom,action,OPERATOR,none,update:lightColor,bedroom-hue color light bedroom
+532,198,92167974-1c0e-4b5c-a7e1-071cafddde00,technology/light/@state,entrancelight,state,condition,equal,and,OFF,entrancelight-state
+533,198,92167974-1c0e-4b5c-a7e1-071cafddde00,environment/@motion,entrance,motion,condition,equal,rule,VALUE,entrance-motion
+534,198,92167974-1c0e-4b5c-a7e1-071cafddde00,Alarms,alarms,alarms,action,OPERATOR,sequential,Welcome back,alarms-alarms
+535,198,92167974-1c0e-4b5c-a7e1-071cafddde00,applianceState/Bedroom/lightColor,bedroom,hue color light bedroom,action,OPERATOR,none,update:lightColor,bedroom-hue color light bedroom
+536,199,3a82f5c2-2cbd-47db-ba66-6f8853b82ebe,user/position/relativePosition/@typeOfProximity,relativeposition,typeofproximity,event,inside,and,BATHROOM,relativeposition-typeofproximity
+537,199,3a82f5c2-2cbd-47db-ba66-6f8853b82ebe,technology/light/@state,bathroomlight,state,condition,equal,rule,OFF,bathroomlight-state
+538,199,3a82f5c2-2cbd-47db-ba66-6f8853b82ebe,applianceState/Bathroom/allLight,bathroom,alllight,action,OPERATOR,sequential,invokeFunctions:changeApplianceState,bathroom-alllight
+539,199,3a82f5c2-2cbd-47db-ba66-6f8853b82ebe,Reminders,reminders,reminders,action,OPERATOR,none,Mind the gap,reminders-reminders
+540,200,4ee5f49e-097d-4081-9034-fe8626850609,technology/light/@state,entrancelight,state,condition,equal,rule,ON,entrancelight-state
+541,200,4ee5f49e-097d-4081-9034-fe8626850609,Reminders,reminders,reminders,action,OPERATOR,none,Turn the light off,reminders-reminders
+542,201,f17631db-9350-4054-aaf5-b775cf83dd23,environment/currentWeather/@outdoorCondition,currentweather,outdoorcondition,event,equal,and,THUNDERSTORM,currentweather-outdoorcondition
+543,201,f17631db-9350-4054-aaf5-b775cf83dd23,environment/@doorWindowSensor,livingroom,doorwindowsensor,condition,equal,rule,OPEN,livingroom-doorwindowsensor
+544,201,f17631db-9350-4054-aaf5-b775cf83dd23,Reminders,reminders,reminders,action,OPERATOR,none,Close the windows,reminders-reminders
+545,202,a59664a4-6401-4bc9-8b87-db02b9d7dbf8,environment/@temperatureLevel,livingroom,temperaturelevel,condition,morethen,rule,12,livingroom-temperaturelevel
+546,202,a59664a4-6401-4bc9-8b87-db02b9d7dbf8,Alarms,alarms,alarms,action,OPERATOR,sequential,Turn on the heater,alarms-alarms
+547,202,a59664a4-6401-4bc9-8b87-db02b9d7dbf8,applianceState/All/allLight,all,alllight,action,OPERATOR,none,invokeFunctions:changeApplianceState,all-alllight
+548,203,1c24101d-2690-4c9a-b7b4-6190f25c017c,environment/@smokeSensor,bathroom,smokesensor,condition,equal,and,true,bathroom-smokesensor
+549,203,1c24101d-2690-4c9a-b7b4-6190f25c017c,technology/light/@state,bathroomlight,state,condition,equal,rule,OFF,bathroomlight-state
+550,203,1c24101d-2690-4c9a-b7b4-6190f25c017c,Alarms,alarms,alarms,action,OPERATOR,sequential,Smoke! Check the bathroom,alarms-alarms
+551,203,1c24101d-2690-4c9a-b7b4-6190f25c017c,applianceState/All/allLight,all,alllight,action,OPERATOR,none,invokeFunctions:changeApplianceState,all-alllight
+552,204,9d46284f-53b7-4cf8-b284-e94dc0068c2c,user/position/timeInsideARoom/@timeInsideKitchen,timeinsidearoom,timeinsidekitchen,condition,morethen,and,50,timeinsidearoom-timeinsidekitchen
+553,204,9d46284f-53b7-4cf8-b284-e94dc0068c2c,environment/@doorWindowSensor,kitchen,doorwindowsensor,condition,equal,rule,CLOSE,kitchen-doorwindowsensor
+554,204,9d46284f-53b7-4cf8-b284-e94dc0068c2c,applianceState/Kitchen/lightColor,kitchen,hue color light kitchen,action,OPERATOR,sequential,update:lightColor,kitchen-hue color light kitchen
+555,204,9d46284f-53b7-4cf8-b284-e94dc0068c2c,Reminders,reminders,reminders,action,OPERATOR,none,Check the microwave,reminders-reminders
+556,205,7402195c-8b78-4d98-8208-1d249f363127,environment/@temperatureLevel,livingroom,temperaturelevel,event,equal,rule,30,livingroom-temperaturelevel
+557,205,7402195c-8b78-4d98-8208-1d249f363127,Alarms,alarms,alarms,action,OPERATOR,none,Turn on the air conditioner ,alarms-alarms
+558,206,32206a9f-19d4-4610-85f2-08541b99836b,user/position/timeInsideARoom/@timeInsideKitchen,timeinsidearoom,timeinsidekitchen,event,equal,and,30,timeinsidearoom-timeinsidekitchen
+559,206,32206a9f-19d4-4610-85f2-08541b99836b,environment/@gasSensor,kitchen,gassensor,condition,equal,rule,true,kitchen-gassensor
+560,206,32206a9f-19d4-4610-85f2-08541b99836b,Alarms,alarms,alarms,action,OPERATOR,none,Turn off the stove!,alarms-alarms
+561,207,08d1c3fe-4ccb-4945-886a-c090e028cd54,technology/appliance/@door,fridge,door,condition,equal,rule,CLOSE,fridge-door
+562,207,08d1c3fe-4ccb-4945-886a-c090e028cd54,Alarms,alarms,alarms,action,OPERATOR,sequential,Close the fridge,alarms-alarms
+563,207,08d1c3fe-4ccb-4945-886a-c090e028cd54,applianceState/Bedroom/@scene,bedroom,relax,action,OPERATOR,none,invokeFunctions:lightScene,bedroom-relax
+564,208,e4c340c3-94da-4b95-9f39-233a3175e603,environment/@motion,entrance,motion,condition,equal,and,VALUE,entrance-motion
+565,208,e4c340c3-94da-4b95-9f39-233a3175e603,technology/light/@state,entrancelight,state,condition,equal,rule,OFF,entrancelight-state
+566,208,e4c340c3-94da-4b95-9f39-233a3175e603,applianceState/Entrance/lightColor,entrance,hue color light entrance,action,OPERATOR,sequential,update:lightColor,entrance-hue color light entrance
+567,208,e4c340c3-94da-4b95-9f39-233a3175e603,Alarms,alarms,alarms,action,OPERATOR,none,Welcome back!,alarms-alarms
+568,209,aef3ed8d-6e06-480e-967a-5b480f09ea66,user/activity/@wakingup,activity,wakingup,event,equal,and,true,activity-wakingup
+569,209,aef3ed8d-6e06-480e-967a-5b480f09ea66,technology/light/@state,bedroomlight,state,condition,equal,rule,ON,bedroomlight-state
+570,209,aef3ed8d-6e06-480e-967a-5b480f09ea66,applianceState/Bedroom/allLight,bedroom,alllight,action,OPERATOR,sequential,invokeFunctions:changeApplianceState,bedroom-alllight
+571,209,aef3ed8d-6e06-480e-967a-5b480f09ea66,Reminders,reminders,reminders,action,OPERATOR,none,Good morning!,reminders-reminders
+572,210,4a7883dc-ec26-4c9a-a704-5eab108a0367,user/position/relativePosition/@typeOfProximity,relativeposition,typeofproximity,event,inside,rule,ENTRANCE,relativeposition-typeofproximity
+573,210,4a7883dc-ec26-4c9a-a704-5eab108a0367,applianceState/Entrance/allLight,entrance,alllight,action,OPERATOR,parallel,invokeFunctions:changeApplianceState,entrance-alllight
+574,210,4a7883dc-ec26-4c9a-a704-5eab108a0367,applianceState/Corridor/allLight,corridor,alllight,action,OPERATOR,none,invokeFunctions:changeApplianceState,corridor-alllight
+575,211,74db63c8-7d56-4612-9ab0-d3b9ecdcfa1d,environment/@smokeSensor,kitchen,smokesensor,event,equal,and,true,kitchen-smokesensor
+576,211,74db63c8-7d56-4612-9ab0-d3b9ecdcfa1d,user/position/relativePosition/@typeOfProximity,relativeposition,typeofproximity,condition,outside,rule,ENTRANCE,relativeposition-typeofproximity
+577,211,74db63c8-7d56-4612-9ab0-d3b9ecdcfa1d,Alarms,alarms,alarms,action,OPERATOR,none,WARNING! Smoke sensors are on!,alarms-alarms
+578,212,e589a97c-3767-4c40-8633-f3cc2508b97a,user/physiological/@heartRate,physiological,heartrate,event,morethen,and,199,physiological-heartrate
+579,212,e589a97c-3767-4c40-8633-f3cc2508b97a,user/activity/@medicationName,activity,medicationname,condition,equal,rule,medicina per il cuore,activity-medicationname
+580,212,e589a97c-3767-4c40-8633-f3cc2508b97a,applianceState/all/allLight,all,alllight,action,OPERATOR,parallel,invokeFunctions:changeApplianceState,all-alllight
+581,212,e589a97c-3767-4c40-8633-f3cc2508b97a,Alarms,alarms,alarms,action,OPERATOR,none,"Warning, high hearth rate",alarms-alarms
+582,213,22364733-a8d9-440d-b86e-417680c6aada,environment/currentWeather/@rain,currentweather,rain,condition,equal,and,true,currentweather-rain
+583,213,22364733-a8d9-440d-b86e-417680c6aada,environment/@doorWindowSensor,corridor,doorwindowsensor,condition,equal,rule,OPEN,corridor-doorwindowsensor
+584,213,22364733-a8d9-440d-b86e-417680c6aada,applianceState/all/@scene,all,biorhythmlight,action,OPERATOR,parallel,invokeFunctions:lightScene,all-biorhythmlight
+585,213,22364733-a8d9-440d-b86e-417680c6aada,Reminders,reminders,reminders,action,OPERATOR,none,It's raining! You left the windows open,reminders-reminders
+586,214,f896e1e0-6cf1-4d8a-bc48-2a7afb78baca,user/activity/@wakingup,activity,wakingup,condition,equal,rule,true,activity-wakingup
+587,214,f896e1e0-6cf1-4d8a-bc48-2a7afb78baca,applianceState/Bedroom/@scene,bedroom,activate,action,OPERATOR,sequential,invokeFunctions:lightScene,bedroom-activate
+588,214,f896e1e0-6cf1-4d8a-bc48-2a7afb78baca,Reminders,reminders,reminders,action,OPERATOR,none,It's time to get up,reminders-reminders
+589,215,3bcb56e7-4587-492a-a267-f8c46231cd40,technology/light/@state,entrancelight,state,condition,equal,rule,ON,entrancelight-state
+590,215,3bcb56e7-4587-492a-a267-f8c46231cd40,Reminders,reminders,reminders,action,OPERATOR,none,Remember to turn off the light,reminders-reminders
+591,216,8792cac9-f5ee-4dee-87f2-e2f7fae5fa08,environment/currentWeather/@rain,currentweather,rain,condition,equal,and,true,currentweather-rain
+592,216,8792cac9-f5ee-4dee-87f2-e2f7fae5fa08,environment/currentWeather/@rainQuantity,currentweather,rainquantity,condition,morethen,rule,10,currentweather-rainquantity
+593,216,8792cac9-f5ee-4dee-87f2-e2f7fae5fa08,Reminders,reminders,reminders,action,OPERATOR,none,Remember to take the umbrella,reminders-reminders
+594,217,a6a3e2b6-0139-4c3c-8a43-c92be546aa3d,technology/appliance/@door,fridge,door,condition,equal,rule,CLOSE,fridge-door
+595,217,a6a3e2b6-0139-4c3c-8a43-c92be546aa3d,Reminders,reminders,reminders,action,OPERATOR,parallel,Fridge door is open,reminders-reminders
+596,217,a6a3e2b6-0139-4c3c-8a43-c92be546aa3d,applianceState/Bedroom/lightColor,bedroom,hue color light bedroom,action,OPERATOR,none,update:lightColor,bedroom-hue color light bedroom
+597,218,a6b53ce5-c2d9-4200-989b-8de3fa75feed,environment/@smokeSensor,corridor,smokesensor,event,equal,and,true,corridor-smokesensor
+598,218,a6b53ce5-c2d9-4200-989b-8de3fa75feed,technology/light/@color,corridorlightstrip,color,event,equal,rule,RED,corridorlightstrip-color
+599,218,a6b53ce5-c2d9-4200-989b-8de3fa75feed,Reminders,reminders,reminders,action,OPERATOR,parallel,Smoke in the corridor,reminders-reminders
+600,218,a6b53ce5-c2d9-4200-989b-8de3fa75feed,applianceState/All/@scene,all,biorhythmlight,action,OPERATOR,none,invokeFunctions:lightScene,all-biorhythmlight
+601,219,b526e18b-1d44-4575-bdb1-63d24110b803,user/activity/@wakingup,activity,wakingup,event,equal,and,true,activity-wakingup
+602,219,b526e18b-1d44-4575-bdb1-63d24110b803,technology/light/@state,bedroomlight,state,event,equal,rule,ON,bedroomlight-state
+603,219,b526e18b-1d44-4575-bdb1-63d24110b803,applianceState/Bedroom/@scene,bedroom,activate,action,OPERATOR,parallel,invokeFunctions:lightScene,bedroom-activate
+604,219,b526e18b-1d44-4575-bdb1-63d24110b803,Reminders,reminders,reminders,action,OPERATOR,none,Good morning!,reminders-reminders
+605,220,be230135-437f-4d21-a433-23950c082ef2,user/position/timeInsideARoom/@timeInsideBedroom,timeinsidearoom,timeinsidebedroom,condition,morethen,and,1,timeinsidearoom-timeinsidebedroom
+606,220,be230135-437f-4d21-a433-23950c082ef2,technology/light/@state,entrancelight,state,condition,equal,rule,ON,entrancelight-state
+607,220,be230135-437f-4d21-a433-23950c082ef2,Reminders,reminders,reminders,action,OPERATOR,sequential,switch the light off,reminders-reminders
+608,220,be230135-437f-4d21-a433-23950c082ef2,applianceState/Bedroom/lightColor,bedroom,hue color light bedroom,action,OPERATOR,none,update:lightColor,bedroom-hue color light bedroom
+609,221,7d213ed6-fe4b-4850-9b14-9b9b1cd2e846,technology/appliance/@door,fridge,door,condition,equal,and,OPEN,fridge-door
+610,221,7d213ed6-fe4b-4850-9b14-9b9b1cd2e846,environment/@lightLevel,kitchen,lightlevel,condition,equal,rule,NO_LIGHT,kitchen-lightlevel
+611,221,7d213ed6-fe4b-4850-9b14-9b9b1cd2e846,Alarms,alarms,alarms,action,OPERATOR,sequential,close the fridge door,alarms-alarms
+612,221,7d213ed6-fe4b-4850-9b14-9b9b1cd2e846,applianceState/Corridor/lightColor,corridor,light strip corridor,action,OPERATOR,none,update:lightColor,corridor-light strip corridor
+613,222,7dd941f5-b1eb-4852-8081-b642707a8a3d,environment/currentWeather/@outdoorCondition,currentweather,outdoorcondition,event,equal,and,SHOWER_RAIN,currentweather-outdoorcondition
+614,222,7dd941f5-b1eb-4852-8081-b642707a8a3d,environment/@doorWindowSensor,bedroom,doorwindowsensor,condition,equal,rule,OPEN,bedroom-doorwindowsensor
+615,222,7dd941f5-b1eb-4852-8081-b642707a8a3d,Reminders,reminders,reminders,action,OPERATOR,none,close the window,reminders-reminders
+616,223,90bdd2bf-e5df-48ff-a469-418b6a7ce2e5,user/activity/@wakingup,activity,wakingup,condition,equal,rule,true,activity-wakingup
+617,223,90bdd2bf-e5df-48ff-a469-418b6a7ce2e5,Alarms,alarms,alarms,action,OPERATOR,sequential,user has not woken up yet,alarms-alarms
+618,223,90bdd2bf-e5df-48ff-a469-418b6a7ce2e5,applianceState/Bedroom/@scene,bedroom,activate,action,OPERATOR,none,invokeFunctions:lightScene,bedroom-activate
+619,224,e397152d-c79c-4574-b2fa-86af4f6b75cf,technology/light/@state,corridorlightstrip,state,condition,equal,rule,OFF,corridorlightstrip-state
+620,224,e397152d-c79c-4574-b2fa-86af4f6b75cf,Reminders,reminders,reminders,action,OPERATOR,none,switch the corridor light strip on,reminders-reminders
+621,225,6f056991-0341-43e1-be8d-2164e9978207,technology/appliance/@door,microwave,door,condition,equal,rule,OPEN,microwave-door
+622,225,6f056991-0341-43e1-be8d-2164e9978207,Reminders,reminders,reminders,action,OPERATOR,none,close microwave door,reminders-reminders
+623,226,d53b7681-ec5c-4241-b60d-228f0f99e113,environment/twentyFourHoursWeatherForecast/@rain,currentweather,rain,condition,equal,rule,true,currentweather-rain
+624,226,d53b7681-ec5c-4241-b60d-228f0f99e113,Alarms,alarms,alarms,action,OPERATOR,sequential,"""Do laundry""",alarms-alarms
+625,226,d53b7681-ec5c-4241-b60d-228f0f99e113,applianceState/LivingRoom/lightColor,livingroom,hue color light living room,action,OPERATOR,none,update:lightColor,livingroom-hue color light living room
+626,227,03528992-a5f4-4359-ae06-54f34214e230,environment/@motion,livingroom,motion,event,equal,and,VALUE,livingroom-motion
+627,227,03528992-a5f4-4359-ae06-54f34214e230,environment/@temperatureLevel,livingroom,temperaturelevel,condition,lessthen,rule,18,livingroom-temperaturelevel
+628,227,03528992-a5f4-4359-ae06-54f34214e230,Reminders,reminders,reminders,action,OPERATOR,none,check the radiators,reminders-reminders
+629,228,edc40ac8-6834-4bdd-8de1-b91ebc2e3c4c,environment/@lightLevel,entrance,lightlevel,condition,equal,or,DARK,entrance-lightlevel
+630,228,edc40ac8-6834-4bdd-8de1-b91ebc2e3c4c,technology/light/@saturation,entrancelight,saturation,condition,lessthen,rule,5,entrancelight-saturation
+631,228,edc40ac8-6834-4bdd-8de1-b91ebc2e3c4c,Alarms,alarms,alarms,action,OPERATOR,sequential,light brightness,alarms-alarms
+632,228,edc40ac8-6834-4bdd-8de1-b91ebc2e3c4c,applianceState/Entrance/allLight,entrance,alllight,action,OPERATOR,none,invokeFunctions:changeApplianceState,entrance-alllight
+633,229,a137dd46-c21d-4d31-bdeb-67a9f527234f,user/activity/sleep/@sleepDuration,sleep,sleepduration,event,morethen,and,480,sleep-sleepduration
+634,229,a137dd46-c21d-4d31-bdeb-67a9f527234f,technology/light/@state,bedroomlight,state,condition,equal,rule,OFF,bedroomlight-state
+635,229,a137dd46-c21d-4d31-bdeb-67a9f527234f,applianceState/Bedroom/@scene,bedroom,activate,action,OPERATOR,parallel,invokeFunctions:lightScene,bedroom-activate
+636,229,a137dd46-c21d-4d31-bdeb-67a9f527234f,Reminders,reminders,reminders,action,OPERATOR,none,Work-time,reminders-reminders
+637,230,3e87374f-0aa9-4f37-8ce4-679fd45c340e,technology/appliance/@door,fridge,door,event,equal,rule,OPEN,fridge-door
+638,230,3e87374f-0aa9-4f37-8ce4-679fd45c340e,Reminders,reminders,reminders,action,OPERATOR,none,There are products that are about to expire,reminders-reminders
+639,231,cf2f05d0-e2a6-4863-bb56-1fa9f5bd75e3,user/activity/@medicationName,activity,medicationname,condition,equal,rule,medicina,activity-medicationname
+640,231,cf2f05d0-e2a6-4863-bb56-1fa9f5bd75e3,Alarms,alarms,alarms,action,OPERATOR,none,The medicine has not been taken,alarms-alarms
+641,232,27ea6e0a-0d29-4667-b630-16ec2560949d,technology/appliance/@door,microwave,door,event,equal,and,OPEN,microwave-door
+642,232,27ea6e0a-0d29-4667-b630-16ec2560949d,technology/appliance/@door,microwave,door,condition,equal,rule,CLOSE,microwave-door
+643,232,27ea6e0a-0d29-4667-b630-16ec2560949d,Alarms,alarms,alarms,action,OPERATOR,none,alarm text,alarms-alarms
+644,232,27ea6e0a-0d29-4667-b630-16ec2560949d,Alarms,alarms,alarms,action,OPERATOR,none,Cooking is not finished,alarms-alarms
+645,233,18d85fc7-dc29-4d46-ba47-aeb358bc5d52,environment/currentWeather/@outdoorTemperature,currentweather,outdoortemperature,condition,equal,and,0,currentweather-outdoortemperature
+646,233,18d85fc7-dc29-4d46-ba47-aeb358bc5d52,technology/light/@temperature,bathroomlight,temperature,condition,equal,rule,11,bathroomlight-temperature
+647,233,18d85fc7-dc29-4d46-ba47-aeb358bc5d52,applianceState/Bathroom/lightColor,bathroom,hue color light bathroom,action,OPERATOR,none,update:lightColor,bathroom-hue color light bathroom
+648,234,12ce6379-92c3-4a2d-8e60-bf7eb071b626,user/physiological/@heartRate,physiological,heartrate,condition,equal,and,100,physiological-heartrate
+649,234,12ce6379-92c3-4a2d-8e60-bf7eb071b626,user/cognitive/@vocalEmotionalState,cognitive,vocalemotionalstate,condition,equal,rule,SAD,cognitive-vocalemotionalstate
+650,234,12ce6379-92c3-4a2d-8e60-bf7eb071b626,applianceState/LivingRoom/@scene,livingroom,relax,action,OPERATOR,sequential,invokeFunctions:lightScene,livingroom-relax
+651,234,12ce6379-92c3-4a2d-8e60-bf7eb071b626,Reminders,reminders,reminders,action,OPERATOR,none,now relax,reminders-reminders
+652,235,d01b54a3-1651-45c4-b590-3b1b6f115d4d,technology/light/@state,entrancelight,state,event,equal,rule,ON,entrancelight-state
+653,235,d01b54a3-1651-45c4-b590-3b1b6f115d4d,Alarms,alarms,alarms,action,OPERATOR,none,Welcome home,alarms-alarms
+654,236,71868a3f-fdc7-4b5a-b725-7fa5af859897,user/cognitive/@trainingTime,cognitive,trainingtime,event,morethen,rule,0.5,cognitive-trainingtime
+655,236,71868a3f-fdc7-4b5a-b725-7fa5af859897,Alarms,alarms,alarms,action,OPERATOR,parallel,Time for some workout,alarms-alarms
+656,236,71868a3f-fdc7-4b5a-b725-7fa5af859897,applianceState/LivingRoom/@scene,livingroom,activate,action,OPERATOR,none,invokeFunctions:lightScene,livingroom-activate
+657,237,0e8c555f-3f51-46da-b875-6c73d2d1b272,environment/@windowSensor,livingroom,windowsensor,condition,equal,and,OPEN,livingroom-windowsensor
+658,237,0e8c555f-3f51-46da-b875-6c73d2d1b272,environment/currentWeather/@rain,currentweather,rain,event,equal,rule,true,currentweather-rain
+659,237,0e8c555f-3f51-46da-b875-6c73d2d1b272,Alarms,alarms,alarms,action,OPERATOR,none,Close the window,alarms-alarms
+660,238,c946eb82-e349-4083-ac1d-85c4f4e179be,environment/@temperatureLevel,kitchen,temperaturelevel,condition,morethen,and,4,kitchen-temperaturelevel
+661,238,c946eb82-e349-4083-ac1d-85c4f4e179be,technology/appliance/@door,fridge,door,condition,equal,rule,OPEN,fridge-door
+662,238,c946eb82-e349-4083-ac1d-85c4f4e179be,Alarms,alarms,alarms,action,OPERATOR,parallel,Close the fridge door!,alarms-alarms
+663,238,c946eb82-e349-4083-ac1d-85c4f4e179be,applianceState/Kitchen/allLight,kitchen,alllight,action,OPERATOR,none,invokeFunctions:changeApplianceState,kitchen-alllight
+664,239,73da8af8-f2d3-4896-845d-60ab520b3bbd,user/physiological/@heartRate,physiological,heartrate,event,morethen,and,100,physiological-heartrate
+665,239,73da8af8-f2d3-4896-845d-60ab520b3bbd,environment/dateTime/@localTime,datetime,localtime,condition,equal,and,22:30,datetime-localtime
+666,239,73da8af8-f2d3-4896-845d-60ab520b3bbd,technology/light/@state,bedroomlight,state,condition,equal,rule,OFF,bedroomlight-state
+667,239,73da8af8-f2d3-4896-845d-60ab520b3bbd,Alarms,alarms,alarms,action,OPERATOR,parallel,are you OK?,alarms-alarms
+668,239,73da8af8-f2d3-4896-845d-60ab520b3bbd,applianceState/Bedroom/@scene,bedroom,biorhythmlight,action,OPERATOR,none,invokeFunctions:lightScene,bedroom-biorhythmlight
+669,240,84025666-04c0-4857-9de4-1f7762cab149,technology/light/@state,entrancelight,state,event,equal,rule,ON,entrancelight-state
+670,240,84025666-04c0-4857-9de4-1f7762cab149,Reminders,reminders,reminders,action,OPERATOR,none,reminder text,reminders-reminders
+671,241,ab1575f3-ae88-4a74-a29e-d8409ca307a2,environment/@temperatureLevel,livingroom,temperaturelevel,condition,equal,rule,25,livingroom-temperaturelevel
+672,241,ab1575f3-ae88-4a74-a29e-d8409ca307a2,Alarms,alarms,alarms,action,OPERATOR,parallel,Fix the living room temperature,alarms-alarms
+673,241,ab1575f3-ae88-4a74-a29e-d8409ca307a2,applianceState/LivingRoom/allLight,livingroom,alllight,action,OPERATOR,none,invokeFunctions:changeApplianceState,livingroom-alllight
+674,242,4a2c4edf-70a6-4095-bb46-e31157214618,environment/@gasSensor,kitchen,gassensor,event,equal,or,true,kitchen-gassensor
+675,242,4a2c4edf-70a6-4095-bb46-e31157214618,environment/@smokeSensor,kitchen,smokesensor,event,equal,rule,true,kitchen-smokesensor
+676,242,4a2c4edf-70a6-4095-bb46-e31157214618,Reminders,reminders,reminders,action,OPERATOR,none,reminder text,reminders-reminders
+677,243,f96e3552-465b-4689-baa5-a9f4cf30f275,environment/currentWeather/@outdoorCondition,currentweather,outdoorcondition,condition,equal,and,FOG,currentweather-outdoorcondition
+678,243,f96e3552-465b-4689-baa5-a9f4cf30f275,technology/light/@state,greatluminaire,state,condition,equal,rule,OFF,greatluminaire-state
+679,243,f96e3552-465b-4689-baa5-a9f4cf30f275,Alarms,alarms,alarms,action,OPERATOR,sequential,alarm text,alarms-alarms
+680,243,f96e3552-465b-4689-baa5-a9f4cf30f275,applianceState/All/allLight,all,alllight,action,OPERATOR,none,invokeFunctions:changeApplianceState,all-alllight
+681,244,42376ba2-e23a-497c-8903-ab47d367553a,user/position/relativePosition/@typeOfProximity,relativeposition,typeofproximity,condition,inside,and,ENTRANCE,relativeposition-typeofproximity
+682,244,42376ba2-e23a-497c-8903-ab47d367553a,technology/light/@state,entrancelight,state,condition,equal,rule,ON,entrancelight-state
+683,244,42376ba2-e23a-497c-8903-ab47d367553a,applianceState/Entrance/allLight,entrance,alllight,action,OPERATOR,parallel,invokeFunctions:changeApplianceState,entrance-alllight
+684,244,42376ba2-e23a-497c-8903-ab47d367553a,Reminders,reminders,reminders,action,OPERATOR,none,Someone at the entrance,reminders-reminders
+685,245,dd3e446e-ea09-4edd-a780-f0611307d2c8,technology/appliance/@door,fridge,door,event,equal,rule,OPEN,fridge-door
+686,245,dd3e446e-ea09-4edd-a780-f0611307d2c8,Reminders,reminders,reminders,action,OPERATOR,none,Check the expiration date of the milk,reminders-reminders
+687,246,c67dab1b-a799-4dce-b705-61178fb06b66,user/position/relativePosition/@typeOfProximity,relativeposition,typeofproximity,event,inside,rule,HOUSE,relativeposition-typeofproximity
+688,246,c67dab1b-a799-4dce-b705-61178fb06b66,applianceState/all/allLight,all,alllight,action,OPERATOR,parallel,invokeFunctions:changeApplianceState,all-alllight
+689,246,c67dab1b-a799-4dce-b705-61178fb06b66,Alarms,alarms,alarms,action,OPERATOR,none,I turned off all the lights in the house,alarms-alarms
+690,247,89e51888-9138-4775-a3b3-84cb5959c4d2,environment/currentWeather/@rain,currentweather,rain,event,equal,and,true,currentweather-rain
+691,247,89e51888-9138-4775-a3b3-84cb5959c4d2,environment/dateTime/@localTime,datetime,localtime,condition,equal,rule,00:00,datetime-localtime
+692,247,89e51888-9138-4775-a3b3-84cb5959c4d2,Reminders,reminders,reminders,action,OPERATOR,none,Remember to take the umbrella,reminders-reminders
+693,248,f769a205-6ee9-4ad2-aa67-9a978d0f8630,environment/@smokeSensor,kitchen,smokesensor,event,equal,and,true,kitchen-smokesensor
+694,248,f769a205-6ee9-4ad2-aa67-9a978d0f8630,environment/@windowSensor,kitchen,windowsensor,condition,equal,rule,CLOSE,kitchen-windowsensor
+695,248,f769a205-6ee9-4ad2-aa67-9a978d0f8630,Alarms,alarms,alarms,action,OPERATOR,parallel,alarm text,alarms-alarms
+696,248,f769a205-6ee9-4ad2-aa67-9a978d0f8630,applianceState/all/allLight,all,alllight,action,OPERATOR,none,invokeFunctions:changeApplianceState,all-alllight
+697,249,7994ea01-7763-4b85-9d50-219f6f7630c8,user/activity/sleep/@sleepDuration,sleep,sleepduration,event,morethen,and,15,sleep-sleepduration
+698,249,7994ea01-7763-4b85-9d50-219f6f7630c8,technology/light/@state,bedroomlight,state,condition,equal,rule,ON,bedroomlight-state
+699,249,7994ea01-7763-4b85-9d50-219f6f7630c8,applianceState/Bedroom/allLight,bedroom,alllight,action,OPERATOR,parallel,invokeFunctions:changeApplianceState,bedroom-alllight
+700,249,7994ea01-7763-4b85-9d50-219f6f7630c8,Reminders,reminders,reminders,action,OPERATOR,none,Even today you fell asleep with the light on ...,reminders-reminders
+701,250,8954a617-90b2-4c33-8897-810e44570ac3,technology/appliance/@door,fridge,door,event,equal,rule,OPEN,fridge-door
+702,250,8954a617-90b2-4c33-8897-810e44570ac3,Reminders,reminders,reminders,action,OPERATOR,none,Do not keep the refrigerator door open longer than necessary,reminders-reminders
+703,251,62616b7b-76f1-4e06-a071-c5bf92ed10ab,environment/@lightLevel,bathroom,lightlevel,condition,equal,rule,NO_LIGHT,bathroom-lightlevel
+704,251,62616b7b-76f1-4e06-a071-c5bf92ed10ab,applianceState/Bathroom/allLight,bathroom,alllight,action,OPERATOR,parallel,invokeFunctions:changeApplianceState,bathroom-alllight
+705,251,62616b7b-76f1-4e06-a071-c5bf92ed10ab,Reminders,reminders,reminders,action,OPERATOR,none,You left the lights turn on in the bathroom....again Charles. I took care of it,reminders-reminders
+706,252,c4ae619c-7991-4817-8d08-113d66e208b5,environment/currentWeather/@rain,currentweather,rain,event,equal,and,true,currentweather-rain
+707,252,c4ae619c-7991-4817-8d08-113d66e208b5,environment/@windowSensor,livingroom,windowsensor,condition,equal,rule,OPEN,livingroom-windowsensor
+708,252,c4ae619c-7991-4817-8d08-113d66e208b5,Reminders,reminders,reminders,action,OPERATOR,none,"Charles, has just started raining, you should close the windows in the livingroom",reminders-reminders
+709,253,c34b77c6-60ac-4799-8589-d5c8aa9717a5,environment/@noiseLevel,kitchen,noiselevel,condition,morethen,and,1,kitchen-noiselevel
+710,253,c34b77c6-60ac-4799-8589-d5c8aa9717a5,technology/light/@state,bedroomportablelight,state,condition,equal,rule,ON,bedroomportablelight-state
+711,253,c34b77c6-60ac-4799-8589-d5c8aa9717a5,Alarms,alarms,alarms,action,OPERATOR,parallel,I'm pretty sure you don't need the lights turn on in your bedroom right now Charles,alarms-alarms
+712,253,c34b77c6-60ac-4799-8589-d5c8aa9717a5,applianceState/Bedroom/allLight,bedroom,alllight,action,OPERATOR,none,invokeFunctions:changeApplianceState,bedroom-alllight
+713,254,52fe7593-a3bb-4724-8748-6e71c20af1e9,user/position/timeInsideARoom/@timeInsideKitchen,timeinsidearoom,timeinsidekitchen,event,morethen,and,1,timeinsidearoom-timeinsidekitchen
+714,254,52fe7593-a3bb-4724-8748-6e71c20af1e9,technology/light/@state,kitchenlight,state,condition,equal,rule,OFF,kitchenlight-state
+715,254,52fe7593-a3bb-4724-8748-6e71c20af1e9,applianceState/Kitchen/allLight,kitchen,alllight,action,OPERATOR,parallel,invokeFunctions:changeApplianceState,kitchen-alllight
+716,254,52fe7593-a3bb-4724-8748-6e71c20af1e9,Reminders,reminders,reminders,action,OPERATOR,none,I took the liberty of turning the lights on Charles. You are quiet short-sighted though,reminders-reminders
+717,255,b6bb0f38-4c8a-4bdb-be5a-5174955ae28c,technology/appliance/@door,fridge,door,event,equal,rule,OPEN,fridge-door
+718,255,b6bb0f38-4c8a-4bdb-be5a-5174955ae28c,Reminders,reminders,reminders,action,OPERATOR,none,Close the fridge,reminders-reminders
+719,256,f03c5777-7504-46b6-a131-1372ec560453,environment/sensors/@door,entrance,doorsensor,condition,equal,rule,CLOSE,entrance-doorsensor
+720,256,f03c5777-7504-46b6-a131-1372ec560453,Reminders,reminders,reminders,action,OPERATOR,NEXTOPERATOR,Warning! entrance door is open,reminders-reminders
+721,256,f03c5777-7504-46b6-a131-1372ec560453,applianceState/all/allLight,home,alllight,action,OPERATOR,NEXTOPERATOR,invokeFunctions:changeApplianceState,home-alllight
+722,257,ba3a8e1a-637e-40f7-ac9a-3b0491d9e51c,environment/weather/currentWeather/@outdoorTemperature,todayweather,outdoortemperature,event,lessthen,and,10,todayweather-outdoortemperature
+723,257,ba3a8e1a-637e-40f7-ac9a-3b0491d9e51c,environment/sensors/@temperature,bedroom,temperature,condition,lessthen,rule,18,bedroom-temperature
+724,257,ba3a8e1a-637e-40f7-ac9a-3b0491d9e51c,Reminders,reminders,reminders,action,OPERATOR,NEXTOPERATOR,turn on the heaters!,reminders-reminders
+725,258,207b26a0-fd92-49a9-9e25-a87801ad0582,environment/sensors/@smokeSensor,kitchen,smokesensor,event,equal,and,VALUE,kitchen-smokesensor
+726,258,207b26a0-fd92-49a9-9e25-a87801ad0582,technology/appliance/@door,microwave,door,condition,equal,rule,CLOSE,microwave-door
+727,258,207b26a0-fd92-49a9-9e25-a87801ad0582,Reminders,reminders,reminders,action,OPERATOR,NEXTOPERATOR,The food is burned!,reminders-reminders
+728,258,207b26a0-fd92-49a9-9e25-a87801ad0582,applianceState/Kitchen/lightColor,kitchen,hue color light kitchen,action,OPERATOR,NEXTOPERATOR,update:lightColor,kitchen-hue color light kitchen
+729,259,317223e4-7ba2-423d-9e0b-234370cd6093,XPATH,relativeposition,typeofproximity,event,inside,NEXTOPERATOR,bedroom,relativeposition-typeofproximity
+730,259,317223e4-7ba2-423d-9e0b-234370cd6093,Reminders,reminders,reminders,action,OPERATOR,NEXTOPERATOR,"Wake up, it's your birthday!!",reminders-reminders
+731,259,317223e4-7ba2-423d-9e0b-234370cd6093,applianceState/Bedroom/lightColor,bedroom,hue color light bedroom,action,OPERATOR,NEXTOPERATOR,update:lightColor,bedroom-hue color light bedroom
+732,260,3babc39c-0d72-4164-a9d7-574811379bd5,technology/appliance/@door,fridge,door,event,equal,rule,OPEN,fridge-door
+733,260,3babc39c-0d72-4164-a9d7-574811379bd5,Reminders,reminders,reminders,action,OPERATOR,none,Close the fridge door,reminders-reminders
+734,261,f1155ab6-efa4-4c3b-8092-d246e10c2e94,technology/appliance/@door,microwave,door,event,equal,rule,CLOSE,microwave-door
+735,261,f1155ab6-efa4-4c3b-8092-d246e10c2e94,Alarms,alarms,alarms,action,OPERATOR,none,Microwave door open!,alarms-alarms
+736,262,05563d27-ee09-45ac-b04e-d68000d85ef7,environment/@doorSensor,bathroom,doorsensor,event,equal,and,OPEN,bathroom-doorsensor
+737,262,05563d27-ee09-45ac-b04e-d68000d85ef7,environment/@doorSensor,bathroom,doorsensor,condition,equal,rule,OPEN,bathroom-doorsensor
+738,262,05563d27-ee09-45ac-b04e-d68000d85ef7,Reminders,reminders,reminders,action,OPERATOR,none,Close the bathroom door!,reminders-reminders
+739,263,3d44bc55-492b-47a0-966e-6b4c87005b92,environment/currentWeather/@wind,currentweather,wind,condition,morethen,and,5,currentweather-wind
+740,263,3d44bc55-492b-47a0-966e-6b4c87005b92,environment/@temperatureLevel,corridor,temperaturelevel,event,lessthen,rule,18,corridor-temperaturelevel
+741,263,3d44bc55-492b-47a0-966e-6b4c87005b92,Alarms,alarms,alarms,action,OPERATOR,none,alarm text,alarms-alarms
+742,264,ff00953a-8558-40e1-9a67-fef83416b488,user/position/timeInsideARoom/@timeInsideBathroom,timeinsidearoom,timeinsidebathroom,event,morethen,and,10,timeinsidearoom-timeinsidebathroom
+743,264,ff00953a-8558-40e1-9a67-fef83416b488,technology/light/@state,bathroomlight,state,condition,equal,rule,OFF,bathroomlight-state
+744,264,ff00953a-8558-40e1-9a67-fef83416b488,Reminders,reminders,reminders,action,OPERATOR,parallel,bathroom light is on for too long,reminders-reminders
+745,264,ff00953a-8558-40e1-9a67-fef83416b488,Alarms,alarms,alarms,action,OPERATOR,none,Someone is sick in the bathroom,alarms-alarms
+746,265,78206a21-cf1f-47b4-9d59-01111fb75031,technology/appliance/@door,microwave,door,condition,equal,rule,OPEN,microwave-door
+747,265,78206a21-cf1f-47b4-9d59-01111fb75031,Reminders,reminders,reminders,action,OPERATOR,none,Remember not to leave the door open,reminders-reminders
+748,266,a8f0fba9-8035-4d44-8935-35e5d6ac4c2f,technology/light/@state,corridorlightstrip,state,condition,equal,rule,OFF,corridorlightstrip-state
+749,266,a8f0fba9-8035-4d44-8935-35e5d6ac4c2f,Alarms,alarms,alarms,action,OPERATOR,parallel,turn the ligths off,alarms-alarms
+750,266,a8f0fba9-8035-4d44-8935-35e5d6ac4c2f,applianceState/Corridor/allLight,corridor,alllight,action,OPERATOR,none,invokeFunctions:changeApplianceState,corridor-alllight
+751,267,7fe54200-4c74-45e3-9d7a-07cd3dc53db3,environment/currentWeather/@snow,currentweather,snow,event,equal,and,true,currentweather-snow
+752,267,7fe54200-4c74-45e3-9d7a-07cd3dc53db3,environment/currentWeather/@outdoorTemperature,currentweather,outdoortemperature,condition,lessthen,rule,0,currentweather-outdoortemperature
+753,267,7fe54200-4c74-45e3-9d7a-07cd3dc53db3,Reminders,reminders,reminders,action,OPERATOR,none,It's snowing!,reminders-reminders
+754,268,ba2dd0cc-033d-4110-9aa8-c024163994fd,environment/dateTime/@localTime,datetime,localtime,condition,equal,and,10:00,datetime-localtime
+755,268,ba2dd0cc-033d-4110-9aa8-c024163994fd,technology/light/@state,kitchenlight,state,condition,equal,rule,ON,kitchenlight-state
+756,268,ba2dd0cc-033d-4110-9aa8-c024163994fd,Alarms,alarms,alarms,action,OPERATOR,parallel,ligths on,alarms-alarms
+757,268,ba2dd0cc-033d-4110-9aa8-c024163994fd,applianceState/Kitchen/allLight,kitchen,alllight,action,OPERATOR,none,invokeFunctions:changeApplianceState,kitchen-alllight
+758,269,c7a78444-787b-4389-8507-5edfaa7146e1,technology/light/@state,bathroomlight,state,condition,equal,and,OFF,bathroomlight-state
+759,269,c7a78444-787b-4389-8507-5edfaa7146e1,user/vocalInput/@vocalString,vocalinput,vocalstring,event,equal,rule,TURN_ON_LIGHT_IN_BATHROOM_COLOR_WHITE,vocalinput-vocalstring
+760,269,c7a78444-787b-4389-8507-5edfaa7146e1,applianceState/Bathroom/allLight,bathroom,alllight,action,OPERATOR,parallel,invokeFunctions:changeApplianceState,bathroom-alllight
+761,269,c7a78444-787b-4389-8507-5edfaa7146e1,Reminders,reminders,reminders,action,OPERATOR,none,Remember to turn on the bathroom light,reminders-reminders
+762,270,af1dee69-74a9-4d8e-88bd-13a8c9f166f4,environment/@gasSensor,kitchen,gassensor,event,equal,rule,true,kitchen-gassensor
+763,270,af1dee69-74a9-4d8e-88bd-13a8c9f166f4,Reminders,reminders,reminders,action,OPERATOR,none,The gas sensor is active!,reminders-reminders
+764,271,87b6eb4e-d5de-4bbd-af2a-955fc471cece,technology/light/@state,corridorlightstrip,state,condition,equal,rule,OFF,corridorlightstrip-state
+765,271,87b6eb4e-d5de-4bbd-af2a-955fc471cece,Alarms,alarms,alarms,action,OPERATOR,parallel,"Attention, the lights in the corridor are on, remember to turn them off!",alarms-alarms
+766,271,87b6eb4e-d5de-4bbd-af2a-955fc471cece,applianceState/Entrance/lightColor,entrance,hue color light entrance,action,OPERATOR,none,update:lightColor,entrance-hue color light entrance
+767,272,8d8b2346-f0ce-4e0b-b139-5f0cf123fdad,environment/twentyFourHoursWeatherForecast/@outdoorCondition,twentyfourhoursweatherforecast,outdoorcondition,event,equal,or,SNOW,twentyfourhoursweatherforecast-outdoorcondition
+768,272,8d8b2346-f0ce-4e0b-b139-5f0cf123fdad,environment/twentyFourHoursWeatherForecast/@outdoorTemperature,twentyfourhoursweatherforecast,outdoortemperature,condition,equal,rule,0,twentyfourhoursweatherforecast-outdoortemperature
+769,272,8d8b2346-f0ce-4e0b-b139-5f0cf123fdad,Reminders,reminders,reminders,action,OPERATOR,none,"Snow is expected tomorrow, remember to put snow chains on the car!",reminders-reminders
+770,273,d1dde5e1-4fd1-4990-a19c-09fca9177df3,environment/@doorSensor,entrance,doorsensor,event,equal,or,OPEN,entrance-doorsensor
+771,273,d1dde5e1-4fd1-4990-a19c-09fca9177df3,technology/light/@state,entrancelight,state,event,equal,rule,ON,entrancelight-state
+772,273,d1dde5e1-4fd1-4990-a19c-09fca9177df3,Alarms,alarms,alarms,action,OPERATOR,parallel,Attention! The entrance light is on and the door sensor is active,alarms-alarms
+773,273,d1dde5e1-4fd1-4990-a19c-09fca9177df3,applianceState/all/allLight,all,alllight,action,OPERATOR,none,invokeFunctions:changeApplianceState,all-alllight
+774,274,6e205e9f-5b16-4613-8be9-f404de84639f,user/activity/sleep/@bedOccupancy,sleep,bedoccupancy,event,equal,and,IN,sleep-bedoccupancy
+775,274,6e205e9f-5b16-4613-8be9-f404de84639f,technology/light/@state,bedroomlight,state,condition,equal,rule,OFF,bedroomlight-state
+776,274,6e205e9f-5b16-4613-8be9-f404de84639f,Reminders,reminders,reminders,action,OPERATOR,parallel,The alarm rings in 5 minutes,reminders-reminders
+777,274,6e205e9f-5b16-4613-8be9-f404de84639f,applianceState/Bedroom/allLight,bedroom,alllight,action,OPERATOR,none,invokeFunctions:changeApplianceState,bedroom-alllight
+778,275,87f16af0-0f9f-4380-8dc2-0a7ca3ccd2bb,technology/appliance/@door,fridge,door,condition,equal,rule,OPEN,fridge-door
+779,275,87f16af0-0f9f-4380-8dc2-0a7ca3ccd2bb,Reminders,reminders,reminders,action,OPERATOR,none,Remember not to leave the fridge open,reminders-reminders
+780,276,00517cf9-84a2-4cea-a0ba-2c7d190412e9,technology/light/@state,kitchenlight,state,condition,equal,rule,OFF,kitchenlight-state
+781,276,00517cf9-84a2-4cea-a0ba-2c7d190412e9,Alarms,alarms,alarms,action,OPERATOR,parallel,You left the light off in the kitchen ,alarms-alarms
+782,276,00517cf9-84a2-4cea-a0ba-2c7d190412e9,applianceState/Kitchen/allLight,kitchen,alllight,action,OPERATOR,none,invokeFunctions:changeApplianceState,kitchen-alllight
+783,277,fb6607a4-1870-4dee-880f-9c7cc4e335db,environment/currentWeather/@snow,currentweather,snow,event,equal,and,true,currentweather-snow
+784,277,fb6607a4-1870-4dee-880f-9c7cc4e335db,environment/dateTime/@localTime,datetime,localtime,condition,equal,rule,14:00,datetime-localtime
+785,277,fb6607a4-1870-4dee-880f-9c7cc4e335db,Reminders,reminders,reminders,action,OPERATOR,none,It's snowing! No beach volleyball today at 2.20pm,reminders-reminders
+786,278,d71a450c-c41a-44ae-a64b-608173c6fb48,environment/dateTime/@localTime,datetime,localtime,condition,equal,and,17:00,datetime-localtime
+787,278,d71a450c-c41a-44ae-a64b-608173c6fb48,technology/light/@state,livingroomlight,state,condition,equal,rule,OFF,livingroomlight-state
+788,278,d71a450c-c41a-44ae-a64b-608173c6fb48,Alarms,alarms,alarms,action,OPERATOR,parallel,The light in the living room is still off!,alarms-alarms
+789,278,d71a450c-c41a-44ae-a64b-608173c6fb48,applianceState/LivingRoom/allLight,livingroom,alllight,action,OPERATOR,none,invokeFunctions:changeApplianceState,livingroom-alllight
+790,279,2229d546-182b-4d82-aea4-9882bb033c3b,technology/light/@state,bathroomlight,state,condition,equal,and,OFF,bathroomlight-state
+791,279,2229d546-182b-4d82-aea4-9882bb033c3b,user/vocalInput/@vocalString,vocalinput,vocalstring,event,equal,rule,TURN_OFF_LIGHT_IN_BATHROOM,vocalinput-vocalstring
+792,279,2229d546-182b-4d82-aea4-9882bb033c3b,applianceState/Bathroom/allLight,bathroom,alllight,action,OPERATOR,parallel,invokeFunctions:changeApplianceState,bathroom-alllight
+793,279,2229d546-182b-4d82-aea4-9882bb033c3b,Reminders,reminders,reminders,action,OPERATOR,none,Remember to turn off the lights in the bathroom,reminders-reminders
+794,280,a99544c2-1637-4cd0-8265-413ca8afa40a,environment/@motion,corridor,motion,event,equal,rule,VALUE,corridor-motion
+795,280,a99544c2-1637-4cd0-8265-413ca8afa40a,applianceState/Corridor/allLight,corridor,alllight,action,OPERATOR,none,invokeFunctions:changeApplianceState,corridor-alllight
+796,281,67b20012-afb2-4068-918b-3442fb2dbf3b,technology/appliance/@door,fridge,door,event,equal,rule,CLOSE,fridge-door
+797,281,67b20012-afb2-4068-918b-3442fb2dbf3b,Alarms,alarms,alarms,action,OPERATOR,sequential,put out a beep sound,alarms-alarms
+798,281,67b20012-afb2-4068-918b-3442fb2dbf3b,applianceState/Kitchen/allLight,kitchen,alllight,action,OPERATOR,none,invokeFunctions:changeApplianceState,kitchen-alllight
+799,282,b977ab5e-7580-444d-bda4-b3c67f6ca854,environment/twentyFourHoursWeatherForecast/@outdoorTemperature,twentyfourhoursweatherforecast,outdoortemperature,event,morethen,and,90,twentyfourhoursweatherforecast-outdoortemperature
+800,282,b977ab5e-7580-444d-bda4-b3c67f6ca854,user/physiological/@heartRate,physiological,heartrate,condition,morethen,rule,40,physiological-heartrate
+801,282,b977ab5e-7580-444d-bda4-b3c67f6ca854,Reminders,reminders,reminders,action,OPERATOR,none,do not go out for jogging,reminders-reminders
+802,283,32e55ff9-fd68-4917-b380-a39ac2e4747f,environment/@gasSensor,kitchen,gassensor,condition,equal,and,true,kitchen-gassensor
+803,283,32e55ff9-fd68-4917-b380-a39ac2e4747f,technology/appliance/@door,microwave,door,condition,equal,rule,OPEN,microwave-door
+804,283,32e55ff9-fd68-4917-b380-a39ac2e4747f,Alarms,alarms,alarms,action,OPERATOR,parallel,trigger alarm beeps,alarms-alarms
+805,283,32e55ff9-fd68-4917-b380-a39ac2e4747f,applianceState/Kitchen/@scene,kitchen,activate,action,OPERATOR,none,invokeFunctions:lightScene,kitchen-activate
+806,284,2ad96dfa-b7e4-4011-96e6-8dd32f0a408d,user/position/timeInsideARoom/@timeInsideBathroom,timeinsidearoom,timeinsidebathroom,event,morethen,and,50,timeinsidearoom-timeinsidebathroom
+807,284,2ad96dfa-b7e4-4011-96e6-8dd32f0a408d,environment/@temperatureLevel,bathroom,temperaturelevel,condition,morethen,rule,30,bathroom-temperaturelevel
+808,284,2ad96dfa-b7e4-4011-96e6-8dd32f0a408d,applianceState/Bathroom/@scene,bathroom,activate,action,OPERATOR,parallel,invokeFunctions:lightScene,bathroom-activate
+809,284,2ad96dfa-b7e4-4011-96e6-8dd32f0a408d,Reminders,reminders,reminders,action,OPERATOR,none,get out of the bathroom,reminders-reminders
+810,285,90a8be0f-f4ba-4f40-ad21-b15df24160e3,environment/@doorSensor,kitchen,doorsensor,condition,equal,rule,OPEN,kitchen-doorsensor
+811,285,90a8be0f-f4ba-4f40-ad21-b15df24160e3,Reminders,reminders,reminders,action,OPERATOR,none,check that the fridge door is closed,reminders-reminders
+812,286,2c0e5a8d-378a-40d7-ad77-6734360b0da1,environment/@lightLevel,bathroom,lightlevel,event,equal,rule,DARK,bathroom-lightlevel
+813,286,2c0e5a8d-378a-40d7-ad77-6734360b0da1,Alarms,alarms,alarms,action,OPERATOR,parallel,Turning off the bathroom lights,alarms-alarms
+814,286,2c0e5a8d-378a-40d7-ad77-6734360b0da1,applianceState/Bathroom/allLight,bathroom,alllight,action,OPERATOR,none,invokeFunctions:changeApplianceState,bathroom-alllight
+815,287,9d469a8c-2992-4d84-ae5d-93f4b4d29863,environment/currentWeather/@rain,currentweather,rain,condition,equal,and,true,currentweather-rain
+816,287,9d469a8c-2992-4d84-ae5d-93f4b4d29863,environment/currentWeather/@outdoorTemperature,currentweather,outdoortemperature,condition,lessthen,rule,5,currentweather-outdoortemperature
+817,287,9d469a8c-2992-4d84-ae5d-93f4b4d29863,Reminders,reminders,reminders,action,OPERATOR,none,Remember the umbrella and cover yourself that it's cold outside,reminders-reminders
+818,288,43737060-be2a-43aa-b422-aa0e93d22aea,environment/@lightLevel,kitchen,lightlevel,condition,equal,and,DAY_LIGHT,kitchen-lightlevel
+819,288,43737060-be2a-43aa-b422-aa0e93d22aea,environment/@lightLevel,kitchen,lightlevel,condition,equal,rule,NO_LIGHT,kitchen-lightlevel
+820,288,43737060-be2a-43aa-b422-aa0e93d22aea,applianceState/Kitchen/allLight,kitchen,alllight,action,OPERATOR,parallel,invokeFunctions:changeApplianceState,kitchen-alllight
+821,288,43737060-be2a-43aa-b422-aa0e93d22aea,Alarms,alarms,alarms,action,OPERATOR,none,It's morning,alarms-alarms
+822,289,95e27c0a-cae4-42c6-a019-e973af71c6d8,user/position/timeInsideARoom/@timeInsideBedroom,timeinsidearoom,timeinsidebedroom,condition,equal,and,30,timeinsidearoom-timeinsidebedroom
+823,289,95e27c0a-cae4-42c6-a019-e973af71c6d8,technology/light/@temperature,bedroomlight,temperature,condition,morethen,rule,20,bedroomlight-temperature
+824,289,95e27c0a-cae4-42c6-a019-e973af71c6d8,applianceState/Bedroom/allLight,bedroom,alllight,action,OPERATOR,parallel,invokeFunctions:changeApplianceState,bedroom-alllight
+825,289,95e27c0a-cae4-42c6-a019-e973af71c6d8,Reminders,reminders,reminders,action,OPERATOR,none,The light bulb is overheating too much,reminders-reminders
+826,290,44bdee03-c7e8-4e2a-a554-a88d8a681126,technology/light/@brightness,bathroomlight,brightness,event,lessthen,rule,20,bathroomlight-brightness
+827,290,44bdee03-c7e8-4e2a-a554-a88d8a681126,Reminders,reminders,reminders,action,OPERATOR,none,Enjoy your relax,reminders-reminders
+828,291,c571d1f5-cb32-4cdd-a821-6718f6d5857a,user/position/relativePosition/@typeOfProximity,relativeposition,typeofproximity,event,inside,rule,HOUSE,relativeposition-typeofproximity
+829,291,c571d1f5-cb32-4cdd-a821-6718f6d5857a,Alarms,alarms,alarms,action,OPERATOR,sequential,I turned the lights off,alarms-alarms
+830,291,c571d1f5-cb32-4cdd-a821-6718f6d5857a,applianceState/all/allLight,all,alllight,action,OPERATOR,none,invokeFunctions:changeApplianceState,all-alllight
+831,292,a893843d-ac1f-43bd-a596-bc7ff2d5787b,environment/@gasSensor,kitchen,gassensor,event,equal,and,true,kitchen-gassensor
+832,292,a893843d-ac1f-43bd-a596-bc7ff2d5787b,environment/@windowSensor,kitchen,windowsensor,condition,equal,rule,CLOSE,kitchen-windowsensor
+833,292,a893843d-ac1f-43bd-a596-bc7ff2d5787b,Reminders,reminders,reminders,action,OPERATOR,none,"Open the window, too much gas",reminders-reminders
+834,293,380b253b-4232-42d9-8e50-8cf2d3ad03e9,environment/@lightLevel,livingroom,lightlevel,condition,equal,and,DAY_LIGHT,livingroom-lightlevel
+835,293,380b253b-4232-42d9-8e50-8cf2d3ad03e9,technology/light/@state,livingroomlight,state,condition,equal,rule,ON,livingroomlight-state
+836,293,380b253b-4232-42d9-8e50-8cf2d3ad03e9,Alarms,alarms,alarms,action,OPERATOR,sequential,Artificial light is not needed now,alarms-alarms
+837,293,380b253b-4232-42d9-8e50-8cf2d3ad03e9,applianceState/LivingRoom/allLight,livingroom,alllight,action,OPERATOR,none,invokeFunctions:changeApplianceState,livingroom-alllight
+838,294,3a8f6042-d858-47f1-a56f-be164b5660c7,user/position/relativePosition/@typeOfProximity,relativeposition,typeofproximity,event,outside,and,BEDROOM,relativeposition-typeofproximity
+839,294,3a8f6042-d858-47f1-a56f-be164b5660c7,technology/light/@state,bedroomlight,state,condition,equal,rule,ON,bedroomlight-state
+840,294,3a8f6042-d858-47f1-a56f-be164b5660c7,applianceState/Bedroom/allLight,bedroom,alllight,action,OPERATOR,parallel,invokeFunctions:changeApplianceState,bedroom-alllight
+841,294,3a8f6042-d858-47f1-a56f-be164b5660c7,Reminders,reminders,reminders,action,OPERATOR,none,Remember to turn the lights off,reminders-reminders
+842,295,223b41e2-eaad-4c47-bdc1-f0fecdd251e5,technology/appliance/@door,fridge,door,event,equal,rule,OPEN,fridge-door
+843,295,223b41e2-eaad-4c47-bdc1-f0fecdd251e5,Reminders,reminders,reminders,action,OPERATOR,none,Close the fridge door,reminders-reminders
+844,296,87bdd514-0cd0-40e3-9e1f-967bf87d2fe3,environment/@lightLevel,bedroom,lightlevel,event,equal,rule,NO_LIGHT,bedroom-lightlevel
+845,296,87bdd514-0cd0-40e3-9e1f-967bf87d2fe3,applianceState/Bedroom/allLight,bedroom,alllight,action,OPERATOR,parallel,invokeFunctions:changeApplianceState,bedroom-alllight
+846,296,87bdd514-0cd0-40e3-9e1f-967bf87d2fe3,Alarms,alarms,alarms,action,OPERATOR,none,Lights off,alarms-alarms
+847,297,f2a72957-979f-47f4-a982-2a90cc2a1d11,environment/@temperatureLevel,entrance,temperaturelevel,event,lessthen,and,15,entrance-temperaturelevel
+848,297,f2a72957-979f-47f4-a982-2a90cc2a1d11,environment/@windowSensor,entrance,windowsensor,condition,equal,rule,OPEN,entrance-windowsensor
+849,297,f2a72957-979f-47f4-a982-2a90cc2a1d11,Reminders,reminders,reminders,action,OPERATOR,none,turn on the heaters and close the windows,reminders-reminders
+850,298,99098b12-51c4-4a6a-ba4b-c5f2536f4852,environment/@windowSensor,livingroom,windowsensor,condition,equal,and,CLOSE,livingroom-windowsensor
+851,298,99098b12-51c4-4a6a-ba4b-c5f2536f4852,environment/@lightLevel,livingroom,lightlevel,condition,equal,rule,DARK,livingroom-lightlevel
+852,298,99098b12-51c4-4a6a-ba4b-c5f2536f4852,Alarms,alarms,alarms,action,OPERATOR,parallel,Lights on,alarms-alarms
+853,298,99098b12-51c4-4a6a-ba4b-c5f2536f4852,applianceState/LivingRoom/allLight,livingroom,alllight,action,OPERATOR,none,invokeFunctions:changeApplianceState,livingroom-alllight
+854,299,70a49e19-82dd-4ca6-a7df-94e431b651b9,user/position/relativePosition/@typeOfProximity,relativeposition,typeofproximity,event,inside,and,BATHROOM,relativeposition-typeofproximity
+855,299,70a49e19-82dd-4ca6-a7df-94e431b651b9,technology/light/@state,bathroomlight,state,condition,equal,rule,OFF,bathroomlight-state
+856,299,70a49e19-82dd-4ca6-a7df-94e431b651b9,applianceState/Bathroom/lightColor,bathroom,hue color light bathroom,action,OPERATOR,parallel,update:lightColor,bathroom-hue color light bathroom
+857,299,70a49e19-82dd-4ca6-a7df-94e431b651b9,Reminders,reminders,reminders,action,OPERATOR,none,Light changed,reminders-reminders
+858,300,77ce0957-67cc-4624-b1bc-ccad80039fd5,technology/appliance/@door,fridge,door,event,equal,rule,OPEN,fridge-door
+859,300,77ce0957-67cc-4624-b1bc-ccad80039fd5,Reminders,reminders,reminders,action,OPERATOR,none,The fridge is open,reminders-reminders
+860,301,df8a5ab5-51a2-40ee-9275-9b0d3d1709bf,user/cognitive/@vocalEmotionalState,cognitive,vocalemotionalstate,condition,equal,and,HAPPY,cognitive-vocalemotionalstate
+861,301,df8a5ab5-51a2-40ee-9275-9b0d3d1709bf,environment/dateTime/@localTime,datetime,localtime,condition,equal,rule,00:00,datetime-localtime
+862,301,df8a5ab5-51a2-40ee-9275-9b0d3d1709bf,applianceState/all/@scene,all,relax,action,OPERATOR,parallel,invokeFunctions:lightScene,all-relax
+863,301,df8a5ab5-51a2-40ee-9275-9b0d3d1709bf,Alarms,alarms,alarms,action,OPERATOR,none,In the midst of all difficulties there is an opportunity,alarms-alarms
+864,302,0de4d88c-4dc3-43c6-b3a8-86c69dd6ae0c,environment/currentWeather/@outdoorTemperature,currentweather,outdoortemperature,condition,lessthen,and,2,currentweather-outdoortemperature
+865,302,0de4d88c-4dc3-43c6-b3a8-86c69dd6ae0c,environment/@temperatureLevel,bedroom,temperaturelevel,condition,lessthen,rule,8,bedroom-temperaturelevel
+866,302,0de4d88c-4dc3-43c6-b3a8-86c69dd6ae0c,Reminders,reminders,reminders,action,OPERATOR,none,Bedroom temperature is low,reminders-reminders
+867,303,4548688d-27a2-47ef-8b49-8c86735ffb2f,environment/@lightLevel,livingroom,lightlevel,condition,equal,and,NORMAL_LIGHT,livingroom-lightlevel
+868,303,4548688d-27a2-47ef-8b49-8c86735ffb2f,environment/dateTime/@localTime,datetime,localtime,condition,equal,and,09:00,datetime-localtime
+869,303,4548688d-27a2-47ef-8b49-8c86735ffb2f,technology/light/@state,livingroomlight,state,condition,equal,rule,OFF,livingroomlight-state
+870,303,4548688d-27a2-47ef-8b49-8c86735ffb2f,applianceState/LivingRoom/allLight,livingroom,alllight,action,OPERATOR,parallel,invokeFunctions:changeApplianceState,livingroom-alllight
+871,303,4548688d-27a2-47ef-8b49-8c86735ffb2f,Alarms,alarms,alarms,action,OPERATOR,none,Light level is low. Turn the lights on,alarms-alarms
+872,304,b52ecd33-8da1-41d9-8d98-a9403921c8c9,user/position/relativePosition/@typeOfProximity,relativeposition,typeofproximity,event,outside,and,HOUSE,relativeposition-typeofproximity
+873,304,b52ecd33-8da1-41d9-8d98-a9403921c8c9,technology/light/@state,greatluminaire,state,condition,equal,rule,ON,greatluminaire-state
+874,304,b52ecd33-8da1-41d9-8d98-a9403921c8c9,applianceState/all/allLight,all,alllight,action,OPERATOR,sequential,invokeFunctions:changeApplianceState,all-alllight
+875,304,b52ecd33-8da1-41d9-8d98-a9403921c8c9,Reminders,reminders,reminders,action,OPERATOR,none,You forgotten the lights on. I turned them off,reminders-reminders
+876,305,0b6e1f61-37a8-46ae-b564-08a2acab9467,technology/appliance/@door,fridge,door,condition,equal,rule,OPEN,fridge-door
+877,305,0b6e1f61-37a8-46ae-b564-08a2acab9467,Alarms,alarms,alarms,action,OPERATOR,none,Close the fridge door!,alarms-alarms
+878,306,a6d6347f-aaf7-40f3-955f-3925aa596f64,environment/@lightLevel,livingroom,lightlevel,condition,equal,rule,DARK,livingroom-lightlevel
+879,306,a6d6347f-aaf7-40f3-955f-3925aa596f64,Alarms,alarms,alarms,action,OPERATOR,parallel,"You forgot the light on in the living room! I will take care of that, be careful!",alarms-alarms
+880,306,a6d6347f-aaf7-40f3-955f-3925aa596f64,applianceState/LivingRoom/allLight,livingroom,alllight,action,OPERATOR,none,invokeFunctions:changeApplianceState,livingroom-alllight
+881,307,97fa200c-e40b-4005-934e-f056f3726b10,environment/currentWeather/@outdoorCondition,currentweather,outdoorcondition,event,equal,and,THUNDERSTORM,currentweather-outdoorcondition
+882,307,97fa200c-e40b-4005-934e-f056f3726b10,environment/currentWeather/@rainQuantity,currentweather,rainquantity,condition,morethen,rule,40,currentweather-rainquantity
+883,307,97fa200c-e40b-4005-934e-f056f3726b10,Reminders,reminders,reminders,action,OPERATOR,none,Unplug everything and check for flooding!,reminders-reminders
+884,308,76f3a3b4-8176-41be-9f14-cccda1076bdc,environment/@lightLevel,livingroom,lightlevel,condition,equal,and,NO_LIGHT,livingroom-lightlevel
+885,308,76f3a3b4-8176-41be-9f14-cccda1076bdc,technology/light/@state,livingroomlight,state,condition,equal,rule,OFF,livingroomlight-state
+886,308,76f3a3b4-8176-41be-9f14-cccda1076bdc,Alarms,alarms,alarms,action,OPERATOR,parallel,You left the lights out in the living room!,alarms-alarms
+887,308,76f3a3b4-8176-41be-9f14-cccda1076bdc,applianceState/LivingRoom/allLight,livingroom,alllight,action,OPERATOR,none,invokeFunctions:changeApplianceState,livingroom-alllight
+888,309,e82b5429-8ab6-46e7-8cf7-5288457bda54,user/personalData/@age,personaldata,age,condition,morethen,and,65,personaldata-age
+889,309,e82b5429-8ab6-46e7-8cf7-5288457bda54,technology/light/@state,corridorlightstrip,state,event,equal,rule,OFF,corridorlightstrip-state
+890,309,e82b5429-8ab6-46e7-8cf7-5288457bda54,Reminders,reminders,reminders,action,OPERATOR,parallel,"The light strip in the corridor has gone out, be careful!",reminders-reminders
+891,309,e82b5429-8ab6-46e7-8cf7-5288457bda54,applianceState/Corridor/allLight,corridor,alllight,action,OPERATOR,none,invokeFunctions:changeApplianceState,corridor-alllight
+892,310,c2484597-0465-4170-9113-b1687feba6c3,technology/appliance/@door,microwave,door,condition,equal,rule,OPEN,microwave-door
+893,310,c2484597-0465-4170-9113-b1687feba6c3,Reminders,reminders,reminders,action,OPERATOR,none,Microwave door is open!,reminders-reminders
+894,311,03adea31-6ed3-4bc7-a1a3-fe23f0f95986,environment/@smokeSensor,corridor,smokesensor,condition,equal,rule,true,corridor-smokesensor
+895,311,03adea31-6ed3-4bc7-a1a3-fe23f0f95986,Alarms,alarms,alarms,action,OPERATOR,parallel,Warning! Corridor smoke sensor is not active,alarms-alarms
+896,311,03adea31-6ed3-4bc7-a1a3-fe23f0f95986,applianceState/Corridor/lightColor,corridor,light strip corridor,action,OPERATOR,none,update:lightColor,corridor-light strip corridor
+897,312,8e1de6c7-d722-4f2b-9774-7c14ad405b37,environment/currentWeather/@rain,currentweather,rain,event,equal,and,true,currentweather-rain
+898,312,8e1de6c7-d722-4f2b-9774-7c14ad405b37,environment/currentWeather/@outdoorPressure,currentweather,outdoorpressure,condition,morethen,rule,50,currentweather-outdoorpressure
+899,312,8e1de6c7-d722-4f2b-9774-7c14ad405b37,Reminders,reminders,reminders,action,OPERATOR,none,Avoid going out today!,reminders-reminders
+900,313,8d5d5944-a76c-4510-bfdb-4838e8674da3,environment/@noiseLevel,entrance,noiselevel,condition,morethen,and,0,entrance-noiselevel
+901,313,8d5d5944-a76c-4510-bfdb-4838e8674da3,technology/light/@state,entrancelight,state,condition,equal,rule,OFF,entrancelight-state
+902,313,8d5d5944-a76c-4510-bfdb-4838e8674da3,Alarms,alarms,alarms,action,OPERATOR,parallel,Noise heard at the entrance!,alarms-alarms
+903,313,8d5d5944-a76c-4510-bfdb-4838e8674da3,applianceState/Entrance/allLight,entrance,alllight,action,OPERATOR,none,invokeFunctions:changeApplianceState,entrance-alllight
+904,314,aad9f8b8-87cb-49a2-8d1d-de7b9316a885,user/activity/sleep/@sleepDuration,sleep,sleepduration,event,morethen,and,600,sleep-sleepduration
+905,314,aad9f8b8-87cb-49a2-8d1d-de7b9316a885,technology/light/@state,bedroomportablelight,state,condition,equal,rule,OFF,bedroomportablelight-state
+906,314,aad9f8b8-87cb-49a2-8d1d-de7b9316a885,applianceState/Bedroom/allLight,bedroom,alllight,action,OPERATOR,parallel,invokeFunctions:changeApplianceState,bedroom-alllight
+907,314,aad9f8b8-87cb-49a2-8d1d-de7b9316a885,Reminders,reminders,reminders,action,OPERATOR,none,It's time to get out of bed!,reminders-reminders
+908,315,9457edfe-9c00-4fbd-9e6d-c048e3480066,technology/light/@state,entrancelight,state,event,equal,rule,ON,entrancelight-state
+909,315,9457edfe-9c00-4fbd-9e6d-c048e3480066,Reminders,reminders,reminders,action,OPERATOR,none,Someone is entering!,reminders-reminders
+910,316,9df6f0b7-7b6b-44e2-99f1-91d16e3609aa,environment/@doorSensor,entrance,doorsensor,condition,equal,rule,CLOSE,entrance-doorsensor
+911,316,9df6f0b7-7b6b-44e2-99f1-91d16e3609aa,Alarms,alarms,alarms,action,OPERATOR,parallel,Door open,alarms-alarms
+912,316,9df6f0b7-7b6b-44e2-99f1-91d16e3609aa,applianceState/Entrance/allLight,entrance,alllight,action,OPERATOR,none,invokeFunctions:changeApplianceState,entrance-alllight
+913,317,9adb84c4-9fd1-49c8-ab9f-3aa9493d070e,environment/@lightLevel,kitchen,lightlevel,event,equal,and,NO_LIGHT,kitchen-lightlevel
+914,317,9adb84c4-9fd1-49c8-ab9f-3aa9493d070e,environment/@gasSensor,kitchen,gassensor,condition,equal,rule,true,kitchen-gassensor
+915,317,9adb84c4-9fd1-49c8-ab9f-3aa9493d070e,Reminders,reminders,reminders,action,OPERATOR,none,"Careful, stoves on!",reminders-reminders
+916,318,72fa6809-ff66-44ba-b118-bdc79fce603a,environment/dateTime/@localTime,datetime,localtime,condition,equal,and,20:00,datetime-localtime
+917,318,72fa6809-ff66-44ba-b118-bdc79fce603a,technology/light/@state,kitchenlight,state,condition,equal,rule,OFF,kitchenlight-state
+918,318,72fa6809-ff66-44ba-b118-bdc79fce603a,Alarms,alarms,alarms,action,OPERATOR,parallel,It's dinner time,alarms-alarms
+919,318,72fa6809-ff66-44ba-b118-bdc79fce603a,applianceState/Kitchen/allLight,kitchen,alllight,action,OPERATOR,none,invokeFunctions:changeApplianceState,kitchen-alllight
+920,319,d350592e-c8c1-42fb-95f8-6312e11f7dae,user/position/relativePosition/@typeOfProximity,relativeposition,typeofproximity,event,inside,and,BATHROOM,relativeposition-typeofproximity
+921,319,d350592e-c8c1-42fb-95f8-6312e11f7dae,technology/light/@state,bathroomlight,state,condition,equal,rule,OFF,bathroomlight-state
+922,319,d350592e-c8c1-42fb-95f8-6312e11f7dae,applianceState/Bathroom/allLight,bathroom,alllight,action,OPERATOR,sequential,invokeFunctions:changeApplianceState,bathroom-alllight
+923,319,d350592e-c8c1-42fb-95f8-6312e11f7dae,Reminders,reminders,reminders,action,OPERATOR,none,Remember to turn off the light when you leave the bathroom,reminders-reminders
+924,320,faeaaca5-a9dd-4940-bac1-ce554af61501,technology/appliance/@door,fridge,door,condition,equal,rule,CLOSE,fridge-door
+925,320,faeaaca5-a9dd-4940-bac1-ce554af61501,Reminders,reminders,reminders,action,OPERATOR,none,Fridge door is open,reminders-reminders
+926,321,2d71e9da-38c0-41f7-870a-53143a6a857c,user/physiological/@steps,physiological,steps,condition,morethen,rule,1999,physiological-steps
+927,321,2d71e9da-38c0-41f7-870a-53143a6a857c,Alarms,alarms,alarms,action,OPERATOR,parallel,Your daily step goal has not been reached,alarms-alarms
+928,321,2d71e9da-38c0-41f7-870a-53143a6a857c,applianceState/All/@scene,all,activate,action,OPERATOR,none,invokeFunctions:lightScene,all-activate
+929,322,8a4e3a06-dd38-4306-b96e-67f390f04bec,environment/currentWeather/@outdoorTemperature,currentweather,outdoortemperature,condition,lessthen,and,16,currentweather-outdoortemperature
+930,322,8a4e3a06-dd38-4306-b96e-67f390f04bec,environment/currentWeather/@rain,currentweather,rain,event,equal,rule,true,currentweather-rain
+931,322,8a4e3a06-dd38-4306-b96e-67f390f04bec,Reminders,reminders,reminders,action,OPERATOR,none,Take the umbrella and the scarf,reminders-reminders
+932,323,8130fbcc-ac90-4d9b-b346-510dff298de2,user/cognitive/@cognitiveState,cognitive,cognitivestate,condition,equal,or,MEMORY_LOSSES_ASSOCIATED_WITH_AGE,cognitive-cognitivestate
+933,323,8130fbcc-ac90-4d9b-b346-510dff298de2,user/personalData/@age,personaldata,age,condition,morethen,rule,70,personaldata-age
+934,323,8130fbcc-ac90-4d9b-b346-510dff298de2,Alarms,alarms,alarms,action,OPERATOR,none,Remember to check if the bathroom window is closed,alarms-alarms
+935,324,9702c921-2b60-4eb9-9e10-7f3a8115a9eb,environment/@lightLevel,livingroom,lightlevel,condition,equal,and,DAY_LIGHT,livingroom-lightlevel
+936,324,9702c921-2b60-4eb9-9e10-7f3a8115a9eb,user/cognitive/@vocalEmotionalState,cognitive,vocalemotionalstate,event,equal,rule,ANGRY,cognitive-vocalemotionalstate
+937,324,9702c921-2b60-4eb9-9e10-7f3a8115a9eb,applianceState/LivingRoom/@scene,livingroom,relax,action,OPERATOR,parallel,invokeFunctions:lightScene,livingroom-relax
+938,324,9702c921-2b60-4eb9-9e10-7f3a8115a9eb,Reminders,reminders,reminders,action,OPERATOR,none,Remember to take breaks and relax,reminders-reminders
+939,325,d6b4b1fd-9984-47bd-ac7c-14c0728240ec,technology/appliance/@door,fridge,door,event,equal,rule,OPEN,fridge-door
+940,325,d6b4b1fd-9984-47bd-ac7c-14c0728240ec,Reminders,reminders,reminders,action,OPERATOR,none,Remember to close the fridge door!,reminders-reminders
+941,326,f37da45e-cf7a-443c-a2d0-56e64d73fc30,user/physiological/@heartRate,physiological,heartrate,event,equal,rule,60,physiological-heartrate
+942,326,f37da45e-cf7a-443c-a2d0-56e64d73fc30,applianceState/Bedroom/lightColor,bedroom,hue color light bedroom,action,OPERATOR,parallel,update:lightColor,bedroom-hue color light bedroom
+943,326,f37da45e-cf7a-443c-a2d0-56e64d73fc30,Alarms,alarms,alarms,action,OPERATOR,none,alarm text,alarms-alarms
+944,327,6fd3a03e-7e2d-4a21-af76-52d7f9fc09b6,environment/currentWeather/@outdoorCondition,currentweather,outdoorcondition,condition,equal,and,RAIN,currentweather-outdoorcondition
+945,327,6fd3a03e-7e2d-4a21-af76-52d7f9fc09b6,environment/@windowSensor,livingroom,windowsensor,condition,equal,rule,OPEN,livingroom-windowsensor
+946,327,6fd3a03e-7e2d-4a21-af76-52d7f9fc09b6,Reminders,reminders,reminders,action,OPERATOR,none,"It's raining, close the living room window!",reminders-reminders
+947,328,4c6d2b24-e524-4cd4-9c8d-c226dfafdfff,environment/@temperatureLevel,bathroom,temperaturelevel,event,lessthen,and,13,bathroom-temperaturelevel
+948,328,4c6d2b24-e524-4cd4-9c8d-c226dfafdfff,environment/@lightLevel,bathroom,lightlevel,condition,equal,rule,NO_LIGHT,bathroom-lightlevel
+949,328,4c6d2b24-e524-4cd4-9c8d-c226dfafdfff,Reminders,reminders,reminders,action,OPERATOR,parallel,Bathroom temperature is less then 13 degrees,reminders-reminders
+950,328,4c6d2b24-e524-4cd4-9c8d-c226dfafdfff,applianceState/Bathroom/allLight,bathroom,alllight,action,OPERATOR,none,invokeFunctions:changeApplianceState,bathroom-alllight
+951,329,f6e221d3-71d0-4e0a-b163-797cd76bb229,user/physiological/@heartRate,physiological,heartrate,event,morethen,and,90,physiological-heartrate
+952,329,f6e221d3-71d0-4e0a-b163-797cd76bb229,technology/light/@color,livingroomlight,color,condition,equal,rule,YELLOW,livingroomlight-color
+953,329,f6e221d3-71d0-4e0a-b163-797cd76bb229,Reminders,reminders,reminders,action,OPERATOR,parallel,Hearth rate more than 90 BPM,reminders-reminders
+954,329,f6e221d3-71d0-4e0a-b163-797cd76bb229,applianceState/Bedroom/allLight,bedroom,alllight,action,OPERATOR,none,invokeFunctions:changeApplianceState,bedroom-alllight
+955,330,58490467-e378-4520-a4b4-2fb9fe0cd1e4,technology/appliance/@door,microwave,door,event,equal,rule,OPEN,microwave-door
+956,330,58490467-e378-4520-a4b4-2fb9fe0cd1e4,Reminders,reminders,reminders,action,OPERATOR,none,Check the container,reminders-reminders
+957,331,97d9cd02-3059-431c-b517-fbec8821adad,environment/@lightLevel,bedroom,lightlevel,condition,equal,rule,DARK,bedroom-lightlevel
+958,331,97d9cd02-3059-431c-b517-fbec8821adad,Alarms,alarms,alarms,action,OPERATOR,parallel,Rest time,alarms-alarms
+959,331,97d9cd02-3059-431c-b517-fbec8821adad,applianceState/Bedroom/allLight,bedroom,alllight,action,OPERATOR,none,invokeFunctions:changeApplianceState,bedroom-alllight
+960,332,489a1ab7-e949-4e99-99c0-a1ecda9e8a28,environment/@temperatureLevel,bedroom,temperaturelevel,event,lessthen,and,18,bedroom-temperaturelevel
+961,332,489a1ab7-e949-4e99-99c0-a1ecda9e8a28,environment/@windowSensor,bedroom,windowsensor,condition,equal,rule,OPEN,bedroom-windowsensor
+962,332,489a1ab7-e949-4e99-99c0-a1ecda9e8a28,Reminders,reminders,reminders,action,OPERATOR,none,Close the bedroom window,reminders-reminders
+963,333,223ff7c1-8e07-4160-a6fa-1d2b9885bc6a,environment/@motion,corridor,motion,condition,equal,and,VALUE,corridor-motion
+964,333,223ff7c1-8e07-4160-a6fa-1d2b9885bc6a,technology/light/@state,corridorlightstrip,state,condition,equal,rule,ON,corridorlightstrip-state
+965,333,223ff7c1-8e07-4160-a6fa-1d2b9885bc6a,Alarms,alarms,alarms,action,OPERATOR,parallel,"Unused corridor lights, shutdown",alarms-alarms
+966,333,223ff7c1-8e07-4160-a6fa-1d2b9885bc6a,applianceState/Corridor/allLight,corridor,alllight,action,OPERATOR,none,invokeFunctions:changeApplianceState,corridor-alllight
+967,334,802d471d-4f00-42ca-9315-d1d2df58dfeb,user/position/relativePosition/@typeOfProximity,relativeposition,typeofproximity,event,inside,and,HOUSE,relativeposition-typeofproximity
+968,334,802d471d-4f00-42ca-9315-d1d2df58dfeb,technology/light/@state,entrancelight,state,condition,equal,rule,OFF,entrancelight-state
+969,334,802d471d-4f00-42ca-9315-d1d2df58dfeb,applianceState/Entrance/allLight,entrance,alllight,action,OPERATOR,parallel,invokeFunctions:changeApplianceState,entrance-alllight
+970,334,802d471d-4f00-42ca-9315-d1d2df58dfeb,Reminders,reminders,reminders,action,OPERATOR,none,Data connection disabled,reminders-reminders
+971,335,906e4ede-4ae4-4f39-b76c-d5e5dd15f9f5,technology/light/@state,kitchenlight,state,event,equal,rule,OFF,kitchenlight-state
+972,335,906e4ede-4ae4-4f39-b76c-d5e5dd15f9f5,Reminders,reminders,reminders,action,OPERATOR,none,Close the window,reminders-reminders
+973,336,222ac1fc-b9e8-40e2-b74f-18aff10d9075,environment/@doorSensor,entrance,doorsensor,event,equal,rule,CLOSE,entrance-doorsensor
+974,336,222ac1fc-b9e8-40e2-b74f-18aff10d9075,applianceState/Entrance/allLight,entrance,alllight,action,OPERATOR,parallel,invokeFunctions:changeApplianceState,entrance-alllight
+975,336,222ac1fc-b9e8-40e2-b74f-18aff10d9075,Alarms,alarms,alarms,action,OPERATOR,none,Door open,alarms-alarms
+976,337,608770bc-a4fc-4847-a328-e06df3dd7aa6,environment/@noiseLevel,bathroom,noiselevel,condition,equal,and,10,bathroom-noiselevel
+977,337,608770bc-a4fc-4847-a328-e06df3dd7aa6,technology/light/@state,bathroomlight,state,event,equal,rule,OFF,bathroomlight-state
+978,337,608770bc-a4fc-4847-a328-e06df3dd7aa6,Reminders,reminders,reminders,action,OPERATOR,none,Turn off the tap,reminders-reminders
+979,338,92d540ed-78c3-467c-ae04-7ed4e741a8e4,environment/currentWeather/@rain,currentweather,rain,condition,equal,and,VALUE,currentweather-rain
+980,338,92d540ed-78c3-467c-ae04-7ed4e741a8e4,environment/@windowSensor,bedroom,windowsensor,condition,equal,rule,OPEN,bedroom-windowsensor
+981,338,92d540ed-78c3-467c-ae04-7ed4e741a8e4,Alarms,alarms,alarms,action,OPERATOR,sequential,It's raining,alarms-alarms
+982,338,92d540ed-78c3-467c-ae04-7ed4e741a8e4,applianceState/Corridor/allLight,corridor,alllight,action,OPERATOR,none,invokeFunctions:changeApplianceState,corridor-alllight
+983,339,d60414e4-a5ce-4944-a7e2-46f2e5c9a1dc,user/position/timeInsideARoom/@timeInsideBedroom,timeinsidearoom,timeinsidebedroom,event,equal,and,600,timeinsidearoom-timeinsidebedroom
+984,339,d60414e4-a5ce-4944-a7e2-46f2e5c9a1dc,technology/light/@state,bedroomlight,state,condition,equal,rule,OFF,bedroomlight-state
+985,339,d60414e4-a5ce-4944-a7e2-46f2e5c9a1dc,applianceState/Bedroom/allLight,bedroom,alllight,action,OPERATOR,parallel,invokeFunctions:changeApplianceState,bedroom-alllight
+986,339,d60414e4-a5ce-4944-a7e2-46f2e5c9a1dc,Alarms,alarms,alarms,action,OPERATOR,none,Wake up!,alarms-alarms
+987,340,a52e6930-4690-4c40-9027-0ce2ede78385,technology/light/@state,bathroomlight,state,condition,equal,rule,ON,bathroomlight-state
+988,340,a52e6930-4690-4c40-9027-0ce2ede78385,Reminders,reminders,reminders,action,OPERATOR,none,Microwave door open,reminders-reminders
+989,341,622823b5-0c16-4d12-8791-44810e3eaeaa,technology/light/@state,bathroomlight,state,event,equal,rule,OFF,bathroomlight-state
+990,341,622823b5-0c16-4d12-8791-44810e3eaeaa,applianceState/Bathroom/allLight,bathroom,alllight,action,OPERATOR,sequential,invokeFunctions:changeApplianceState,bathroom-alllight
+991,341,622823b5-0c16-4d12-8791-44810e3eaeaa,Alarms,alarms,alarms,action,OPERATOR,none,Bathroom light on,alarms-alarms
+992,342,ef5e9914-017e-4d5a-8a03-5dc5beb24a79,environment/currentWeather/@rain,currentweather,rain,condition,equal,and,VALUE,currentweather-rain
+993,342,ef5e9914-017e-4d5a-8a03-5dc5beb24a79,environment/@windowSensor,livingroom,windowsensor,event,equal,rule,OPEN,livingroom-windowsensor
+994,342,ef5e9914-017e-4d5a-8a03-5dc5beb24a79,Reminders,reminders,reminders,action,OPERATOR,none,You left the windows open!,reminders-reminders
+995,343,ed2bcec2-770e-47dc-8587-0eaa74dd2416,environment/dateTime/@localTime,datetime,localtime,condition,equal,and,00:00,datetime-localtime
+996,343,ed2bcec2-770e-47dc-8587-0eaa74dd2416,technology/light/@state,bedroomlight,state,condition,equal,rule,ON,bedroomlight-state
+997,343,ed2bcec2-770e-47dc-8587-0eaa74dd2416,applianceState/Bedroom/allLight,bedroom,alllight,action,OPERATOR,sequential,invokeFunctions:changeApplianceState,bedroom-alllight
+998,343,ed2bcec2-770e-47dc-8587-0eaa74dd2416,Alarms,alarms,alarms,action,OPERATOR,none,It's midnight,alarms-alarms
+999,344,4fc8858a-cd6b-4f1a-b7e8-93aa17d970d3,user/position/relativePosition/@typeOfProximity,relativeposition,typeofproximity,condition,inside,and,LIVINGROOM,relativeposition-typeofproximity
+1000,344,4fc8858a-cd6b-4f1a-b7e8-93aa17d970d3,technology/light/@state,livingroomlight,state,condition,equal,rule,OFF,livingroomlight-state
+1001,344,4fc8858a-cd6b-4f1a-b7e8-93aa17d970d3,applianceState/LivingRoom/greatLuminare,livingroom,livingroom-greatluminare,action,OPERATOR,sequential,custom:greatLuminare,livingroom-livingroom-greatluminare
+1002,344,4fc8858a-cd6b-4f1a-b7e8-93aa17d970d3,Reminders,reminders,reminders,action,OPERATOR,none,light on,reminders-reminders
+1003,345,e8c3719d-f690-4af6-a32a-d04e181fccb3,technology/appliance/@door,fridge,door,event,equal,rule,OPEN,fridge-door
+1004,345,e8c3719d-f690-4af6-a32a-d04e181fccb3,Reminders,reminders,reminders,action,OPERATOR,none,Close the fridge door,reminders-reminders
+1005,346,9ea8641c-a8bc-4720-9525-ea6bcef64db8,technology/light/@state,bathroomlight,state,condition,equal,rule,ON,bathroomlight-state
+1006,346,9ea8641c-a8bc-4720-9525-ea6bcef64db8,Alarms,alarms,alarms,action,OPERATOR,sequential,Bathroom light is off,alarms-alarms
+1007,346,9ea8641c-a8bc-4720-9525-ea6bcef64db8,applianceState/Bathroom/allLight,bathroom,alllight,action,OPERATOR,none,invokeFunctions:changeApplianceState,bathroom-alllight
+1008,347,f9d4f430-c28b-49bc-a77d-5cd345868fd9,environment/@smokeSensor,livingroom,smokesensor,event,equal,and,VALUE,livingroom-smokesensor
+1009,347,f9d4f430-c28b-49bc-a77d-5cd345868fd9,environment/@windowSensor,kitchen,windowsensor,condition,equal,rule,CLOSE,kitchen-windowsensor
+1010,347,f9d4f430-c28b-49bc-a77d-5cd345868fd9,Reminders,reminders,reminders,action,OPERATOR,none,open the window,reminders-reminders
+1011,348,cf9cca3a-6357-4006-9a7d-47a169a9c6dd,environment/@lightLevel,livingroom,lightlevel,condition,equal,and,DARK,livingroom-lightlevel
+1012,348,cf9cca3a-6357-4006-9a7d-47a169a9c6dd,technology/light/@temperature,livingroomlight,temperature,event,lessthen,rule,20,livingroomlight-temperature
+1013,348,cf9cca3a-6357-4006-9a7d-47a169a9c6dd,applianceState/LivingRoom/@scene,livingroom,biorhythmlight,action,OPERATOR,parallel,invokeFunctions:lightScene,livingroom-biorhythmlight
+1014,348,cf9cca3a-6357-4006-9a7d-47a169a9c6dd,Alarms,alarms,alarms,action,OPERATOR,none,cold,alarms-alarms
+1015,349,f2057522-b94d-42e2-85dc-a99397149b47,user/position/timeInsideARoom/@timeInsideBathroom,timeinsidearoom,timeinsidebathroom,event,morethen,and,2,timeinsidearoom-timeinsidebathroom
+1016,349,f2057522-b94d-42e2-85dc-a99397149b47,technology/light/@state,bathroomlight,state,condition,equal,rule,OFF,bathroomlight-state
+1017,349,f2057522-b94d-42e2-85dc-a99397149b47,applianceState/Bathroom/allLight,bathroom,alllight,action,OPERATOR,parallel,invokeFunctions:changeApplianceState,bathroom-alllight
+1018,349,f2057522-b94d-42e2-85dc-a99397149b47,Reminders,reminders,reminders,action,OPERATOR,none,the light was off,reminders-reminders
+1019,350,1c158300-d292-4a78-83ad-2352d71f820e,technology/light/@state,kitchenlight,state,event,equal,rule,ON,kitchenlight-state
+1020,350,1c158300-d292-4a78-83ad-2352d71f820e,Reminders,reminders,reminders,action,OPERATOR,none,Kitchen light remained on,reminders-reminders
+1021,351,f963f9c5-6c65-479e-a2fc-5627a0851060,environment/@doorSensor,entrance,doorsensor,event,equal,rule,CLOSE,entrance-doorsensor
+1022,351,f963f9c5-6c65-479e-a2fc-5627a0851060,Alarms,alarms,alarms,action,OPERATOR,parallel,The Door is open,alarms-alarms
+1023,351,f963f9c5-6c65-479e-a2fc-5627a0851060,applianceState/Bedroom/lightColor,bedroom,hue color light bedroom,action,OPERATOR,none,update:lightColor,bedroom-hue color light bedroom
+1024,352,257cf1df-2cfe-4d2e-856a-03ec9b3672aa,user/activity/sleep/@sleepDuration,sleep,sleepduration,condition,morethen,and,300,sleep-sleepduration
+1025,352,257cf1df-2cfe-4d2e-856a-03ec9b3672aa,environment/dateTime/@localTime,datetime,localtime,event,equal,rule,12:00,datetime-localtime
+1026,352,257cf1df-2cfe-4d2e-856a-03ec9b3672aa,Reminders,reminders,reminders,action,OPERATOR,none,Get up!!,reminders-reminders
+1027,353,a35d25dc-0ec9-4399-a64f-db2fc1c81b70,environment/currentWeather/@outdoorCondition,currentweather,outdoorcondition,condition,equal,and,THUNDERSTORM,currentweather-outdoorcondition
+1028,353,a35d25dc-0ec9-4399-a64f-db2fc1c81b70,technology/light/@state,livingroomlight,state,condition,equal,rule,ON,livingroomlight-state
+1029,353,a35d25dc-0ec9-4399-a64f-db2fc1c81b70,applianceState/LivingRoom/@scene,livingroom,relax,action,OPERATOR,parallel,invokeFunctions:lightScene,livingroom-relax
+1030,353,a35d25dc-0ec9-4399-a64f-db2fc1c81b70,Reminders,reminders,reminders,action,OPERATOR,none,It's raining outside,reminders-reminders
+1031,354,87275baa-5696-40ff-8746-41b74c0835fb,user/position/timeInsideARoom/@timeInsideBathroom,timeinsidearoom,timeinsidebathroom,event,morethen,and,20,timeinsidearoom-timeinsidebathroom
+1032,354,87275baa-5696-40ff-8746-41b74c0835fb,technology/light/@state,bathroomlight,state,event,equal,rule,OFF,bathroomlight-state
+1033,354,87275baa-5696-40ff-8746-41b74c0835fb,applianceState/Bathroom/allLight,bathroom,alllight,action,OPERATOR,parallel,invokeFunctions:changeApplianceState,bathroom-alllight
+1034,354,87275baa-5696-40ff-8746-41b74c0835fb,Reminders,reminders,reminders,action,OPERATOR,none,20 minutes in the bathroom,reminders-reminders
+1035,355,3d518f10-614d-4c41-b4d5-2406b513364b,technology/appliance/@door,fridge,door,event,equal,rule,OPEN,fridge-door
+1036,355,3d518f10-614d-4c41-b4d5-2406b513364b,Reminders,reminders,reminders,action,OPERATOR,NEXTOPERATOR,today you opened the fridge door $NumFridgeEvent times,reminders-reminders
+1037,356,bdc84ad8-55e8-439b-ad26-0776a946d4ef,user/cognitive/@trainingResult,cognitive,trainingresult,condition,equal,rule,STUPENDOUSLY,cognitive-trainingresult
+1038,356,bdc84ad8-55e8-439b-ad26-0776a946d4ef,Alarms,alarms,alarms,action,OPERATOR,NEXTOPERATOR,"tomorrow you will train better, now take a shower",alarms-alarms
+1039,356,bdc84ad8-55e8-439b-ad26-0776a946d4ef,Relax,bathroom,relax,action,OPERATOR,NEXTOPERATOR,invokeFunctions:lightScene,bathroom-relax
+1040,357,f82672ef-b75e-4b1d-8c7f-1804949b2dab,environment/@humidityLevel,bathroom,humiditylevel,event,morethen,and,65,bathroom-humiditylevel
+1041,357,f82672ef-b75e-4b1d-8c7f-1804949b2dab,environment/@temperatureLevel,bathroom,temperaturelevel,condition,lessthen,rule,20,bathroom-temperaturelevel
+1042,357,f82672ef-b75e-4b1d-8c7f-1804949b2dab,Reminders,reminders,reminders,action,OPERATOR,NEXTOPERATOR,remember to dehumidify the bathroom before use,reminders-reminders
+1043,358,32623968-24aa-4f5e-ab7b-34ca6fe6e64b,environment/@lightLevel,entrance,lightlevel,condition,equal,and,DARK,entrance-lightlevel
+1044,358,32623968-24aa-4f5e-ab7b-34ca6fe6e64b,technology/light/@state,entrancelight,state,condition,equal,rule,OFF,entrancelight-state
+1045,358,32623968-24aa-4f5e-ab7b-34ca6fe6e64b,alarms,alarms,alarms,action,OPERATOR,NEXTOPERATOR,make sure the entrance is lit,alarms-alarms
+1046,358,32623968-24aa-4f5e-ab7b-34ca6fe6e64b,AllLight,entrance,alllight,action,OPERATOR,NEXTOPERATOR,invokeFunctions:changeApplianceState,entrance-alllight
+1047,359,d4b37afb-c2b4-4e06-bb39-99586a29d2e7,user/vocalInput/@vocalString,vocalinput,vocalstring,event,equal,and,TURN_ON_LIGHT_IN_LIVING_ROOM,vocalinput-vocalstring
+1048,359,d4b37afb-c2b4-4e06-bb39-99586a29d2e7,technology/light/@state,livingroomlight,state,condition,equal,rule,OFF,livingroomlight-state
+1049,359,d4b37afb-c2b4-4e06-bb39-99586a29d2e7,AllLight,livingroom,alllight,action,OPERATOR,NEXTOPERATOR,invokeFunctions:changeApplianceState,livingroom-alllight
+1050,359,d4b37afb-c2b4-4e06-bb39-99586a29d2e7,Reminders,reminders,reminders,action,OPERATOR,NEXTOPERATOR,successful voice command,reminders-reminders
+1051,360,3eac9cc9-7bfa-4d1c-8018-1b4ba7c0a71c,technology/appliance/@state,heating system,state,condition,equal,rule,ON,heating system-state
+1052,360,3eac9cc9-7bfa-4d1c-8018-1b4ba7c0a71c,xPath missing!!,reminders,reminders,action,OPERATOR,NEXTOPERATOR,"""Il sistema di riscaldamento si ÃƒÂ¨ acceso""",reminders-reminders
+1053,361,af0cc42e-54e1-420b-bcdd-5d986dd032ad,user/positionOutside/@outSidePosition,test-user,outsideposition,condition,equal,rule,OFFICE,test-user-outsideposition
+1054,361,af0cc42e-54e1-420b-bcdd-5d986dd032ad,applianceState/all/allLight,home,alllight,action,OPERATOR,NEXTOPERATOR,invokeFunctions:changeApplianceState,home-alllight
+1055,361,af0cc42e-54e1-420b-bcdd-5d986dd032ad,xPath missing!!,reminders,reminders,action,OPERATOR,NEXTOPERATOR,"""La tua casa ti sta aspettando!""",reminders-reminders
+1056,362,f83ad79b-7d28-41c3-bae6-a4aa6fc6bb7c,environment/sensors/@temperature,bedroom,temperature,event,lessthen,and,21,bedroom-temperature
+1057,362,f83ad79b-7d28-41c3-bae6-a4aa6fc6bb7c,environment/sensors/@lightLevel,bedroom,lightlevel,condition,equal,rule,NO_LIGHT,bedroom-lightlevel
+1058,362,f83ad79b-7d28-41c3-bae6-a4aa6fc6bb7c,applianceState/Bedroom/lightColor,bedroom,hue color light bedroom,action,OPERATOR,NEXTOPERATOR,update:lightColor,bedroom-hue color light bedroom
+1059,363,21508356-e932-410f-bd37-de579ecddb85,environment/home/@securityIntrusion,home,securityintrusion,condition,equal,and,VALUE,home-securityintrusion
+1060,363,21508356-e932-410f-bd37-de579ecddb85,environment/sensors/@door,entrance,doorsensor,condition,equal,rule,OPEN,entrance-doorsensor
+1061,363,21508356-e932-410f-bd37-de579ecddb85,xPath missing!!,reminders,reminders,action,OPERATOR,NEXTOPERATOR,"""INTRUSIONE IN CORSO""",reminders-reminders
+1062,363,21508356-e932-410f-bd37-de579ecddb85,applianceState/all/allLight,home,alllight,action,OPERATOR,NEXTOPERATOR,invokeFunctions:changeApplianceState,home-alllight
+1063,364,786b69f4-963d-4c85-bff8-92ee2b2a47a3,user/alexaInput/@vocalSentence,test-user,vocalsentence,event,equal,and,"Alexa, make coffee",test-user-vocalsentence
+1064,364,786b69f4-963d-4c85-bff8-92ee2b2a47a3,technology/appliance/@state,coffee machine,state,condition,equal,rule,ON,coffee machine-state
+1065,364,786b69f4-963d-4c85-bff8-92ee2b2a47a3,applianceState/Kitchen/lightColor,kitchen,hue color light kitchen,action,OPERATOR,NEXTOPERATOR,update:lightColor,kitchen-hue color light kitchen
+1066,364,786b69f4-963d-4c85-bff8-92ee2b2a47a3,xPath missing!!,reminders,reminders,action,OPERATOR,NEXTOPERATOR,throw out the trash,reminders-reminders
+1067,365,445e6249-5d12-410b-8069-cae7880dd738,technology/device/@state,wi fi,state,event,equal,rule,OFF,wi fi-state
+1068,365,445e6249-5d12-410b-8069-cae7880dd738,xPath missing!!,reminders,reminders,action,OPERATOR,NEXTOPERATOR,Wifi has been turned off,reminders-reminders
+1069,366,b4d1cbf5-b58a-4be4-b343-b20a962fdb70,user/activity/@medicine,test-user,medicine,event,equal,rule,Medicina,test-user-medicine
+1070,366,b4d1cbf5-b58a-4be4-b343-b20a962fdb70,xPath missing!!,alarms,notificationmode,action,OPERATOR,NEXTOPERATOR,custom:notificationMode,alarms-notificationmode
+1071,366,b4d1cbf5-b58a-4be4-b343-b20a962fdb70,applianceState/all/allLight,home,alllight,action,OPERATOR,NEXTOPERATOR,invokeFunctions:changeApplianceState,home-alllight
+1072,367,8509bcd2-7995-4353-9d7e-f91686cabb88,environment/sensors/@lightLevel,entrance,lightlevel,condition,equal,and,NO_LIGHT,entrance-lightlevel
+1073,367,8509bcd2-7995-4353-9d7e-f91686cabb88,environment/sensors/@door,entrance,doorsensor,event,equal,rule,OPEN,entrance-doorsensor
+1074,367,8509bcd2-7995-4353-9d7e-f91686cabb88,applianceState/Entrance/lightColor,entrance,hue color light entrance,action,OPERATOR,NEXTOPERATOR,update:lightColor,entrance-hue color light entrance
+1075,368,cedcdc04-424a-4f11-8edf-57ed41abde51,environment/dateTime/@localTime,datetime,localtime,condition,equal,and,07:30,datetime-localtime
+1076,368,cedcdc04-424a-4f11-8edf-57ed41abde51,technology/light/@state,bedroom light,state,condition,equal,rule,OFF,bedroom light-state
+1077,368,cedcdc04-424a-4f11-8edf-57ed41abde51,amazonAlexa/@routineName,devices,alexa services,action,OPERATOR,NEXTOPERATOR,invokeFunctions:startRoutine,devices-alexa services
+1078,368,cedcdc04-424a-4f11-8edf-57ed41abde51,applianceState/Bedroom/lightColor,bedroom,hue color light bedroom,action,OPERATOR,NEXTOPERATOR,update:lightColor,bedroom-hue color light bedroom
+1079,369,d5cc437b-f50c-46f7-9f54-c34875ec770b,technology/appliance/@state,microwave,state,event,equal,and,ON,microwave-state
+1080,369,d5cc437b-f50c-46f7-9f54-c34875ec770b,XPATH,relativeposition,typeofproximity,condition,outside,NEXTOPERATOR,house,relativeposition-typeofproximity
+1081,369,d5cc437b-f50c-46f7-9f54-c34875ec770b,applianceState/LivingRoom/@microwave,kitchen,microwave,action,OPERATOR,NEXTOPERATOR,invokeFunctions:changeApplianceState,kitchen-microwave
+1082,369,d5cc437b-f50c-46f7-9f54-c34875ec770b,xPath missing!!,reminders,reminders,action,OPERATOR,NEXTOPERATOR,"""Il microonde ÃƒÂ¨ stato spento""",reminders-reminders
+1083,370,e3a6b678-f05a-4635-a15b-ae0ea21eff72,technology/device/@state,pc,state,event,equal,rule,ON,pc-state
+1084,370,e3a6b678-f05a-4635-a15b-ae0ea21eff72,xPath missing!!,reminders,reminders,action,OPERATOR,NEXTOPERATOR,put on your glasses when you are at the computer,reminders-reminders
+1085,371,81a4df7c-20a3-45cc-88a4-940d78bb81ef,environment/sensors/@windowSensor,bedroom,windowsensor,condition,equal,rule,OPEN,bedroom-windowsensor
+1086,371,81a4df7c-20a3-45cc-88a4-940d78bb81ef,applianceState/Bedroom/lightColor,bedroom,hue color light bedroom,action,OPERATOR,NEXTOPERATOR,update:lightColor,bedroom-hue color light bedroom
+1087,371,81a4df7c-20a3-45cc-88a4-940d78bb81ef,xPath missing!!,alarms,notificationmode,action,OPERATOR,NEXTOPERATOR,custom:notificationMode,alarms-notificationmode
+1088,371,81a4df7c-20a3-45cc-88a4-940d78bb81ef,xPath missing!!,alarms,notificationmode,action,OPERATOR,NEXTOPERATOR,custom:notificationMode,alarms-notificationmode
+1089,372,fcb51a1e-de2f-46c3-9751-fa0343961da1,user/physiological/@bodyTemperature,test-user,bodytemperature,event,morethen,and,38,test-user-bodytemperature
+1090,372,fcb51a1e-de2f-46c3-9751-fa0343961da1,environment/sensors/@temperature,bedroom,temperature,condition,lessthen,rule,20,bedroom-temperature
+1091,372,fcb51a1e-de2f-46c3-9751-fa0343961da1,applianceState/Bedroom/window,bedroom,window,action,OPERATOR,NEXTOPERATOR,invokeFunctions:changeDoorState,bedroom-window
+1092,372,fcb51a1e-de2f-46c3-9751-fa0343961da1,xPath missing!!,reminders,reminder,action,OPERATOR,NEXTOPERATOR,drink some water,reminders-reminder
+1093,373,a4220e4e-c495-469d-b2a8-2420beb0eb81,XPATH,relativeposition,typeofproximity,event,inside,NEXTOPERATOR,house,relativeposition-typeofproximity
+1094,373,a4220e4e-c495-469d-b2a8-2420beb0eb81,environment/weather/currentWeather/@outdoorTemperature,currentweather,outdoortemperature,condition,lessthen,rule,13,currentweather-outdoortemperature
+1095,373,a4220e4e-c495-469d-b2a8-2420beb0eb81,applianceState/bathroom/window,bathroom,window,action,OPERATOR,NEXTOPERATOR,invokeFunctions:changeDoorState,bathroom-window
+1096,374,a58caeef-f91e-4dad-b9e2-4c6f13c36547,environment/dateTime/@localTime,datetime,localtime,condition,equal,and,08:00,datetime-localtime
+1097,374,a58caeef-f91e-4dad-b9e2-4c6f13c36547,technology/appliance/@state,coffee machine,state,condition,equal,rule,OFF,coffee machine-state
+1098,374,a58caeef-f91e-4dad-b9e2-4c6f13c36547,applianceState/Bedroom/lightColor,bedroom,hue color light bedroom,action,OPERATOR,NEXTOPERATOR,update:lightColor,bedroom-hue color light bedroom
+1099,374,a58caeef-f91e-4dad-b9e2-4c6f13c36547,applianceState/LivingRoom/@coffeeMachine,kitchen,coffeemachine,action,OPERATOR,NEXTOPERATOR,invokeFunctions:changeApplianceState,kitchen-coffeemachine
+1100,375,43f63eb7-7f66-4b29-8d2a-103ac8f2b2f3,environment/home/@securityIntrusion,home,securityintrusion,event,equal,rule,VALUE,home-securityintrusion
+1101,375,43f63eb7-7f66-4b29-8d2a-103ac8f2b2f3,xPath missing!!,reminders,reminders,action,OPERATOR,NEXTOPERATOR,"it looks like someone has entered the house, be sure to call the police!",reminders-reminders
+1102,376,5d30a422-7466-43d5-9560-20c794871291,environment/sensors/@door,entrance,doorsensor,condition,equal,rule,CLOSE,entrance-doorsensor
+1103,376,5d30a422-7466-43d5-9560-20c794871291,xPath missing!!,alarms,notificationmode,action,OPERATOR,NEXTOPERATOR,custom:notificationMode,alarms-notificationmode
+1104,376,5d30a422-7466-43d5-9560-20c794871291,applianceState/all/allLight,home,alllight,action,OPERATOR,NEXTOPERATOR,invokeFunctions:changeApplianceState,home-alllight
+1105,377,88dd2b75-d7fe-4c58-bcec-5b8d411608ad,environment/sensors/@windowSensor,bedroom,windowsensor,condition,equal,and,OPEN,bedroom-windowsensor
+1106,377,88dd2b75-d7fe-4c58-bcec-5b8d411608ad,environment/weather/currentWeather/@rain,currentweather,rain,event,equal,rule,VALUE,currentweather-rain
+1107,377,88dd2b75-d7fe-4c58-bcec-5b8d411608ad,applianceState/Bedroom/window,bedroom,window,action,OPERATOR,NEXTOPERATOR,invokeFunctions:changeDoorState,bedroom-window
+1108,378,e6b92f35-413a-4a59-84c2-6d539fe639de,environment/dateTime/@localTime,datetime,localtime,condition,equal,and,09:00,datetime-localtime
+1109,378,e6b92f35-413a-4a59-84c2-6d539fe639de,user/activity/sleep/@bedInOut,test-user,bedinout,condition,equal,rule,IN,test-user-bedinout
+1110,378,e6b92f35-413a-4a59-84c2-6d539fe639de,applianceState/Bedroom/lightColor,bedroom,hue color light bedroom,action,OPERATOR,NEXTOPERATOR,update:lightColor,bedroom-hue color light bedroom
+1111,378,e6b92f35-413a-4a59-84c2-6d539fe639de,amazonAlexa/@routineName,devices,alexa services,action,OPERATOR,NEXTOPERATOR,invokeFunctions:startRoutine,devices-alexa services
+1112,379,3717f303-befd-481a-b94d-806aa6a59634,XPATH,relativeposition,typeofproximity,event,outside,NEXTOPERATOR,house,relativeposition-typeofproximity
+1113,379,3717f303-befd-481a-b94d-806aa6a59634,technology/appliance/@state,heating system,state,condition,equal,rule,ON,heating system-state
+1114,379,3717f303-befd-481a-b94d-806aa6a59634,applianceState/all/@heating,home,heating,action,OPERATOR,NEXTOPERATOR,invokeFunctions:changeApplianceState,home-heating
+1115,379,3717f303-befd-481a-b94d-806aa6a59634,xPath missing!!,reminders,reminders,action,OPERATOR,NEXTOPERATOR,"Remember to turn off the heating when you leave the house, you forgot that!",reminders-reminders
+1116,380,71bd0719-9e93-4c82-bd4a-385ef528c177,technology/appliance/@door,fridge,door,condition,equal,rule,OPEN,fridge-door
+1117,380,71bd0719-9e93-4c82-bd4a-385ef528c177,xPath missing!!,reminders,reminders,action,OPERATOR,NEXTOPERATOR,Close the fridge door,reminders-reminders
+1118,381,36884d9f-1d0f-4881-a7d3-8c54e6465155,environment/home/@electricity,home,electricity,condition,equal,rule,ON,home-electricity
+1119,381,36884d9f-1d0f-4881-a7d3-8c54e6465155,xPath missing!!,reminders,reminders,action,OPERATOR,NEXTOPERATOR,"attention, the power has gone out",reminders-reminders
+1120,381,36884d9f-1d0f-4881-a7d3-8c54e6465155,applianceState/LivingRoom/@fridge,kitchen,fridge,action,OPERATOR,NEXTOPERATOR,invokeFunctions:changeApplianceState,kitchen-fridge
+1121,382,4f3f6da9-9289-4436-8cec-b7229216166e,XPATH,relativeposition,typeofproximity,condition,outside,NEXTOPERATOR,house,relativeposition-typeofproximity
+1122,382,4f3f6da9-9289-4436-8cec-b7229216166e,environment/sensors/@smokeSensor,kitchen,smokesensor,event,equal,rule,VALUE,kitchen-smokesensor
+1123,382,4f3f6da9-9289-4436-8cec-b7229216166e,xPath missing!!,alarms,notificationmode,action,OPERATOR,NEXTOPERATOR,custom:notificationMode,alarms-notificationmode
+1124,383,2761f669-3ca4-411e-bab4-efefe410fadd,environment/weather/currentWeather/@outdoorTemperature,currentweather,outdoortemperature,condition,lessthen,and,15,currentweather-outdoortemperature
+1125,383,2761f669-3ca4-411e-bab4-efefe410fadd,technology/appliance/@state,heating system,state,condition,equal,rule,OFF,heating system-state
+1126,383,2761f669-3ca4-411e-bab4-efefe410fadd,applianceState/all/@heating,home,heating,action,OPERATOR,NEXTOPERATOR,invokeFunctions:changeApplianceState,home-heating
+1127,383,2761f669-3ca4-411e-bab4-efefe410fadd,xPath missing!!,reminders,reminders,action,OPERATOR,NEXTOPERATOR,"It's cold today, the heating has been turned on",reminders-reminders
+1128,384,8210555c-0ff1-47b0-9102-3e67edc4a97f,user/activity/@leisure,test-user,leisure,event,equal,and,READING,test-user-leisure
+1129,384,8210555c-0ff1-47b0-9102-3e67edc4a97f,technology/light/@state,bedroom light,state,condition,equal,rule,OFF,bedroom light-state
+1130,384,8210555c-0ff1-47b0-9102-3e67edc4a97f,applianceState/Bedroom/lightColor,bedroom,hue color light bedroom,action,OPERATOR,NEXTOPERATOR,update:lightColor,bedroom-hue color light bedroom
+1131,384,8210555c-0ff1-47b0-9102-3e67edc4a97f,xPath missing!!,reminders,reminders,action,OPERATOR,NEXTOPERATOR,Enjoy the reading!,reminders-reminders
+1132,385,ec597efa-163b-4917-b2c4-0498118f18c8,environment/sensors/@smokeSensor,garden,smokesensor,condition,equal,rule,VALUE,garden-smokesensor
+1133,385,ec597efa-163b-4917-b2c4-0498118f18c8,applianceState/all/allLight,home,alllight,action,OPERATOR,NEXTOPERATOR,invokeFunctions:changeApplianceState,home-alllight
+1134,385,ec597efa-163b-4917-b2c4-0498118f18c8,xPath missing!!,alarms,notificationmode,action,OPERATOR,NEXTOPERATOR,custom:notificationMode,alarms-notificationmode
+1135,386,80560aa6-92fc-43c8-8b4d-ff60132a8cf9,environment/weather/currentWeather/@rain,currentweather,rain,event,equal,and,VALUE,currentweather-rain
+1136,386,80560aa6-92fc-43c8-8b4d-ff60132a8cf9,environment/sensors/@windowSensor,bedroom,windowsensor,condition,equal,rule,OPEN,bedroom-windowsensor
+1137,386,80560aa6-92fc-43c8-8b4d-ff60132a8cf9,applianceState/Bedroom/lightColor,bedroom,hue color light bedroom,action,OPERATOR,NEXTOPERATOR,update:lightColor,bedroom-hue color light bedroom
+1138,387,ee6d4da4-c2df-4b7c-a887-8356479e45d4,environment/sensors/@lightLevel,living room,lightlevel,condition,equal,and,LOW_LIGHT,living room-lightlevel
+1139,387,ee6d4da4-c2df-4b7c-a887-8356479e45d4,technology/light/@state,light,state,condition,equal,rule,OFF,light-state
+1140,387,ee6d4da4-c2df-4b7c-a887-8356479e45d4,applianceState/LivingRoom/lightColor,living room,hue color light living room,action,OPERATOR,NEXTOPERATOR,update:lightColor,living room-hue color light living room
+1141,387,ee6d4da4-c2df-4b7c-a887-8356479e45d4,xPath missing!!,reminders,reminders,action,OPERATOR,NEXTOPERATOR,You ruin your eyes!,reminders-reminders
+1142,388,5079c34f-95ad-4616-b8a4-2c5f581a6f0c,user/physiological/@heartRate,test-user,heartrate,event,morethen,and,100,test-user-heartrate
+1143,388,5079c34f-95ad-4616-b8a4-2c5f581a6f0c,technology/device/@state,smartphone,state,condition,equal,or,ON,smartphone-state
+1144,388,5079c34f-95ad-4616-b8a4-2c5f581a6f0c,technology/device/@state,tablet,state,condition,equal,or,ON,tablet-state
+1145,388,5079c34f-95ad-4616-b8a4-2c5f581a6f0c,technology/device/@state,pc,state,condition,equal,rule,ON,pc-state
+1146,388,5079c34f-95ad-4616-b8a4-2c5f581a6f0c,applianceState/all/allLight,home,alllight,action,OPERATOR,NEXTOPERATOR,invokeFunctions:changeApplianceState,home-alllight
+1147,388,5079c34f-95ad-4616-b8a4-2c5f581a6f0c,xPath missing!!,reminders,reminders,action,OPERATOR,NEXTOPERATOR,hearth rate too high,reminders-reminders
+1148,389,b68da88b-1c6b-4420-957f-2f5a27b171dd,technology/appliance/@door,microwave,door,condition,equal,rule,OPEN,microwave-door
+1149,389,b68da88b-1c6b-4420-957f-2f5a27b171dd,xPath missing!!,reminders,reminders,action,OPERATOR,NEXTOPERATOR,Close the microwave door,reminders-reminders
+1150,390,56bfd1b5-62cc-4e13-a4b6-54448d175ae4,XPATH,relativeposition,typeofproximity,event,inside,NEXTOPERATOR,house,relativeposition-typeofproximity
+1151,390,56bfd1b5-62cc-4e13-a4b6-54448d175ae4,amazonAlexa/@routineName,devices,alexa services,action,OPERATOR,NEXTOPERATOR,invokeFunctions:startRoutine,devices-alexa services
+1152,391,4a7ad3a1-1330-4e96-b4a7-438b49f17279,user/activity/@medicine,test-user,medicine,condition,equal,rule,pressure pill,test-user-medicine
+1153,391,4a7ad3a1-1330-4e96-b4a7-438b49f17279,devices/Smartphone/@state,devices,smartphonetv,action,OPERATOR,NEXTOPERATOR,invokeFunctions:changeApplianceState,devices-smartphonetv
+1154,391,4a7ad3a1-1330-4e96-b4a7-438b49f17279,xPath missing!!,reminders,reminders,action,OPERATOR,NEXTOPERATOR,take the medicine,reminders-reminders
+1155,392,c1dcca97-e121-4cf4-a977-7ea694aaac18,XPATH,relativeposition,typeofproximity,event,outside,NEXTOPERATOR,garden,relativeposition-typeofproximity
+1156,392,c1dcca97-e121-4cf4-a977-7ea694aaac18,technology/appliance/@door,entrance,doorsensor,condition,equal,rule,CLOSE,entrance-doorsensor
+1157,392,c1dcca97-e121-4cf4-a977-7ea694aaac18,applianceState/all/allLight,home,alllight,action,OPERATOR,NEXTOPERATOR,invokeFunctions:changeApplianceState,home-alllight
+1158,393,5753c024-d134-49a1-a013-398dfac1bc1e,environment/sensors/@temperature,bedroom,temperature,condition,lessthen,and,25,bedroom-temperature
+1159,393,5753c024-d134-49a1-a013-398dfac1bc1e,technology/appliance/@state,heating system,state,condition,equal,rule,OFF,heating system-state
+1160,393,5753c024-d134-49a1-a013-398dfac1bc1e,devices/Smartphone/@state,devices,smartphonetv,action,OPERATOR,NEXTOPERATOR,invokeFunctions:changeApplianceState,devices-smartphonetv
+1161,393,5753c024-d134-49a1-a013-398dfac1bc1e,xPath missing!!,reminders,reminders,action,OPERATOR,NEXTOPERATOR,turn on heating system,reminders-reminders
+1162,394,ecffc641-7b22-4294-96af-cc010af5edf1,user/activity/@leisure,test-user,leisure,event,equal,and,WATCHING_TV,test-user-leisure
+1163,394,ecffc641-7b22-4294-96af-cc010af5edf1,technology/appliance/@door,fridge,door,condition,equal,rule,OPEN,fridge-door
+1164,394,ecffc641-7b22-4294-96af-cc010af5edf1,applianceState/Kitchen/lightColor,kitchen,hue color light kitchen,action,OPERATOR,NEXTOPERATOR,update:lightColor,kitchen-hue color light kitchen
+1165,394,ecffc641-7b22-4294-96af-cc010af5edf1,xPath missing!!,reminders,reminders,action,OPERATOR,NEXTOPERATOR,fridge door open,reminders-reminders
+1166,395,2ebd73e5-b2e4-4581-8153-5fffeadc41f1,technology/appliance/@state,coffee machine,state,event,equal,rule,OFF,coffee machine-state
+1167,395,2ebd73e5-b2e4-4581-8153-5fffeadc41f1,xPath missing!!,reminders,reminders,action,OPERATOR,NEXTOPERATOR,The coffee is ready!,reminders-reminders
+1168,396,73c6e0d0-16b8-422a-96d7-455b8099aa2b,environment/sensors/@gasSensor,kitchen,gassensor,event,equal,and,VALUE,kitchen-gassensor
+1169,396,73c6e0d0-16b8-422a-96d7-455b8099aa2b,environment/sensors/@windowSensor,kitchen,windowsensor,condition,equal,rule,CLOSE,kitchen-windowsensor
+1170,396,73c6e0d0-16b8-422a-96d7-455b8099aa2b,applianceState/all/window,home,allwindow,action,OPERATOR,NEXTOPERATOR,invokeFunctions:changeDoorState,home-allwindow
+1171,397,c6fbaf63-bd4a-4da0-9403-fe8afb21c4f7,environment/sensors/@windowSensor,bedroom,windowsensor,condition,equal,rule,CLOSE,bedroom-windowsensor
+1172,397,c6fbaf63-bd4a-4da0-9403-fe8afb21c4f7,xPath missing!!,alarms,notificationmode,action,OPERATOR,NEXTOPERATOR,custom:notificationMode,alarms-notificationmode
+1173,397,c6fbaf63-bd4a-4da0-9403-fe8afb21c4f7,applianceState/Bedroom/lightColor,bedroom,hue color light bedroom,action,OPERATOR,NEXTOPERATOR,update:lightColor,bedroom-hue color light bedroom
+1174,398,9d081711-422f-4bc7-89ad-b7328093f244,environment/dateTime/@localTime,datetime,localtime,condition,equal,and,23:00,datetime-localtime
+1175,398,9d081711-422f-4bc7-89ad-b7328093f244,technology/device/@state,tv,state,condition,equal,rule,ON,tv-state
+1176,398,9d081711-422f-4bc7-89ad-b7328093f244,devices/tv/@state,devices,tv,action,OPERATOR,NEXTOPERATOR,invokeFunctions:changeApplianceState,devices-tv
+1177,398,9d081711-422f-4bc7-89ad-b7328093f244,applianceState/all/allLight,home,alllight,action,OPERATOR,NEXTOPERATOR,invokeFunctions:changeApplianceState,home-alllight
+1178,399,b990f6c1-acdc-409c-ab10-6897d1306cc8,user/physiological/@sweatingType,test-user,sweatingtype,event,equal,and,HIGH,test-user-sweatingtype
+1179,399,b990f6c1-acdc-409c-ab10-6897d1306cc8,technology/appliance/@state,heating system,state,condition,equal,rule,ON,heating system-state
+1180,399,b990f6c1-acdc-409c-ab10-6897d1306cc8,applianceState/all/@heating,home,heating,action,OPERATOR,NEXTOPERATOR,invokeFunctions:changeApplianceState,home-heating
+1181,399,b990f6c1-acdc-409c-ab10-6897d1306cc8,xPath missing!!,reminders,reminders,action,OPERATOR,NEXTOPERATOR,I have turned off the heating!,reminders-reminders
+1182,400,d5dac887-08b8-44a2-8957-5fad0d5a3aa1,technology/appliance/@state,heating system,state,event,equal,rule,ON,heating system-state
+1183,400,d5dac887-08b8-44a2-8957-5fad0d5a3aa1,xPath missing!!,reminders,reminders,action,OPERATOR,NEXTOPERATOR,The heaters are on!,reminders-reminders
+1184,401,b0cfd5d1-0de7-4a2f-bb62-3c27eb3dff2c,environment/weather/currentWeather/@outdoorCondition,currentweather,outdoorcondition,event,equal,and,RAIN,currentweather-outdoorcondition
+1185,401,b0cfd5d1-0de7-4a2f-bb62-3c27eb3dff2c,environment/sensors/@windowSensor,living room,windowsensor,condition,equal,rule,OPEN,living room-windowsensor
+1186,401,b0cfd5d1-0de7-4a2f-bb62-3c27eb3dff2c,applianceState/LivingRoom/window,living room,window,action,OPERATOR,NEXTOPERATOR,invokeFunctions:changeDoorState,living room-window
+1187,402,2c81afe8-0fb6-4530-8b9b-95d14b739e71,environment/home/@electricity,home,electricity,condition,equal,rule,ON,home-electricity
+1188,402,2c81afe8-0fb6-4530-8b9b-95d14b739e71,xPath missing!!,alarms,notificationmode,action,OPERATOR,NEXTOPERATOR,custom:notificationMode,alarms-notificationmode
+1189,402,2c81afe8-0fb6-4530-8b9b-95d14b739e71,applianceState/Corridor/lightColor,corridor,light strip corridor,action,OPERATOR,NEXTOPERATOR,update:lightColor,corridor-light strip corridor
+1190,403,bb1cc258-5d1c-4a3a-8db8-01032911f8ac,environment/dateTime/@dayType,datetime,daytype,condition,equal,and,WEEK_DAYS,datetime-daytype
+1191,403,bb1cc258-5d1c-4a3a-8db8-01032911f8ac,environment/dateTime/@localTime,datetime,localtime,condition,equal,rule,08:00,datetime-localtime
+1192,403,bb1cc258-5d1c-4a3a-8db8-01032911f8ac,applianceState/Bedroom/lightColor,bedroom,hue color light bedroom,action,OPERATOR,NEXTOPERATOR,update:lightColor,bedroom-hue color light bedroom
+1193,403,bb1cc258-5d1c-4a3a-8db8-01032911f8ac,amazonAlexa/@routineName,devices,alexa services,action,OPERATOR,NEXTOPERATOR,invokeFunctions:startRoutine,devices-alexa services
+1194,404,8d5d5515-40f0-4615-a223-30684596bae8,XPATH,relativeposition,typeofproximity,event,outside,NEXTOPERATOR,house,relativeposition-typeofproximity
+1195,404,8d5d5515-40f0-4615-a223-30684596bae8,technology/appliance/@door,entrance,doorsensor,condition,equal,rule,OPEN,entrance-doorsensor
+1196,404,8d5d5515-40f0-4615-a223-30684596bae8,xPath missing!!,reminders,reminders,action,OPERATOR,NEXTOPERATOR,The door is left open!,reminders-reminders
+1197,404,8d5d5515-40f0-4615-a223-30684596bae8,applianceState/Corridor/door,entrance,door,action,OPERATOR,NEXTOPERATOR,invokeFunctions:changeDoorState,entrance-door
+1198,405,c55f5d20-5d3d-4c65-95ad-d70e29d0815d,technology/device/@state,tv,state,condition,equal,rule,ON,tv-state
+1199,405,c55f5d20-5d3d-4c65-95ad-d70e29d0815d,xPath missing!!,reminders,reminders,action,OPERATOR,NEXTOPERATOR,The TV is on,reminders-reminders
+1200,406,2800670d-cdba-4b87-99ee-a49690491940,environment/sensors/@temperature,bedroom,temperature,event,morethen,and,27,bedroom-temperature
+1201,406,2800670d-cdba-4b87-99ee-a49690491940,environment/sensors/@windowSensor,bedroom,windowsensor,condition,equal,rule,CLOSE,bedroom-windowsensor
+1202,406,2800670d-cdba-4b87-99ee-a49690491940,applianceState/Bedroom/window,bedroom,window,action,OPERATOR,NEXTOPERATOR,invokeFunctions:changeDoorState,bedroom-window
+1203,407,f8f2fa53-f02b-4ded-95bf-dbe7ff50eaf0,environment/sensors/@motion,living room,motion,event,equal,and,VALUE,living room-motion
+1204,407,f8f2fa53-f02b-4ded-95bf-dbe7ff50eaf0,technology/light/@state,light,state,condition,equal,rule,ON,light-state
+1205,407,f8f2fa53-f02b-4ded-95bf-dbe7ff50eaf0,devices/tv/@state,devices,tv,action,OPERATOR,NEXTOPERATOR,invokeFunctions:changeApplianceState,devices-tv
+1206,407,f8f2fa53-f02b-4ded-95bf-dbe7ff50eaf0,applianceState/LivingRoom/lightColor,living room,hue color light living room,action,OPERATOR,NEXTOPERATOR,update:lightColor,living room-hue color light living room
+1207,408,de845b52-95a8-4cdd-b862-3903d3fb1c77,technology/appliance/@door,entrance,doorsensor,condition,equal,rule,CLOSE,entrance-doorsensor
+1208,408,de845b52-95a8-4cdd-b862-3903d3fb1c77,xPath missing!!,alarms,notificationmode,action,OPERATOR,NEXTOPERATOR,custom:notificationMode,alarms-notificationmode
+1209,408,de845b52-95a8-4cdd-b862-3903d3fb1c77,applianceState/all/allLight,home,alllight,action,OPERATOR,NEXTOPERATOR,invokeFunctions:changeApplianceState,home-alllight
+1210,409,b82ab89f-8dea-46b9-9cf7-222ccc506995,user/positionOutside/@outSidePosition,test-user,outsideposition,event,equal,and,OFFICE,test-user-outsideposition
+1211,409,b82ab89f-8dea-46b9-9cf7-222ccc506995,technology/light/@state,light,state,condition,equal,rule,ON,light-state
+1212,409,b82ab89f-8dea-46b9-9cf7-222ccc506995,applianceState/LivingRoom/lightColor,living room,hue color light living room,action,OPERATOR,NEXTOPERATOR,update:lightColor,living room-hue color light living room
+1213,409,b82ab89f-8dea-46b9-9cf7-222ccc506995,xPath missing!!,reminders,reminders,action,OPERATOR,NEXTOPERATOR,"""hai dimenticato le luci accese""",reminders-reminders
+1214,410,248ed767-aea6-409a-b4e0-1e4c5635a3aa,technology/appliance/@door,entrance,doorsensor,event,equal,rule,OPEN,entrance-doorsensor
+1215,410,248ed767-aea6-409a-b4e0-1e4c5635a3aa,xPath missing!!,reminders,reminders,action,OPERATOR,NEXTOPERATOR,The front door has been opened,reminders-reminders
+1216,411,d7e52e20-0183-4ea4-a9db-85964eac3723,environment/sensors/@humidity,bathroom,humidity,event,morethen,and,70,bathroom-humidity
+1217,411,d7e52e20-0183-4ea4-a9db-85964eac3723,environment/sensors/@windowSensor,bathroom,windowsensor,condition,equal,rule,CLOSE,bathroom-windowsensor
+1218,411,d7e52e20-0183-4ea4-a9db-85964eac3723,applianceState/bathroom/window,bathroom,window,action,OPERATOR,NEXTOPERATOR,invokeFunctions:changeDoorState,bathroom-window
+1219,412,8d9f04ba-d278-47f5-83a8-cac7e8127b96,environment/weather/currentWeather/@outdoorCondition,currentweather,outdoorcondition,condition,equal,and,THUNDERSTORM,currentweather-outdoorcondition
+1220,412,8d9f04ba-d278-47f5-83a8-cac7e8127b96,technology/device/@state,tv,state,condition,equal,rule,ON,tv-state
+1221,412,8d9f04ba-d278-47f5-83a8-cac7e8127b96,devices/tv/@state,devices,tv,action,OPERATOR,NEXTOPERATOR,invokeFunctions:changeApplianceState,devices-tv
+1222,412,8d9f04ba-d278-47f5-83a8-cac7e8127b96,applianceState/all/allLight,home,alllight,action,OPERATOR,NEXTOPERATOR,invokeFunctions:changeApplianceState,home-alllight
+1223,413,690aaf07-9eb6-43d3-8467-5747a86635c9,technology/appliance/@door,entrance,doorsensor,condition,equal,rule,CLOSE,entrance-doorsensor
+1224,413,690aaf07-9eb6-43d3-8467-5747a86635c9,xPath missing!!,alarms,notificationmode,action,OPERATOR,NEXTOPERATOR,custom:notificationMode,alarms-notificationmode
+1225,413,690aaf07-9eb6-43d3-8467-5747a86635c9,applianceState/Bedroom/lightColor,bedroom,hue color light bedroom,action,OPERATOR,NEXTOPERATOR,update:lightColor,bedroom-hue color light bedroom
+1226,414,5d4dd1df-95e6-40dd-8910-4246c7373372,XPATH,relativeposition,typeofproximity,event,outside,NEXTOPERATOR,house,relativeposition-typeofproximity
+1227,414,5d4dd1df-95e6-40dd-8910-4246c7373372,technology/appliance/@state,heating system,state,condition,equal,rule,ON,heating system-state
+1228,414,5d4dd1df-95e6-40dd-8910-4246c7373372,applianceState/all/@heating,home,heating,action,OPERATOR,NEXTOPERATOR,invokeFunctions:changeApplianceState,home-heating
+1229,414,5d4dd1df-95e6-40dd-8910-4246c7373372,xPath missing!!,reminders,reminders,action,OPERATOR,NEXTOPERATOR,Heating off,reminders-reminders
+1230,415,59c00615-f5be-4791-9bc5-48d0108f0008,technology/device/@state,wi fi,state,event,equal,rule,OFF,wi fi-state
+1231,415,59c00615-f5be-4791-9bc5-48d0108f0008,xPath missing!!,reminders,reminders,action,OPERATOR,NEXTOPERATOR,Wifi is off! Check the internet connection,reminders-reminders
+1232,416,1c39d573-5777-4b3a-a8d3-5ac888e65ff4,environment/sensors/@gasSensor,bedroom,gassensor,condition,equal,rule,VALUE,bedroom-gassensor
+1233,416,1c39d573-5777-4b3a-a8d3-5ac888e65ff4,xPath missing!!,alarms,notificationmode,action,OPERATOR,NEXTOPERATOR,custom:notificationMode,alarms-notificationmode
+1234,416,1c39d573-5777-4b3a-a8d3-5ac888e65ff4,applianceState/Bedroom/lightColor,bedroom,hue color light bedroom,action,OPERATOR,NEXTOPERATOR,update:lightColor,bedroom-hue color light bedroom
+1235,417,917831b4-51f1-4319-a4c9-d624dc40f834,environment/sensors/@temperature,bedroom,temperature,event,morethen,and,20,bedroom-temperature
+1236,417,917831b4-51f1-4319-a4c9-d624dc40f834,environment/weather/currentWeather/@rain,currentweather,rain,condition,equal,rule,VALUE,currentweather-rain
+1237,417,917831b4-51f1-4319-a4c9-d624dc40f834,applianceState/Bedroom/window,bedroom,window,action,OPERATOR,NEXTOPERATOR,invokeFunctions:changeDoorState,bedroom-window
+1238,418,8091c927-ef3d-4033-bb63-06169a454642,environment/dateTime/@localTime,datetime,localtime,condition,equal,and,21:00,datetime-localtime
+1239,418,8091c927-ef3d-4033-bb63-06169a454642,technology/light/@state,light,state,condition,equal,rule,OFF,light-state
+1240,418,8091c927-ef3d-4033-bb63-06169a454642,applianceState/LivingRoom/lightColor,living room,hue color light living room,action,OPERATOR,NEXTOPERATOR,update:lightColor,living room-hue color light living room
+1241,418,8091c927-ef3d-4033-bb63-06169a454642,devices/tv/@state,devices,tv,action,OPERATOR,NEXTOPERATOR,invokeFunctions:changeApplianceState,devices-tv
+1242,419,dce2c03f-9956-498d-82e2-02d71ac80a18,user/positionOutside/@outSidePosition,test-user,outsideposition,event,equal,and,OFFICE,test-user-outsideposition
+1243,419,dce2c03f-9956-498d-82e2-02d71ac80a18,technology/appliance/@state,heating system,state,condition,equal,rule,ON,heating system-state
+1244,419,dce2c03f-9956-498d-82e2-02d71ac80a18,applianceState/all/@heating,home,heating,action,OPERATOR,NEXTOPERATOR,invokeFunctions:changeApplianceState,home-heating
+1245,419,dce2c03f-9956-498d-82e2-02d71ac80a18,xPath missing!!,reminders,reminders,action,OPERATOR,NEXTOPERATOR,The heating system has been deactivated. Remember to activate it when you get home,reminders-reminders
+1246,420,4aae1aad-8d3d-4b5f-8531-8b646b64186e,environment/sensors/@motion,entrance,motion,condition,equal,and,VALUE,entrance-motion
+1247,420,4aae1aad-8d3d-4b5f-8531-8b646b64186e,technology/appliance/@door,entrance,doorsensor,condition,equal,rule,OPEN,entrance-doorsensor
+1248,420,4aae1aad-8d3d-4b5f-8531-8b646b64186e,amazonAlexa/@routineName,devices,alexa services,action,OPERATOR,NEXTOPERATOR,invokeFunctions:startRoutine,devices-alexa services
+1249,420,4aae1aad-8d3d-4b5f-8531-8b646b64186e,applianceState/Entrance/lightColor,entrance,hue color light entrance,action,OPERATOR,NEXTOPERATOR,update:lightColor,entrance-hue color light entrance
+1250,421,e5b7d2fc-c6e2-4e0b-b57b-2285d5310424,technology/device/@state,wi fi,state,condition,equal,rule,OFF,wi fi-state
+1251,421,e5b7d2fc-c6e2-4e0b-b57b-2285d5310424,xPath missing!!,reminders,reminders,action,OPERATOR,NEXTOPERATOR,the wifi isn't working,reminders-reminders
+1252,422,2b6c241b-f797-4d48-82b6-b346d4630b1d,environment/sensors/@smokeSensor,living room,smokesensor,condition,equal,rule,VALUE,living room-smokesensor
+1253,422,2b6c241b-f797-4d48-82b6-b346d4630b1d,xPath missing!!,alarms,notificationmode,action,OPERATOR,NEXTOPERATOR,custom:notificationMode,alarms-notificationmode
+1254,423,61125172-2b1f-4831-9b8f-4f0ee4739fd4,environment/sensors/@lightLevel,entrance,lightlevel,event,equal,and,DAY_LIGHT,entrance-lightlevel
+1255,423,61125172-2b1f-4831-9b8f-4f0ee4739fd4,environment/weather/currentWeather/@outdoorTemperature,currentweather,outdoortemperature,condition,morethen,rule,15,currentweather-outdoortemperature
+1256,423,61125172-2b1f-4831-9b8f-4f0ee4739fd4,applianceState/all/window,home,allwindow,action,OPERATOR,NEXTOPERATOR,invokeFunctions:changeDoorState,home-allwindow
+1257,424,c11bf20d-d9e3-48c3-b916-d92f30ebb9ab,technology/device/@state,tv,state,condition,equal,and,ON,tv-state
+1258,424,c11bf20d-d9e3-48c3-b916-d92f30ebb9ab,user/activity/@leisure,test-user,leisure,event,equal,rule,WATCHING_TV,test-user-leisure
+1259,424,c11bf20d-d9e3-48c3-b916-d92f30ebb9ab,applianceState/all/@robotVacuumCleaner,home,robotvacuumcleaner,action,OPERATOR,NEXTOPERATOR,invokeFunctions:changeApplianceState,home-robotvacuumcleaner
+1260,424,c11bf20d-d9e3-48c3-b916-d92f30ebb9ab,xPath missing!!,reminders,reminders,action,OPERATOR,NEXTOPERATOR,remember to use the vacuum when you're finished watching tv,reminders-reminders
+1261,425,6492800e-4dde-400a-afc6-45366867434a,technology/light/@state,entrance light,state,condition,equal,rule,OFF,entrance light-state
+1262,425,6492800e-4dde-400a-afc6-45366867434a,xPath missing!!,reminders,reminders,action,OPERATOR,NEXTOPERATOR,Turn on the lights,reminders-reminders
+1263,426,e2b93d38-a563-4a8b-89f9-635584b04287,user/activity/@medicine,test-user,medicine,event,equal,rule,Medicine name,test-user-medicine
+1264,426,e2b93d38-a563-4a8b-89f9-635584b04287,xPath missing!!,alarms,notificationmode,action,OPERATOR,NEXTOPERATOR,custom:notificationMode,alarms-notificationmode
+1265,426,e2b93d38-a563-4a8b-89f9-635584b04287,applianceState/Bedroom/lightColor,bedroom,hue color light bedroom,action,OPERATOR,NEXTOPERATOR,update:lightColor,bedroom-hue color light bedroom
+1266,427,6fcfbc16-3561-499a-b2d3-7396079ba3a0,environment/weather/currentWeather/@outdoorTemperature,currentweather,outdoortemperature,condition,equal,and,8,currentweather-outdoortemperature
+1267,427,6fcfbc16-3561-499a-b2d3-7396079ba3a0,environment/sensors/@windowSensor,living room,windowsensor,event,equal,rule,OPEN,living room-windowsensor
+1268,427,6fcfbc16-3561-499a-b2d3-7396079ba3a0,applianceState/LivingRoom/window,living room,window,action,OPERATOR,NEXTOPERATOR,invokeFunctions:changeDoorState,living room-window
+1269,428,6a4fea10-65ae-48af-8ea3-6718dff9bdac,environment/dateTime/@localTime,datetime,localtime,condition,equal,and,20:00,datetime-localtime
+1270,428,6a4fea10-65ae-48af-8ea3-6718dff9bdac,technology/device/@state,living room alexa,state,condition,equal,rule,OFF,living room alexa-state
+1271,428,6a4fea10-65ae-48af-8ea3-6718dff9bdac,amazonAlexa/@routineName,devices,alexa services,action,OPERATOR,NEXTOPERATOR,invokeFunctions:startRoutine,devices-alexa services
+1272,428,6a4fea10-65ae-48af-8ea3-6718dff9bdac,applianceState/LivingRoom/lightColor,living room,hue color light living room,action,OPERATOR,NEXTOPERATOR,update:lightColor,living room-hue color light living room
+1273,429,4ff31663-7f3c-4666-b294-31402b9c99ee,user/physiological/@heartRate,test-user,heartrate,event,equal,and,135,test-user-heartrate
+1274,429,4ff31663-7f3c-4666-b294-31402b9c99ee,technology/appliance/@state,coffee machine,state,condition,equal,rule,ON,coffee machine-state
+1275,429,4ff31663-7f3c-4666-b294-31402b9c99ee,applianceState/LivingRoom/@coffeeMachine,kitchen,coffeemachine,action,OPERATOR,NEXTOPERATOR,invokeFunctions:changeApplianceState,kitchen-coffeemachine
+1276,429,4ff31663-7f3c-4666-b294-31402b9c99ee,xPath missing!!,reminders,reminders,action,OPERATOR,NEXTOPERATOR,Don't drink too much coffee!,reminders-reminders
+1277,430,86352d8d-22dc-4ccd-94e6-8a3be4d4f25f,environment/dateTime/@localTime,datetime,localtime,event,equal,and,07:45,datetime-localtime
+1278,430,86352d8d-22dc-4ccd-94e6-8a3be4d4f25f,environment/dateTime/@dayType,datetime,daytype,condition,equal,rule,WEEK_DAYS,datetime-daytype
+1279,430,86352d8d-22dc-4ccd-94e6-8a3be4d4f25f,applianceState/LivingRoom/@coffeeMachine,kitchen,coffeemachine,action,OPERATOR,NEXTOPERATOR,invokeFunctions:changeApplianceState,kitchen-coffeemachine
+1280,431,7adc6053-84b2-4107-a8ec-343c3710b879,technology/device/@state,pc,state,event,equal,rule,ON,pc-state
+1281,431,7adc6053-84b2-4107-a8ec-343c3710b879,xPath missing!!,reminders,reminders,action,OPERATOR,NEXTOPERATOR,Remember to save your work,reminders-reminders
+1282,432,0ac31364-8477-4df6-ba1e-db6a4de80771,environment/dateTime/@localTime,datetime,localtime,condition,equal,and,19:01,datetime-localtime
+1283,432,0ac31364-8477-4df6-ba1e-db6a4de80771,technology/device/@vocalInput,kitchen alexa,vocalinput,condition,equal,rule,it's time to cook,kitchen alexa-vocalinput
+1284,432,0ac31364-8477-4df6-ba1e-db6a4de80771,amazonAlexa/@routineName,devices,alexa services,action,OPERATOR,NEXTOPERATOR,invokeFunctions:startRoutine,devices-alexa services
+1285,432,0ac31364-8477-4df6-ba1e-db6a4de80771,applianceState/Kitchen/lightColor,kitchen,hue color light kitchen,action,OPERATOR,NEXTOPERATOR,update:lightColor,kitchen-hue color light kitchen
+1286,433,1c89847d-4ad2-452a-ac0c-819c68fb2bf6,XPATH,relativeposition,typeofproximity,event,outside,NEXTOPERATOR,entrance,relativeposition-typeofproximity
+1287,433,1c89847d-4ad2-452a-ac0c-819c68fb2bf6,technology/appliance/@door,entrance,doorsensor,condition,equal,rule,OPEN,entrance-doorsensor
+1288,433,1c89847d-4ad2-452a-ac0c-819c68fb2bf6,applianceState/all/window,home,allwindow,action,OPERATOR,NEXTOPERATOR,invokeFunctions:changeDoorState,home-allwindow
+1289,433,1c89847d-4ad2-452a-ac0c-819c68fb2bf6,xPath missing!!,reminders,reminders,action,OPERATOR,NEXTOPERATOR,remember to take the house keys and the mask,reminders-reminders
+1290,434,abbb502f-5684-4e76-82a7-9d2a0281da87,technology/appliance/@door,entrance,doorsensor,condition,equal,rule,CLOSE,entrance-doorsensor
+1291,434,abbb502f-5684-4e76-82a7-9d2a0281da87,xPath missing!!,alarms,notificationmode,action,OPERATOR,NEXTOPERATOR,custom:notificationMode,alarms-notificationmode
+1292,434,abbb502f-5684-4e76-82a7-9d2a0281da87,applianceState/Entrance/lightColor,entrance,hue color light entrance,action,OPERATOR,NEXTOPERATOR,update:lightColor,entrance-hue color light entrance

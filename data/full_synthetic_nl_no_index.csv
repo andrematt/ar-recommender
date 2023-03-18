@@ -1,0 +1,434 @@
+ if timeinsidearoom timeinsidebathroom is more than 30  then alarms alarms  alarm ,0
+ if currentweather weathericon is sun  then reminders reminders  the sun is shining please go outside ,1
+ if relativeposition typeofproximity is inside  if relativeposition pointofinterest is bathroom  then bathroom alllight  turn on or off ,2
+ if physiological steps is less then 5000  then reminders reminders  exercises on the treadmill ,3
+ when livingroom lightlevel is lowlight  then livingroom hue color light living room  change light color ,4
+ if greatluminaire state is off  then kitchen hue color light kitchen  customlightcolor ,5
+ when datetime localtime is 1522  then reminders reminders  you havent played with kwido in a long time try playing a game ,6
+ when datetime localtime is 1452  then reminders reminders  remember to take aspirin  then livingroom hue color light living room  change light color ,7
+ if cognitive trainingtime is 30  then alarms alarms  you can stop doing the exercises ,8
+ if activity medicationname is dobetin and lampard  then alarms alarms  dobetin and lampard  ,9
+ if activity medicationname is cardicor   then alarms alarms  take the evening cardicor  ,10
+ if activity medicationname is provisacor  then alarms alarms  take the evening provisacor  ,11
+ if activity medicationname is tardifer lunch  then alarms alarms  take tardifer  ,12
+ if activity medicationname is duoplavin lunch  then alarms alarms  duoplavin lunch ,13
+ if activity medicationname is ganfort eye drops  then alarms alarms  ganfort eye drops evening ,14
+ if activity medicationname is trusopt eye drops evening  then alarms alarms  trusopt eye drops evening ,15
+ if activity medicationname is trusopt lunch  then alarms alarms  trusopt eye drops lunch ,16
+ if activity medicationname is trusopt eye drops  then alarms alarms  take trusopt drops morning ,17
+ if activity medicationname is zoloft  then alarms alarms  take zoloft ,18
+ if activity medicationname is lansoprazolo  then alarms alarms  take lansoprazolo ,19
+ if activity medicationname is eucreas evening  then alarms alarms  take evening eucreas  ,20
+ if activity medicationname is eucreas lunch  then alarms alarms  take eucreas lunch ,21
+ when activity medicationname is eucreas  then alarms alarms  take morning eucreas  ,22
+ if greatluminaire state notequal off  if datetime localtime is 1337  then reminders reminders  turn off the great luminarie ,23
+ if greatluminaire state notequal off  then reminders reminders  turn off the great luminarie ,24
+ when livingroom lightlevel is lowlight  then livingroom hue color light living room  change light color ,25
+ if physiological steps is less then 5000  then reminders reminders  exercises on the treadmill ,26
+ when relativeposition typeofproximity is outside  when relativeposition pointofinterest is house  if datetime localtime is more than 2100  if datetime localtime is less then 2200  then alarms alarms  user 2 is away from home late at night ,27
+ if cognitive trainingtime is less then 1  then alarms alarms  keep practicing ,28
+ if medication intaketime notequal 1500  then alarms alarms  take the 3 oclock pill ,29
+ when activity medicationname is aprovelcoaprovel  then alarms alarms  aprovelcoaprovel  ,30
+ when activity medicationname is ibustrin 200 mg 1cp die  then alarms alarms  ibustrin 200 mg 1cpdie ,31
+ when activity medicationname is norvasc 5mg 1cpdie  then alarms alarms  norvasc 5 mg 1cpdie ,32
+ when activity medicationname is tenormin 14 cpdie  then alarms alarms  tenormin 14 pill ,33
+ when activity medicationname is pantorc  then alarms alarms  remember to take the pantorc ,34
+ when activity medicationname is aplactin 20 mg 1cpdie  then alarms alarms  aplactin 20 mg 1cpdie ,35
+ if cognitive trainingtime is less then 20  then reminders reminders  do some more exercise ,36
+ if activity medicationname is aspirine  then reminders reminders  aspirine taken ,37
+ when activity medicationname is aspirine  then alarms alarms  marco did not take the aspirine ,38
+ when bedroom lightlevel is nolight  then bedroom biorhythmlight  start light scene ,39
+ when datetime localtime is 1825  if physiological steps is less then 5000  then reminders reminders  go outside to have a walk ,40
+ when timeinsidearoom timeinsidebathroom is more than 2  then alarms alarms  marco is in the bathroom for more than 1 hour ,41
+ when relativeposition typeofproximity is inside  when relativeposition pointofinterest is bedroom  then bedroom relax  start light scene ,42
+ when bedroom motion is true  if datetime localtime between 1755  if datetime localtime is less then 1800  then corridor light strip corridor  change light color ,43
+ when datetime localtime is 1752  then reminders reminders  remember to take the aspirine ,44
+ when cognitive vocalemotionalstate is happy  then livingroom hue color light living room  change light color ,45
+ if physical layingdown is true  then alarms alarms  man down alarm ,46
+ when datetime localtime is 2200  then reminders reminders  reminder drink a glass of water ,47
+ when datetime localtime is 1600  then reminders reminders  reminder drink a glass of water ,48
+ when datetime localtime is 1100  then reminders reminders  reminder drink a glass of water ,49
+ when datetime localtime is 0900  then reminders reminders  reminder eye drops and therapy ,50
+ when relativeposition typeofproximity is inside  when relativeposition pointofinterest is livingroom  if datetime localtime is more than 0930  then livingroom greatluminare  customgreatluminare ,51
+ when relativeposition typeofproximity is inside  when relativeposition pointofinterest is livingroom  when datetime localtime is more than 2200  then livingroom relax  start light scene ,52
+ if cognitive lastconnectiontime is more than 48  then reminders reminders  please do exercises on the tablet ,53
+ when datetime localtime is 2200  then reminders reminders  reminder drink a glass of water ,54
+ when datetime localtime is 1600  then reminders reminders  reminder drink a glass of water ,55
+ when datetime localtime is 1100  then reminders reminders  reminder drink a glass of water ,56
+ when datetime localtime is 0900  then reminders reminders  reminder eye drops and therapy ,57
+ when relativeposition typeofproximity is inside  when relativeposition pointofinterest is livingroom  when datetime localtime is more than 2200  then livingroom relax  start light scene ,58
+ when cognitive lastconnectiontime is 48  then reminders reminders  please do exercises on the tablet ,59
+ when livingroom motion is true  if livingroom lightlevel is verylowlight  then livingroom greatluminare  customgreatluminare ,60
+ when bedroom motion is true  then livingroom hue color light living room  change light color ,61
+ when bedroom motion is true  then bedroom activate  start light scene ,62
+ when twentyfourhoursweatherforecast rain is true  then alarms alarms  tomorrow is likely to rain ,63
+ when physiological steps is less then 6000  then reminders reminders  remind to walk more for a healthier lifestyle ,64
+ if relativeposition typeofproximity is inside  if relativeposition pointofinterest is livingroom  when datetime localtime is 2200  then livingroom relax  start light scene ,65
+ when timeinsidearoom timeinsidebathroom is more than 30  then alarms alarms  marco is in the bathroom for more than 1 hour ,66
+ when bedroom lightlevel is nolight  then bedroom biorhythmlight  start light scene ,67
+ when physiological steps is less then 6000  then reminders reminders  remind to walk more for a healthier lifestyle ,68
+ when bedroom motion is true  if datetime localtime is more than 2200  if datetime localtime is less then 2359  if datetime localtime is 0230  if datetime localtime is 0600  then bathroom hue color light bathroom  change light color ,69
+ when datetime localtime is 0800  then reminders reminders  please measure blood sugar ,70
+ when datetime localtime is 0800  then reminders reminders  please measure blood sugar ,71
+ if cognitive emotionalstate is discouraged  then alarms alarms  emotional status discouraged ,72
+ if cognitive cognitivestate is mildcognitiveimpairment  then alarms alarms  mild cognitive status ,73
+ when cognitive emotionalstate is sad  then livingroom activate  start light scene ,74
+ if cognitive lastconnectiontime is more than 48  then alarms alarms  your last connection was more than 48 hours ago lets play ,75
+ if activity medicationname is aspirine  then reminders reminders  aspirine taken ,76
+ if cognitive emotionalstate is discouraged  then alarms alarms  emotional status discouraged ,77
+ if cognitive cognitivestate is mildcognitiveimpairment  then alarms alarms  mild cognitive status ,78
+ when cognitive emotionalstate is sad  then livingroom activate  start light scene ,79
+ if cognitive lastconnectiontime is more than 48  then alarms alarms  your last connection was more than 48 hours ago lets play ,80
+ when vocalinput vocalstring is turnonlightinlivingroomscenerelaxing  then livingroom relax  start light scene ,81
+ if twentyfourhoursweatherforecast rain is true  then reminders reminders  tomorrow will rain ,82
+ when sleep sleepduration is less then 60  then alarms alarms  youre getting too little sleep ,83
+ when kitchen gassensor is true  when kitchen smokesensor is true  then alarms alarms  gas or smoke detected in the kitchen ,84
+ when cognitive lastconnectiontime is more than 48  when cognitive trainingtime is less then 15  then reminders reminders  remember to train more ,85
+ if relativeposition typeofproximity is inside  if relativeposition pointofinterest is house  if livingroom lightlevel is lowlight  then livingroom biorhythmlight  start light scene ,86
+ if datetime localtime is more than 2100  if datetime localtime is less then 2300  then livingroom relax  start light scene ,87
+ when cognitive emotionalstate is sad  then reminders reminders  elderly is sad call herhim ,88
+ if relativeposition typeofproximity is inside  if relativeposition pointofinterest is bedroom  if datetime localtime is more than 2300  if datetime localtime is less then 0600  then bedroom alllight  turn on or off ,89
+ when datetime localtime is 2100  then reminders reminders  remember to charge your smart devices ,90
+ when relativeposition typeofproximity is outside  when relativeposition pointofinterest is house  then all alllight  turn on or off ,91
+ when relativeposition typeofproximity is inside  when relativeposition pointofinterest is house  then entrance hue color light entrance  change light color ,92
+ if relativeposition typeofproximity is inside  if relativeposition pointofinterest is livingroom  if livingroom lightlevel is lowlight  then livingroom hue color light living room  change light color ,93
+ when timeinsidearoom timeinsidebathroom is 20  if datetime localtime is more than 2200  if datetime localtime is less then 0700  then alarms alarms  the elder has been in the bathroom for 20 minutes he may have fallen ,94
+ when relativeposition typeofproximity is outside  when relativeposition pointofinterest is kitchen  if kitchenlight state is on  then kitchen hue color light kitchen  change light color ,95
+ when cognitive lastconnectiontime is 72  then alarms alarms  more than 72 hours since the last connection to the kwido application ,96
+ if bedroom motion is true  then bedroom activate  start light scene ,97
+ when datetime localtime is 1800  if twentyfourhoursweatherforecast outdoorcondition is clearsky  if twentyfourhoursweatherforecast outdoortemperature is more than 20  then reminders reminders  tomorrow the weather will be excellent remember to go out for a walk ,98
+ when relativeposition typeofproximity is inside  when relativeposition pointofinterest is kitchen  if kitchen lightlevel is lowlight  then kitchen hue color light kitchen  change light color ,99
+ when datetime localtime is 1830  if relativeposition typeofproximity is inside  if relativeposition pointofinterest is kitchen  if kitchen lightlevel is dark  then kitchen hue color light kitchen  change light color ,100
+ when datetime localtime is 0900  if datetime localdate is 12062020  then reminders reminders  remember to go to the appointment  then reminders reminders  the elder has an appointment ,101
+ when cognitive emotionalstate is sad  then livingroom relax  start light scene ,102
+ when datetime localtime is 0900  then reminders reminders  remember to take the medicine ,103
+ when physiological heartrate is 100  if relativeposition typeofproximity is inside  if relativeposition pointofinterest is bedroom  then bedroom relax  start light scene ,104
+ when physiological heartrate is 130  then alarms alarms  elderly heart rate is 130 ,105
+ when datetime localtime is 2000  if relativeposition typeofproximity is outside  if relativeposition pointofinterest is house  then alarms alarms  elderly is outside house ,106
+ when bedroom motion is true  if datetime localtime is more than 0000  if datetime localtime is less then 0600  then corridor light strip corridor  change light color ,107
+ when datetime localtime is 1500  if physiological steps is less then 1000  then reminders reminders  you should move more ,108
+ when datetime localtime is 1500  if relativeposition typeofproximity is inside  if relativeposition pointofinterest is livingroom  then livingroom relax  start light scene ,109
+ when cognitive trainingresult is notprogressing  then reminders reminders  keep trying the results will improve ,110
+ when currentweather outdoorcondition is clearsky  if datetime localtime is more than 0930  if datetime localtime is less then 1100  then reminders reminders  weather is good you should go out for a walk ,111
+ when bedroom motion is true  then alarms alarms  no motion in bedroom ,112
+ when activity medicationname is medicine x  then reminders reminders  remember to take the medicine ,113
+ when cognitive trainingresult is notprogressing  then reminders reminders  training is not progressing ,114
+ when cognitive trainingresult is notprogressing  then livingroom hue color light living room  change light color  then livingroom activate  start light scene ,115
+ if kitchen windowsensor is open  then kitchen alllight  turn on or off ,116
+ when bedroom lightlevel is nolight  then bedroom biorhythmlight  start light scene ,117
+ when relativeposition typeofproximity is inside  when relativeposition pointofinterest is livingroom  when datetime localtime is more than 2200  then livingroom relax  start light scene ,118
+ if cognitive lastconnectiontime is more than 48  then reminders reminders  please do exercises on the tablet ,119
+ if fridge door is close  then reminders reminders  the refrigerator door is open ,120
+ when datetime localtime is 0730  if currentweather outdoortemperature is less then 14  then reminders reminders  remember to take your scarf and gloves ,121
+ if bedroom motion is true  then alarms alarms  wake up youll be late  then bedroom activate  start light scene ,122
+ if timeinsidearoom timeinsidebedroom is more than 20  if bedroomlight state is on  then alarms alarms  energy saving mode activated  then bedroom relax  start light scene ,123
+ if personaldata age is more than 70  when bedroomportablelight state is on  then corridor light strip corridor  change light color  then reminders reminders  the bedside light is on ,124
+ when bedroomportablelight brightness is more than 100  then reminders reminders  lower the brightness ,125
+ when entrance doorsensor is open  when livingroom windowsensor is open  then reminders reminders  close doors and  or windows ,126
+ if physiological steps is more than 500  then all biorhythmlight  start light scene  then alarms alarms  increase physical activity ,127
+ when kitchen smokesensor is true  when kitchenlight brightness is less then 30  then kitchen hue color light kitchen  change light color  then alarms alarms  some smoke comes from the kitchen ,128
+ if fridge door is open  if personaldata age is more than 75  then kitchen alllight  turn on or off  then reminders reminders  close the fridge door ,129
+ if livingroomlight state is off  when datetime localtime is 0700  then alarms alarms  accese le luci  then livingroom alllight  turn on or off ,130
+ if fridge door is open  then reminders reminders  porta del frigo aperta ,131
+ if bedroomportablelight state is on  when relativeposition typeofproximity is inside bedroom  then bedroom alllight  turn on or off  then reminders reminders  lights on ,132
+ if cognitive emotionalstate is happy  then alarms alarms  call mum  then livingroom alllight  turn on or off ,133
+ when datetime localtime is 0650  if datetime localdate is 20190209  then reminders reminders  svegliati ,134
+ if fridge door is open  then reminders reminders  close the fridge door ,135
+ when bedroom temperaturelevel is less then 22  if datetime localtime is 2200  then reminders reminders  set the heat to 22 degrees  ,136
+ if cognitive trainingtime is 60  then livingroom relax  start light scene  then alarms alarms  you have to train for at least 60 minutes a day ,137
+ if twentyfourhoursweatherforecast rain is true  if greatluminaire state is on  then alarms alarms  remember that tomorrow will rain  then livingroom hue color light living room  change light color ,138
+ if relativeposition typeofproximity is outside bedroom  when bedroomlight state is on  then reminders reminders  you turned on the light by mistake  then bedroom alllight  turn on or off ,139
+ if fridge door is open  then reminders reminders  close fridges door ,140
+ when currentweather rain is true  if livingroom windowsensor is open  then alarms alarms  close the windows ,141
+ if activity medicationname is cardio aspirina  then kitchen hue color light kitchen  change light color  then alarms alarms  cardioaspirina ,142
+ if bedroom temperaturelevel is less then 13  if bedroomlight color is azure  then bedroom alllight  turn on or off  then alarms alarms  low temperature in bedroom ,143
+ when activity wakingup is true  if bedroomportablelight state is on  then reminders reminders  wake up  then bathroom alllight  turn on or off ,144
+ if fridge door is open  then reminders reminders  remember to close the fridge ,145
+ when currentweather outdoorcondition is thunderstorm  if livingroom windowsensor is open  then reminders reminders  remember to close the windows ,146
+ if entrance doorsensor is close  then alarms alarms  be careful thiefs  then all alllight  turn on or off ,147
+ if kitchen gassensor is true  if kitchen lightlevel is nolight  then alarms alarms  gas leak  then kitchen alllight  turn on or off  then kitchen hue color light kitchen  change light color ,148
+ when activity wakingup is true  if bedroom lightlevel is nolight  then bedroom relax  start light scene  then reminders reminders  have a nice day ,149
+ if fridge door is open  then alarms alarms  you left the fridge open ,150
+ if relativeposition typeofproximity is outside kitchen  if kitchen gassensor is true  then all biorhythmlight  start light scene  then alarms alarms  th egas sensor is active check that you have turned it off ,151
+ when cognitive emotionalstate is sad  if livingroomlight state is off  then livingroom relax  start light scene  then reminders reminders  do you want me to play some music ,152
+ when currentweather rain is true  if livingroom windowsensor is open  then alarms alarms  its raining close the windows ,153
+ if activity medicationname is pressione  then all biorhythmlight  start light scene  then alarms alarms  you didnt take the meds ,154
+ if kitchen gassensor is true  if kitchenlight state is off  then alarms alarms  has anyone forgotten to turn off the gas  then bedroom hue color light bedroom  change light color ,155
+ when currentweather outdoortemperature is less then 6  if corridor windowsensor is close  then reminders reminders  é freddo é meglio tu chiuda la finestra del corridoio ,156
+ when relativeposition typeofproximity is outside bathroom  if bathroomlight state is on  then corridor light strip corridor  change light color  then reminders reminders  remember to turn off the light when you leave the bathroom ,157
+ if kitchenlight brightness is less then 1  then reminders reminders  change the kitchen lamp ,158
+ if physiological steps is more than 7000  then alarms alarms  you did little exercise today you should take a walk  then livingroom hue color light living room  change light color ,159
+ if bathroomlight state is on  if datetime localtime is 2100  then reminders reminders  remember to turn off the bathroom light before going to sleep ,160
+ if kitchen motion is true  when kitchen gassensor is true  then reminders reminders  gas stove unattended turn it off as soon as you can ,161
+ if test-user typeofproximity is inside bedroom  then reminders reminders  child is not in the bedroom  then bedroom hue color light bedroom  change light color ,162
+ if kitchen motion is true  if fridge door is open  then corridor light strip corridor  change light color ,163
+ when sleep bedoccupancy is out  if smalllight state is off  then bedroom hue color light bedroom  change light color  then reminders reminders  good awakening ,164
+ when livingroomlight state is off  then reminders reminders  living room light on ,165
+ when entrance doorsensor is open  if currentweather rain is true  then reminders reminders  close the window ,166
+ when relativeposition typeofproximity is inside livingroom  then alarms alarms  lights off  then all alllight  turn on or off ,167
+ if livingroom motion is true  if greatluminaire state is off  then alarms alarms  movement in the house  then all alllight  turn on or off ,168
+ when activity wakingup is true  if bedroomlight state is on  then bedroom relax  start light scene  then reminders reminders  todays appointments ,169
+ if bedroomportablelight temperature is 0  then reminders reminders  dont strain your eyes turn the color to warmer shades ,170
+ when datatime localtime is 2130  if bedroom lightlevel is normallight  then reminders reminders  lower the brightness of the light for better rest ,171
+ when relativeposition typeofproximity is outside kitchen  if fridge door is open  then corridor alllight  turn on or off  then reminders reminders  the refrigerator remained open ,172
+ when kitchen smokesensor is true  when kitchenlight state is on  then alarms alarms  smoke in the kitchen  then kitchen alllight  turn on or off ,173
+ when activity wakingup is true  then alarms alarms  you woke up at an unusual time you may have to regain energy for tomorrow  then reminders reminders  news about your sleep look at your mail  ,174
+ if fridge door is open  then reminders reminders  the fridge door is open ,175
+ if livingroom lightlevel is daylight  then alarms alarms  the living room light has just been turned on   then livingroom alllight  turn on or off ,176
+ if entrance doorsensor is open  if entrancelight state is off  then alarms alarms  the entrance light has just been turned on  then entrance alllight  turn on or off ,177
+ when relativeposition typeofproximity is inside bedroom  if bedroomlight state is off  then bedroom alllight  turn on or off  then reminders reminders  the bedroom light has been turned on ,178
+ when livingroom temperaturelevel is less then 10  if livingroom windowsensor is open  then bedroom alllight  turn on or off  then reminders reminders  the living room window is open and the inside temperature is too low ,179
+ if bedroom lightlevel is daylight  then reminders reminders  the light in the bedroom is on ,180
+ when currentweather outdoorcondition is fog  if livingroom windowsensor is open  then reminders reminders  it is advisable to close the kitchen window due to strong fog ,181
+ if physiological heartrate is less then 100  then alarms alarms  check the blood pressure  then bedroom hue color light bedroom  change light color ,182
+ if kitchen windowsensor is open  if kitchenlight state is off  then alarms alarms  kitchen window is open  then kitchen alllight  turn on or off ,183
+ when timeinsidearoom timeinsidebathroom is more than 15  if bathroomlight state is on  then bathroom hue color light bathroom  change light color  then reminders reminders  15 minutes spent in bathroom ,184
+ if corridorlightstrip state is on  then reminders reminders  reminder text ,185
+ if livingroom windowsensor is open  when livingroom temperaturelevel is less then 20  then reminders reminders  reminder text ,186
+ if entrance doorsensor is close  then alarms alarms  alarm text  then all alllight  turn on or off ,187
+ if kitchen smokesensor is true  if kitchen lightlevel is nolight  then alarms alarms  alarm text  then kitchen alllight  turn on or off ,188
+ if relativeposition typeofproximity is outside bathroom  when bathroom lightlevel is normallight  then reminders reminders  reminder text  then all alllight  turn on or off ,189
+ if currentweather outdoorcondition is rain  then reminders reminders  remember the umbrella ,190
+ if kitchen smokesensor is true  if kitchen temperaturelevel is more than 40  then alarms alarms  fire  then entrance biorhythmlight  start light scene ,191
+ when fridge door is close  if cognitive emotionalstate is happy  then kitchen relax  start light scene  then reminders reminders  have a snack and close the fridge when youre done ,192
+ if activity wakingup is true  then alarms alarms  the user did not wake up  then all alllight  turn on or off ,193
+ when livingroom windowsensor is open  then reminders reminders  close the window ,194
+ when fridge door is open  then reminders reminders  warning the fridge door is open ,195
+ if datetime localtime is 1900  when livingroom temperaturelevel is less then 18  then reminders reminders  turn the heater on ,196
+ when activity wakingup is true  then alarms alarms  wake up  then bedroom hue color light bedroom  change light color ,197
+ if entrancelight state is off  if entrance motion is true  then alarms alarms  welcome back  then bedroom hue color light bedroom  change light color ,198
+ when relativeposition typeofproximity is inside bathroom  if bathroomlight state is off  then bathroom alllight  turn on or off  then reminders reminders  mind the gap ,199
+ if entrancelight state is on  then reminders reminders  turn the light off ,200
+ when currentweather outdoorcondition is thunderstorm  if livingroom windowsensor is open  then reminders reminders  close the windows ,201
+ if livingroom temperaturelevel is more than 12  then alarms alarms  turn on the heater  then all alllight  turn on or off ,202
+ if bathroom smokesensor is true  if bathroomlight state is off  then alarms alarms  smoke check the bathroom  then all alllight  turn on or off ,203
+ if timeinsidearoom timeinsidekitchen is more than 50  if kitchen windowsensor is close  then kitchen hue color light kitchen  change light color  then reminders reminders  check the microwave ,204
+ when livingroom temperaturelevel is 30  then alarms alarms  turn on the air conditioner  ,205
+ when timeinsidearoom timeinsidekitchen is 30  if kitchen gassensor is true  then alarms alarms  turn off the stove ,206
+ if fridge door is close  then alarms alarms  close the fridge  then bedroom relax  start light scene ,207
+ if entrance motion is true  if entrancelight state is off  then entrance hue color light entrance  change light color  then alarms alarms  welcome back ,208
+ when activity wakingup is true  if bedroomlight state is on  then bedroom alllight  turn on or off  then reminders reminders  good morning ,209
+ when relativeposition typeofproximity is inside entrance  then entrance alllight  turn on or off  then corridor alllight  turn on or off ,210
+ when kitchen smokesensor is true  if relativeposition typeofproximity is outside entrance  then alarms alarms  warning smoke sensors are on ,211
+ when physiological heartrate is more than 199  if activity medicationname is medicina per il cuore  then all alllight  turn on or off  then alarms alarms  warning high hearth rate ,212
+ if currentweather rain is true  if corridor windowsensor is open  then all biorhythmlight  start light scene  then reminders reminders  its raining you left the windows open ,213
+ if activity wakingup is true  then bedroom activate  start light scene  then reminders reminders  its time to get up ,214
+ if entrancelight state is on  then reminders reminders  remember to turn off the light ,215
+ if currentweather rain is true  if currentweather rainquantity is more than 10  then reminders reminders  remember to take the umbrella ,216
+ if fridge door is close  then reminders reminders  fridge door is open  then bedroom hue color light bedroom  change light color ,217
+ when corridor smokesensor is true  when corridorlightstrip color is red  then reminders reminders  smoke in the corridor  then all biorhythmlight  start light scene ,218
+ when activity wakingup is true  when bedroomlight state is on  then bedroom activate  start light scene  then reminders reminders  good morning ,219
+ if timeinsidearoom timeinsidebedroom is more than 1  if entrancelight state is on  then reminders reminders  switch the light off  then bedroom hue color light bedroom  change light color ,220
+ if fridge door is open  if kitchen lightlevel is nolight  then alarms alarms  close the fridge door  then corridor light strip corridor  change light color ,221
+ when currentweather outdoorcondition is showerrain  if bedroom windowsensor is open  then reminders reminders  close the window ,222
+ if activity wakingup is true  then alarms alarms  user has not woken up yet  then bedroom activate  start light scene ,223
+ if corridorlightstrip state is off  then reminders reminders  switch the corridor light strip on ,224
+ if microwave door is open  then reminders reminders  close microwave door ,225
+ if currentweather rain is true  then alarms alarms  do laundry  then livingroom hue color light living room  change light color ,226
+ when livingroom motion is true  if livingroom temperaturelevel is less then 18  then reminders reminders  check the radiators ,227
+ if entrance lightlevel is dark  if entrancelight saturation is less then 5  then alarms alarms  light brightness  then entrance alllight  turn on or off ,228
+ when sleep sleepduration is more than 480  if bedroomlight state is off  then bedroom activate  start light scene  then reminders reminders  worktime ,229
+ when fridge door is open  then reminders reminders  there are products that are about to expire ,230
+ if activity medicationname is medicina  then alarms alarms  the medicine has not been taken ,231
+ when microwave door is open  if microwave door is close  then alarms alarms  alarm text  then alarms alarms  cooking is not finished ,232
+ if currentweather outdoortemperature is 0  if bathroomlight temperature is 11  then bathroom hue color light bathroom  change light color ,233
+ if physiological heartrate is 100  if cognitive vocalemotionalstate is sad  then livingroom relax  start light scene  then reminders reminders  now relax ,234
+ when entrancelight state is on  then alarms alarms  welcome home ,235
+ when cognitive trainingtime is more than 05  then alarms alarms  time for some workout  then livingroom activate  start light scene ,236
+ if livingroom windowsensor is open  when currentweather rain is true  then alarms alarms  close the window ,237
+ if kitchen temperaturelevel is more than 4  if fridge door is open  then alarms alarms  close the fridge door  then kitchen alllight  turn on or off ,238
+ when physiological heartrate is more than 100  if datetime localtime is 2230  if bedroomlight state is off  then alarms alarms  are you ok  then bedroom biorhythmlight  start light scene ,239
+ when entrancelight state is on  then reminders reminders  reminder text ,240
+ if livingroom temperaturelevel is 25  then alarms alarms  fix the living room temperature  then livingroom alllight  turn on or off ,241
+ when kitchen gassensor is true  when kitchen smokesensor is true  then reminders reminders  reminder text ,242
+ if currentweather outdoorcondition is fog  if greatluminaire state is off  then alarms alarms  alarm text  then all alllight  turn on or off ,243
+ if relativeposition typeofproximity is inside entrance  if entrancelight state is on  then entrance alllight  turn on or off  then reminders reminders  someone at the entrance ,244
+ when fridge door is open  then reminders reminders  check the expiration date of the milk ,245
+ when relativeposition typeofproximity is inside house  then all alllight  turn on or off  then alarms alarms  i turned off all the lights in the house ,246
+ when currentweather rain is true  if datetime localtime is 0000  then reminders reminders  remember to take the umbrella ,247
+ when kitchen smokesensor is true  if kitchen windowsensor is close  then alarms alarms  alarm text  then all alllight  turn on or off ,248
+ when sleep sleepduration is more than 15  if bedroomlight state is on  then bedroom alllight  turn on or off  then reminders reminders  even today you fell asleep with the light on  ,249
+ when fridge door is open  then reminders reminders  do not keep the refrigerator door open longer than necessary ,250
+ if bathroom lightlevel is nolight  then bathroom alllight  turn on or off  then reminders reminders  you left the lights turn on in the bathroomagain charles i took care of it ,251
+ when currentweather rain is true  if livingroom windowsensor is open  then reminders reminders  charles has just started raining you should close the windows in the livingroom ,252
+ if kitchen noiselevel is more than 1  if bedroomportablelight state is on  then alarms alarms  im pretty sure you dont need the lights turn on in your bedroom right now charles  then bedroom alllight  turn on or off ,253
+ when timeinsidearoom timeinsidekitchen is more than 1  if kitchenlight state is off  then kitchen alllight  turn on or off  then reminders reminders  i took the liberty of turning the lights on charles you are quiet shortsighted though ,254
+ when fridge door is open  then reminders reminders  close the fridge ,255
+ if entrance door is close  then reminders reminders  warning entrance door is open  then home alllight  turn on or off ,256
+ when todayweather outdoortemperature is less then 10  if bedroom temperature is less then 18  then reminders reminders  turn on the heaters ,257
+ when kitchen smokesensor is true  if microwave door is close  then reminders reminders  the food is burned  then kitchen hue color light kitchen  change light color ,258
+ when test-user typeofproximity is inside bedroom  then reminders reminders  wake up its your birthday  then bedroom hue color light bedroom  change light color ,259
+ when fridge door is open  then reminders reminders  close the fridge door ,260
+ when microwave door is close  then alarms alarms  microwave door open ,261
+ when bathroom doorsensor is open  if bathroom doorsensor is open  then reminders reminders  close the bathroom door ,262
+ if currentweather wind is more than 5  when corridor temperaturelevel is less then 18  then alarms alarms  alarm text ,263
+ when timeinsidearoom timeinsidebathroom is more than 10  if bathroomlight state is off  then reminders reminders  bathroom light is on for too long  then alarms alarms  someone is sick in the bathroom ,264
+ if microwave door is open  then reminders reminders  remember not to leave the door open ,265
+ if corridorlightstrip state is off  then alarms alarms  turn the ligths off  then corridor alllight  turn on or off ,266
+ when currentweather snow is true  if currentweather outdoortemperature is less then 0  then reminders reminders  its snowing ,267
+ if datetime localtime is 1000  if kitchenlight state is on  then alarms alarms  ligths on  then kitchen alllight  turn on or off ,268
+ if bathroomlight state is off  when vocalinput vocalstring is turnonlightinbathroomcolorwhite  then bathroom alllight  turn on or off  then reminders reminders  remember to turn on the bathroom light ,269
+ when kitchen gassensor is true  then reminders reminders  the gas sensor is active ,270
+ if corridorlightstrip state is off  then alarms alarms  attention the lights in the corridor are on remember to turn them off  then entrance hue color light entrance  change light color ,271
+ when twentyfourhoursweatherforecast outdoorcondition is snow  if twentyfourhoursweatherforecast outdoortemperature is 0  then reminders reminders  snow is expected tomorrow remember to put snow chains on the car ,272
+ when entrance doorsensor is open  when entrancelight state is on  then alarms alarms  attention the entrance light is on and the door sensor is active  then all alllight  turn on or off ,273
+ when sleep bedoccupancy is in  if bedroomlight state is off  then reminders reminders  the alarm rings in 5 minutes  then bedroom alllight  turn on or off ,274
+ if fridge door is open  then reminders reminders  remember not to leave the fridge open ,275
+ if kitchenlight state is off  then alarms alarms  you left the light off in the kitchen   then kitchen alllight  turn on or off ,276
+ when currentweather snow is true  if datetime localtime is 1400  then reminders reminders  its snowing no beach volleyball today at 220pm ,277
+ if datetime localtime is 1700  if livingroomlight state is off  then alarms alarms  the light in the living room is still off  then livingroom alllight  turn on or off ,278
+ if bathroomlight state is off  when vocalinput vocalstring is turnofflightinbathroom  then bathroom alllight  turn on or off  then reminders reminders  remember to turn off the lights in the bathroom ,279
+ when corridor motion is true  then corridor alllight  turn on or off ,280
+ when fridge door is close  then alarms alarms  put out a beep sound  then kitchen alllight  turn on or off ,281
+ when twentyfourhoursweatherforecast outdoortemperature is more than 90  if physiological heartrate is more than 40  then reminders reminders  do not go out for jogging ,282
+ if kitchen gassensor is true  if microwave door is open  then alarms alarms  trigger alarm beeps  then kitchen activate  start light scene ,283
+ when timeinsidearoom timeinsidebathroom is more than 50  if bathroom temperaturelevel is more than 30  then bathroom activate  start light scene  then reminders reminders  get out of the bathroom ,284
+ if kitchen doorsensor is open  then reminders reminders  check that the fridge door is closed ,285
+ when bathroom lightlevel is dark  then alarms alarms  turning off the bathroom lights  then bathroom alllight  turn on or off ,286
+ if currentweather rain is true  if currentweather outdoortemperature is less then 5  then reminders reminders  remember the umbrella and cover yourself that its cold outside ,287
+ if kitchen lightlevel is daylight  if kitchen lightlevel is nolight  then kitchen alllight  turn on or off  then alarms alarms  its morning ,288
+ if timeinsidearoom timeinsidebedroom is 30  if bedroomlight temperature is more than 20  then bedroom alllight  turn on or off  then reminders reminders  the light bulb is overheating too much ,289
+ when bathroomlight brightness is less then 20  then reminders reminders  enjoy your relax ,290
+ when relativeposition typeofproximity is inside house  then alarms alarms  i turned the lights off  then all alllight  turn on or off ,291
+ when kitchen gassensor is true  if kitchen windowsensor is close  then reminders reminders  open the window too much gas ,292
+ if livingroom lightlevel is daylight  if livingroomlight state is on  then alarms alarms  artificial light is not needed now  then livingroom alllight  turn on or off ,293
+ when relativeposition typeofproximity is outside bedroom  if bedroomlight state is on  then bedroom alllight  turn on or off  then reminders reminders  remember to turn the lights off ,294
+ when fridge door is open  then reminders reminders  close the fridge door ,295
+ when bedroom lightlevel is nolight  then bedroom alllight  turn on or off  then alarms alarms  lights off ,296
+ when entrance temperaturelevel is less then 15  if entrance windowsensor is open  then reminders reminders  turn on the heaters and close the windows ,297
+ if livingroom windowsensor is close  if livingroom lightlevel is dark  then alarms alarms  lights on  then livingroom alllight  turn on or off ,298
+ when relativeposition typeofproximity is inside bathroom  if bathroomlight state is off  then bathroom hue color light bathroom  change light color  then reminders reminders  light changed ,299
+ when fridge door is open  then reminders reminders  the fridge is open ,300
+ if cognitive vocalemotionalstate is happy  if datetime localtime is 0000  then all relax  start light scene  then alarms alarms  in the midst of all difficulties there is an opportunity ,301
+ if currentweather outdoortemperature is less then 2  if bedroom temperaturelevel is less then 8  then reminders reminders  bedroom temperature is low ,302
+ if livingroom lightlevel is normallight  if datetime localtime is 0900  if livingroomlight state is off  then livingroom alllight  turn on or off  then alarms alarms  light level is low turn the lights on ,303
+ when relativeposition typeofproximity is outside house  if greatluminaire state is on  then all alllight  turn on or off  then reminders reminders  you forgotten the lights on i turned them off ,304
+ if fridge door is open  then alarms alarms  close the fridge door ,305
+ if livingroom lightlevel is dark  then alarms alarms  you forgot the light on in the living room i will take care of that be careful  then livingroom alllight  turn on or off ,306
+ when currentweather outdoorcondition is thunderstorm  if currentweather rainquantity is more than 40  then reminders reminders  unplug everything and check for flooding ,307
+ if livingroom lightlevel is nolight  if livingroomlight state is off  then alarms alarms  you left the lights out in the living room  then livingroom alllight  turn on or off ,308
+ if personaldata age is more than 65  when corridorlightstrip state is off  then reminders reminders  the light strip in the corridor has gone out be careful  then corridor alllight  turn on or off ,309
+ if microwave door is open  then reminders reminders  microwave door is open ,310
+ if corridor smokesensor is true  then alarms alarms  warning corridor smoke sensor is not active  then corridor light strip corridor  change light color ,311
+ when currentweather rain is true  if currentweather outdoorpressure is more than 50  then reminders reminders  avoid going out today ,312
+ if entrance noiselevel is more than 0  if entrancelight state is off  then alarms alarms  noise heard at the entrance  then entrance alllight  turn on or off ,313
+ when sleep sleepduration is more than 600  if bedroomportablelight state is off  then bedroom alllight  turn on or off  then reminders reminders  its time to get out of bed ,314
+ when entrancelight state is on  then reminders reminders  someone is entering ,315
+ if entrance doorsensor is close  then alarms alarms  door open  then entrance alllight  turn on or off ,316
+ when kitchen lightlevel is nolight  if kitchen gassensor is true  then reminders reminders  careful stoves on ,317
+ if datetime localtime is 2000  if kitchenlight state is off  then alarms alarms  its dinner time  then kitchen alllight  turn on or off ,318
+ when relativeposition typeofproximity is inside bathroom  if bathroomlight state is off  then bathroom alllight  turn on or off  then reminders reminders  remember to turn off the light when you leave the bathroom ,319
+ if fridge door is close  then reminders reminders  fridge door is open ,320
+ if physiological steps is more than 1999  then alarms alarms  your daily step goal has not been reached  then all activate  start light scene ,321
+ if currentweather outdoortemperature is less then 16  when currentweather rain is true  then reminders reminders  take the umbrella and the scarf ,322
+ if cognitive cognitivestate is memorylossesassociatedwithage  if personaldata age is more than 70  then alarms alarms  remember to check if the bathroom window is closed ,323
+ if livingroom lightlevel is daylight  when cognitive vocalemotionalstate is angry  then livingroom relax  start light scene  then reminders reminders  remember to take breaks and relax ,324
+ when fridge door is open  then reminders reminders  remember to close the fridge door ,325
+ when physiological heartrate is 60  then bedroom hue color light bedroom  change light color  then alarms alarms  alarm text ,326
+ if currentweather outdoorcondition is rain  if livingroom windowsensor is open  then reminders reminders  its raining close the living room window ,327
+ when bathroom temperaturelevel is less then 13  if bathroom lightlevel is nolight  then reminders reminders  bathroom temperature is less then 13 degrees  then bathroom alllight  turn on or off ,328
+ when physiological heartrate is more than 90  if livingroomlight color is yellow  then reminders reminders  hearth rate more than 90 bpm  then bedroom alllight  turn on or off ,329
+ when microwave door is open  then reminders reminders  check the container ,330
+ if bedroom lightlevel is dark  then alarms alarms  rest time  then bedroom alllight  turn on or off ,331
+ when bedroom temperaturelevel is less then 18  if bedroom windowsensor is open  then reminders reminders  close the bedroom window ,332
+ if corridor motion is true  if corridorlightstrip state is on  then alarms alarms  unused corridor lights shutdown  then corridor alllight  turn on or off ,333
+ when relativeposition typeofproximity is inside house  if entrancelight state is off  then entrance alllight  turn on or off  then reminders reminders  data connection disabled ,334
+ when kitchenlight state is off  then reminders reminders  close the window ,335
+ when entrance doorsensor is close  then entrance alllight  turn on or off  then alarms alarms  door open ,336
+ if bathroom noiselevel is 10  when bathroomlight state is off  then reminders reminders  turn off the tap ,337
+ if currentweather rain is true  if bedroom windowsensor is open  then alarms alarms  its raining  then corridor alllight  turn on or off ,338
+ when timeinsidearoom timeinsidebedroom is 600  if bedroomlight state is off  then bedroom alllight  turn on or off  then alarms alarms  wake up ,339
+ if bathroomlight state is on  then reminders reminders  microwave door open ,340
+ when bathroomlight state is off  then bathroom alllight  turn on or off  then alarms alarms  bathroom light on ,341
+ if currentweather rain is true  when livingroom windowsensor is open  then reminders reminders  you left the windows open ,342
+ if datetime localtime is 0000  if bedroomlight state is on  then bedroom alllight  turn on or off  then alarms alarms  its midnight ,343
+ if relativeposition typeofproximity is inside livingroom  if livingroomlight state is off  then livingroom livingroom-greatluminare  customgreatluminare  then reminders reminders  light on ,344
+ when fridge door is open  then reminders reminders  close the fridge door ,345
+ if bathroomlight state is on  then alarms alarms  bathroom light is off  then bathroom alllight  turn on or off ,346
+ when livingroom smokesensor is true  if kitchen windowsensor is close  then reminders reminders  open the window ,347
+ if livingroom lightlevel is dark  when livingroomlight temperature is less then 20  then livingroom biorhythmlight  start light scene  then alarms alarms  cold ,348
+ when timeinsidearoom timeinsidebathroom is more than 2  if bathroomlight state is off  then bathroom alllight  turn on or off  then reminders reminders  the light was off ,349
+ when kitchenlight state is on  then reminders reminders  kitchen light remained on ,350
+ when entrance doorsensor is close  then alarms alarms  the door is open  then bedroom hue color light bedroom  change light color ,351
+ if sleep sleepduration is more than 300  when datetime localtime is 1200  then reminders reminders  get up ,352
+ if currentweather outdoorcondition is thunderstorm  if livingroomlight state is on  then livingroom relax  start light scene  then reminders reminders  its raining outside ,353
+ when timeinsidearoom timeinsidebathroom is more than 20  when bathroomlight state is off  then bathroom alllight  turn on or off  then reminders reminders  20 minutes in the bathroom ,354
+ when fridge door is open  then reminders reminders  today you opened the fridge door numfridgeevent times ,355
+ if cognitive trainingresult is stupendously  then alarms alarms  tomorrow you will train better now take a shower  then bathroom relax  start light scene ,356
+ when bathroom humiditylevel is more than 65  if bathroom temperaturelevel is less then 20  then reminders reminders  remember to dehumidify the bathroom before use ,357
+ if entrance lightlevel is dark  if entrancelight state is off  then alarms alarms  make sure the entrance is lit  then entrance alllight  turn on or off ,358
+ when vocalinput vocalstring is turnonlightinlivingroom  if livingroomlight state is off  then livingroom alllight  turn on or off  then reminders reminders  successful voice command ,359
+ if heating system state is on  then reminders reminders  heating system is on ,360
+ if test-user outsideposition is office  then home alllight  turn on or off  then reminders reminders  your home awaits you ,361
+ when bedroom temperature is less then 21  if bedroom lightlevel is nolight  then bedroom hue color light bedroom  change light color ,362
+ if home securityintrusion is true  if entrance door is open  then reminders reminders  intrusione in corso  then home alllight  turn on or off ,363
+ when test-user vocalsentence is alexa make coffee  if coffee machine state is on  then kitchen hue color light kitchen  change light color  then reminders reminders  throw out the trash ,364
+ when wi fi state is off  then reminders reminders  wifi has been turned off ,365
+ when activity medicationname is medicina  then alarms alarms  send an alert notification  then home alllight  turn on or off ,366
+ if entrance lightlevel is nolight  when entrance door is open  then entrance hue color light entrance  change light color ,367
+ if datetime localtime is 0730  if bedroom light state is off  then devices alexa services  start alexa routine  then bedroom hue color light bedroom  change light color ,368
+ when microwave state is on  if relativeposition typeofproximity is outside house  then kitchen microwave  turn on or off  then reminders reminders  il microonde ãƒâ¨ stato spento ,369
+ when pc state is on  then reminders reminders  put on your glasses when you are at the computer ,370
+ if bedroom windowsensor is open  then bedroom hue color light bedroom  change light color  then alarms alarms  send an alert notification  then alarms alarms  send an alert notification ,371
+ when test-user bodytemperature is more than 38  if bedroom temperature is less then 20  then bedroom window  open or close  then reminders reminder  drink some water ,372
+ when relativeposition typeofproximity is inside house  if today weather outdoortemperature is less then 13  then bathroom window  open or close ,373
+ if datetime localtime is 0800  if coffee machine state is off  then bedroom hue color light bedroom  change light color  then kitchen coffeemachine  turn on or off ,374
+ when home securityintrusion is true  then reminders reminders  it looks like someone has entered the house be sure to call the police ,375
+ if entrance door is close  then alarms alarms  send an alert notification  then home alllight  turn on or off ,376
+ if bedroom windowsensor is open  when today weather rain is true  then bedroom window  open or close ,377
+ if datetime localtime is 0900  if sleep bedoccupancy is in  then bedroom hue color light bedroom  change light color  then devices alexa services  start alexa routine ,378
+ when realtiveposition typeofproximity is outside house  if heating system state is on  then home heating  turn on or off  then reminders reminders  remember to turn off the heating when you leave the house you forgot that ,379
+ if fridge door is open  then reminders reminders  close the fridge door ,380
+ if home electricity is on  then reminders reminders  attention the power has gone out  then kitchen fridge  turn on or off ,381
+ if relativeposition typeofproximity is outside house  when kitchen smokesensor is true  then alarms alarms  send an alert notification ,382
+ if today weather outdoortemperature is less then 15  if heating system state is off  then home heating  turn on or off  then reminders reminders  its cold today the heating has been turned on ,383
+ when test-user leisure is reading  if bedroom light state is off  then bedroom hue color light bedroom  change light color  then reminders reminders  enjoy the reading ,384
+ if garden smokesensor is true  then home alllight  turn on or off  then alarms alarms  send an alert notification ,385
+ when today weather rain is true  if bedroom windowsensor is open  then bedroom hue color light bedroom  change light color ,386
+ if livingroom lightlevel is lowlight  if light state is off  then livingroom hue color light living room  change light color  then reminders reminders  you ruin your eyes ,387
+ when physiological heartrate is more than 100  if smartphone state is on  if tablet state is on  if pc state is on  then home alllight  turn on or off  then reminders reminders  hearth rate too high ,388
+ if microwave door is open  then reminders reminders  close the microwave door ,389
+ when test-user relativeposition is inside house  then devices alexa services  start alexa routine ,390
+ if activity medicationname is pressure pill  then devices smartphonetv  turn on or off  then reminders reminders  take the medicine ,391
+ when relativeposition typeofproximity is outside garden  if entrance door is close  then home alllight  turn on or off ,392
+ if bedroom temperature is less then 25  if heating system state is off  then devices smartphonetv  turn on or off  then reminders reminders  turn on heating system ,393
+ when test-user leisure is watchingtv  if fridge door is open  then kitchen hue color light kitchen  change light color  then reminders reminders  fridge door open ,394
+ when coffee machine state is off  then reminders reminders  the coffee is ready ,395
+ when kitchen gassensor is true  if kitchen windowsensor is close  then home allwindow  open or close ,396
+ if bedroom windowsensor is close  then alarms alarms  send an alert notification  then bedroom hue color light bedroom  change light color ,397
+ if datetime localtime is 2300  if tv state is on  then devices tv  turn on or off  then home alllight  turn on or off ,398
+ when test-user sweatingtype is high  if heating system state is on  then home heating  turn on or off  then reminders reminders  i have turned off the heating ,399
+ when heating system state is on  then reminders reminders  the heaters are on ,400
+ when currentweather outdoorcondition is rain  if livingroom windowsensor is open  then livingroom window  open or close ,401
+ if home electricity is on  then alarms alarms  send an alert notification  then corridor light strip corridor  change light color ,402
+ if datetime daytype is weekdays  if datetime localtime is 0800  then bedroom hue color light bedroom  change light color  then devices alexa services  start alexa routine ,403
+ when relativeposition typeofproximity is outside house  if entrance door is open  then reminders reminders  the door is left open  then entrance door  open or close ,404
+ if tv state is on  then reminders reminders  the tv is on ,405
+ when bedroom temperature is more than 27  if bedroom windowsensor is close  then bedroom window  open or close ,406
+ when livingroom motion is true  if livingroomlight state is on  then devices tv  turn on or off  then livingroom hue color light living room  change light color ,407
+ if entrance door is close  then alarms alarms  send an alert notification  then home alllight  turn on or off ,408
+ when test-user outsideposition is office  if livingroomlight state is on  then livingroom hue color light living room  change light color  then reminders reminders  you forget the lights on ,409
+ when entrance door is open  then reminders reminders  the front door has been opened ,410
+ when bathroom humidity is more than 70  if bathroom windowsensor is close  then bathroom window  open or close ,411
+ if currentweather outdoorcondition is thunderstorm  if tv state is on  then devices tv  turn on or off  then home alllight  turn on or off ,412
+ if entrance door is close  then alarms alarms  send an alert notification  then bedroom hue color light bedroom  change light color ,413
+ when relativeposition typeofproximity is outside house  if heating system state is on  then home heating  turn on or off  then reminders reminders  heating off ,414
+ when wi fi state is off  then reminders reminders  wifi is off check the internet connection ,415
+ if bedroom gassensor is true  then alarms alarms  send an alert notification  then bedroom hue color light bedroom  change light color ,416
+ when bedroom temperature is more than 20  if currentweather rain is true  then bedroom window  open or close ,417
+ if datetime localtime is 2100  if livingroomlight state is off  then livingroom hue color light living room  change light color  then devices tv  turn on or off ,418
+ when test-user outsideposition is office  if heating system state is on  then home heating  turn on or off  then reminders reminders  the heating system has been deactivated remember to activate it when you get home ,419
+ if entrance motion is true  if entrance door is open  then devices alexa services  start alexa routine  then entrance hue color light entrance  change light color ,420
+ if wi fi state is off  then reminders reminders  the wifi isnt working ,421
+ if livingroom smokesensor is true  then alarms alarms  send an alert notification ,422
+ when entrance lightlevel is daylight  if currentweather outdoortemperature is more than 15  then home allwindow  open or close ,423
+ if tv state is on  when test-user leisure is watchingtv  then home robotvacuumcleaner  turn on or off  then reminders reminders  remember to use the vacuum when youre finished watching tv ,424
+ if entrancelight state is off  then reminders reminders  turn on the lights ,425
+ when activity medicationname is medicine name  then alarms alarms  send an alert notification  then bedroom hue color light bedroom  change light color ,426
+ if currentweather outdoortemperature is 8  when livingroom windowsensor is open  then livingroom window  open or close ,427
+ if datetime localtime is 2000  if living room alexa state is off  then devices alexa services  start alexa routine  then livingroom hue color light living room  change light color ,428
+ when physiological heartrate is 135  if coffee machine state is on  then kitchen coffeemachine  turn on or off  then reminders reminders  dont drink too much coffee ,429
+ when datetime localtime is 0745  if datetime daytype is weekdays  then kitchen coffeemachine  turn on or off ,430
+ when pc state is on  then reminders reminders  remember to save your work ,431
+ if datetime localtime is 1901  if kitchen alexa vocalinput is its time to cook  then devices alexa services  start alexa routine  then kitchen hue color light kitchen  change light color ,432
+ when relativeposition typeofproximity is outside entrance  if entrance door is open  then home allwindow  open or close  then reminders reminders  remember to take the house keys and the mask ,433
